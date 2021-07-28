@@ -1,10 +1,8 @@
 ---
-title: Who
+title: Who is behind the AIL Project?
 permalink: /who
 layout: info
 ---
-
-# Who is behind the AIL Project?
 
 The core team behind the AIL Project is a group of highly motivated individuals.
 
