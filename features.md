@@ -1,6 +1,7 @@
 ---
 title: AIL Project features
 permalink: /features
+layout: info
 ---
 
 
