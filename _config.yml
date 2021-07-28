@@ -1,19 +1,19 @@
 # Site settings
-title: Jekyll Doc Theme
-email: your-email@domain.com
+title: AIL Project
+email: info@circl.lu
 description: >
-  Jekyll Template for Project Websites
-  providing documentation and blog post pages.
+  AIL Project is an open source framework to collect, crawl, dig and analyse unstructured data.
 lang: en-US
 
-baseurl: "/" # the subpath of your site, e.g. /blog/
+baseurl: "" # the subpath of your site, e.g. /blog/
 url: https://ail-project.org # the base hostname & protocol for your site
-git_address: https://github.com/ail-project/ail-website
-git_edit_address: https://github.com/ail-project/ail-website/blob/main
+git_address: https://github.com/ail-project/
+twitter: https://twitter.com/ail_project
+#git_edit_address: https://github.com/ail-project/ail-website/blob/main
 
 # theme options from https://bootswatch.com/3/
 # comment out this to use default Bootstrap
-bootwatch: paper # cerulean cosmo custom cyborg darkly flatly journal lumen readable sandstone simplex slate solar spacelab superhero united yeti
+bootwatch: cosmo # cerulean cosmo custom cyborg darkly flatly journal lumen readable sandstone simplex slate solar spacelab superhero united yeti
 
 # Build settings
 markdown: kramdown
