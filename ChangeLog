@@ -1,0 +1,4982 @@
+# Changelog
+
+
+## v3.7 (2021-08-27)
+
+### Changes
+
+* [tracker + update] add update v3.7 + add map item_id:tracker_uuid (data retention) + fix tracker first_seen/last_seen. [Terrtia]
+
+* [tracker] typo fixed. [Alexandre Dulaunoy]
+
+* [Credential + tags] add misp-taxonomies submodule + fix typo. [Terrtia]
+
+* [gitchangelog.rc] updated to output Markdown. [Alexandre Dulaunoy]
+
+### Fix
+
+* [tracker] global tracker list: fix first/last seen. [Terrtia]
+
+* [v3.7] add missing file. [Terrtia]
+
+* [trackers] items by daterange. [Terrtia]
+
+* [correlation graph] fix legend, remove icon text. [Terrtia]
+
+* [Credential] fix moduleStats. [Terrtia]
+
+* [Credemtial module] fix stats. [Terrtia]
+
+* [Yara + regex trackers] remove tests. [Terrtia]
+
+* [Decoder] log level. [Terrtia]
+
+* [abstract_modules + Global] log message on error + fix Global exception on invalid gzip. [Terrtia]
+
+* [Credential] fix old funct call. [Terrtia]
+
+* [UI Item submit] tags input: avoid browser and password managers autocomplete. [Terrtia]
+
+* [term tracker] typo. [Terrtia]
+
+### Other
+
+* Merge branch 'master' of github.com:ail-project/ail-framework. [Terrtia]
+
+* Merge branch 'master' of github.com:ail-project/ail-framework. [Terrtia]
+
+* Merge pull request #123 from TonyJabbour/master. [Alexandre Dulaunoy]
+
+  CentOS 8 installation script Fixed a problem
+
+* CentOS 8 installation script Fixed a problem Added centos installation guide in README.md. [Tony Jabbour]
+
+* Merge branch 'master' of github.com:ail-project/ail-framework. [Terrtia]
+
+* Merge pull request #122 from TonyJabbour/master. [Alexandre Dulaunoy]
+
+  Added CentOS 8 installation script
+
+* Added CentOS 8 installation script. [Tony Jabbour]
+
+* Merge branch 'master' of github.com:ail-project/ail-framework. [Terrtia]
+
+* Merge pull request #119 from Relega/patch-1. [Alexandre Dulaunoy]
+
+  Update HOWTO.md
+
+* Update HOWTO.md. [Relega]
+
+  * replaced pystemon url (from circl repository to the original repository)
+  * refined pystemon instructions
+
+
+## v3.6 (2021-07-14)
+
+### Changes
+
+* Chg: [README] add Olivier Sagit @osagit to contributors list. [Terrtia]
+
+* [requirements] minimal version + remove old packages. [Terrtia]
+
+* Add Retro Hunt. [Terrtia]
+
+* [UI trackers] add/edit/remove tracker source/target #43 #102. [Terrtia]
+
+* [Trackers regex + yara] filter by item source. [Terrtia]
+
+* [Tracker term] track terms by sources. [Terrtia]
+
+* [test] add new workflow. [Thirion Aurélien]
+
+* [requirements] minimal version + remove old packages. [Terrtia]
+
+* [modules + tests] fix modules + test modules on samples. [Terrtia]
+
+* [update v3.6 + installer] fix faup install + add v3.6 update. [Terrtia]
+
+* [Launcher] update modules directory. [Terrtia]
+
+* [SQLInjectionDetection LibInjection modules] add module class. [Terrtia]
+
+* [Urls (Web) module] fix regex + rename. [Terrtia]
+
+* [Tracker_Regex module] create module class + mv module. [Terrtia]
+
+* [Tracker_Yara module] create module class. [Terrtia]
+
+* [modules] create new modules repository + small fixs. [Terrtia]
+
+* [Keys] add test. [Terrtia]
+
+* [modules] add tests: CreditCard, Global, DomClassifier. [Terrtia]
+
+* [Categ] tests + docs. [Terrtia]
+
+* [ApiKey] refactor module + tests. [Terrtia]
+
+* [launcher + modules] add module tests (Onion module) [Terrtia]
+
+* [AIL items + Onion] create AIL item objects + Onion module refactor. [Terrtia]
+
+* [tools extract_cryptocurrency] filter by correlation objects + errors messages. [Terrtia]
+
+* [tools extract_cryptocurrency] new input: list of addresses to extract. [Terrtia]
+
+* [tools] add 2 new tools: extract cryptocurrency correlation by type + trigger manual update. [Terrtia]
+
+* [modules] set log level to critcal on unexpected errors. [Terrtia]
+
+### Fix
+
+* [Term tracker] fix fct args. [Terrtia]
+
+* [crawler] fix new crawled item id. [Terrtia]
+
+* [Retro Humt UI] clarify tags input. [Terrtia]
+
+* URLs www word to match. [osagit]
+
+  There is 4 'w' chars instead of 3
+
+* [crawlers] get_all_splash return type. [Terrtia]
+
+* [Splash_Manager errors] catch invalid response. [Terrtia]
+
+* [Trackers UI] fix sources logo + tracker metadata. [Terrtia]
+
+* Change module name Web to Urls. [lpwm9803]
+
+* [Splash_Manager errors] catch invalid response. [Terrtia]
+
+* [github workflows] fix test. [Terrtia]
+
+* [github workflows] clone depth. [Thirion Aurélien]
+
+* [installer] pyfaup install. [Terrtia]
+
+* [installer] pyfaup install. [Terrtia]
+
+* [UI crawler dashboard] block_languages_search: fix domains_types #110. [Terrtia]
+
+* [UI crawler dashboard] block_domains_name_search: fix domains_types #110. [Terrtia]
+
+* [modules] print + save traceback in logs. [Terrtia]
+
+* [paste_submit] restrict source characters. [Terrtia]
+
+* [submit_paste] restrict source name. [Terrtia]
+
+* [tools extract_cryptocurrency] argparse flags. [Terrtia]
+
+* [tags] invalid tags. [Terrtia]
+
+* Replace redis init with generic ConfigLoader. [osagit]
+
+  StrictRedis() replaced by ConfigLoader.get_redis_conn()
+
+* Debug() string  takes 1 positional argument. [osagit]
+
+* FILE_ALLOWED_EXTENSIONS without quotes. [osagit]
+
+* Stuck queues and submit paste. [Olivier SAGIT]
+
+* Name pystemon feeder in feeder monitor dashboard. [Olivier SAGIT]
+
+* [tools extract cryptocurrency] correlation type. [Terrtia]
+
+* [Updater] don't check if modified config files (redis and ardb config) [Terrtia]
+
+* [Web module] resolver, change log level. [Terrtia]
+
+* [WebStats] typo. [Terrtia]
+
+* [Indexer] debug messages. [Terrtia]
+
+* [WebStats] typo. [Terrtia]
+
+* [terms tracker] refresh Tracked terms. [Terrtia]
+
+* [redis cache] remove old paste_name db. [Terrtia]
+
+* [crawler] typo: splash restart. [Terrtia]
+
+### Other
+
+* Merge branch 'master' of https://github.com/ail-project/ail-framework into dev. [Terrtia]
+
+* Merge pull request #115 from My-WAF/master. [Thirion Aurélien]
+
+  Remove Block Copy Git Directory
+
+* Update .dockerignore. [VNC Company]
+
+* Merge branch 'dev' of https://github.com/ail-project/ail-framework into dev. [Terrtia]
+
+* Merge pull request #116 from osagit/patch-1. [Thirion Aurélien]
+
+  fix: URLs www word to match
+
+* Merge. [Terrtia]
+
+* Merge branch 'dev' of https://github.com/ail-project/ail-framework into dev. [Terrtia]
+
+* Merge pull request #114 from osagit/dev. [Thirion Aurélien]
+
+  fix: Change module name Web to Urls
+
+* Merge branch 'master' into dev. [Terrtia]
+
+* Merge branch 'master' of https://github.com/CIRCL/AIL-framework. [Terrtia]
+
+* Merge pull request #559 from lesleyxyz/patch-1. [Thirion Aurélien]
+
+  Submit paste contents to TheHive
+
+* Submit file contents to TheHive. [Lesley De Keyser]
+
+* Merge pull request #103 from osagit/scriptsenhance. [Thirion Aurélien]
+
+  fix: stuck queues and submit paste
+
+* Merge branch 'dev' into scriptsenhance. [Thirion Aurélien]
+
+* Merge branch 'master' of https://github.com/ail-project/ail-framework. [Terrtia]
+
+* Perf: use defined compiled regex. [osagit]
+
+  re.compile(regex) definition was not used
+  use compile_regex.findAll() directely instead of re.findall(regex)
+
+* Log message split error + perf. [osagit]
+
+  fix: log message split errors
+  perf: string affected at start
+  doc: comments
+
+* Merge pull request #101 from osagit/namedfeeder. [Alexandre Dulaunoy]
+
+  fix: name pystemon feeder name in feeder monitor dashboard
+
+* Merge pull request #97 from osagit/abstract-module. [Thirion Aurélien]
+
+  feat: module factorization
+
+* Feat: module factorization. [lpwm9803]
+
+
+## v3.5 (2021-03-31)
+
+### Changes
+
+* [passivedns] D4server port. [Terrtia]
+
+* [v3.5] install pyAIL. [Terrtia]
+
+* [passivedns] D4server port. [Terrtia]
+
+* [passiveDns] add dns records. [Terrtia]
+
+* [passiveDns D4 Client] add passiveDns D4 Client. [Terrtia]
+
+* [crawler] add test + relaunch crawlers + major fixs. [Terrtia]
+
+* [update] add v3.5 update. [Terrtia]
+
+* [doc] Splash Manager Configuration. [Terrtia]
+
+* [UI] add update note. [Terrtia]
+
+* [IPAddress] Add Debug + Check if option is empty. [Terrtia]
+
+* [splash manager] update enpoints + use Splash name to restart docker. [Terrtia]
+
+* [merge master] [Terrtia]
+
+* [domains search] search domains by name. [Terrtia]
+
+* [screenshot + har directory] add option to change screenshots directory. [Terrtia]
+
+* [crawler_manager] UI edit config + fix crawler queues. [Terrtia]
+
+* [config] save config on DB + default values. [Terrtia]
+
+* [crawlers manager] show setings. [Terrtia]
+
+* [crawler] show all crawlers type on dashboard. [Terrtia]
+
+* [crawler] manage crawlers. [Terrtia]
+
+* [crawler] crawler queue + restart docker on error. [Terrtia]
+
+* [core module] disable phone module by default. [Terrtia]
+
+* Merge master -> crawler_manager. [Terrtia]
+
+* [crawler manager] get all splash dockers, proxies and launch all crawlers. [Terrtia]
+
+### Fix
+
+* [crawler] crawler test: remove print. [Terrtia]
+
+* [crawler UI] remove unused crawlers configuration. [Terrtia]
+
+* [crawler] user agent + splash restart. [Terrtia]
+
+* [crawler UI] crawler by domain type, remove old dashboard. [Terrtia]
+
+* [MISP Export UI] object type selector. [Terrtia]
+
+* [UI] fix navbar: invalid url. [Terrtia]
+
+* [crawler] typo. [Terrtia]
+
+* [crawler] typo. [Terrtia]
+
+* [crawler] typo. [Terrtia]
+
+* [Crawler] faup. [Terrtia]
+
+* [Launcher] launch core module: Crawler_manager. [Terrtia]
+
+* [cralers] remove debug. [Terrtia]
+
+* [Domain search] fix regex. [Terrtia]
+
+* [API ACL] avoid user_no_api users to access the API. [Terrtia]
+
+* [Module Queue] module without subscriber. [Terrtia]
+
+* [term Tracker] TimeoutException. [Terrtia]
+
+* [API ACL] read_only user role. [Terrtia]
+
+* [OVERVIEW] [Terrtia]
+
+* [gitignore] [Terrtia]
+
+* [showDomain] empty father field. [Terrtia]
+
+* [showDomain] empty father field. [Terrtia]
+
+* [redis cache] remove old Redis_Data_Merging db. [Terrtia]
+
+* [redis cache] remove old paste_name db. [Terrtia]
+
+* [background updater] Don't launch updates on fresh install. [Terrtia]
+
+* [v3.4 update] fix update progress. [Terrtia]
+
+* [background updater] remove completed updates. [Terrtia]
+
+* [install] force virtual environmemt activation. [Terrtia]
+
+### Other
+
+* Merge branch 'master' into crawler_manager. [Terrtia]
+
+* Merge pull request #89 from ail-project/crawler_manager. [Alexandre Dulaunoy]
+
+  Crawler manager
+
+* Merge branch 'master' into crawler_manager. [Terrtia]
+
+* Merge branch 'master' into crawler_manager. [Terrtia]
+
+* Merge pull request #536 from simonsigre/patch-1. [Alexandre Dulaunoy]
+
+  Typo in placeholder "Optionnal" --> "Optional"
+
+* Typo in placeholder "Optionnal" --> "Optional" [Simon Sigré]
+
+  Updated placeholder value to correct typo;
+  "Optionnal" --> "Optional"
+
+* Merge branch 'master' of github.com:CIRCL/AIL-framework. [Alexandre Dulaunoy]
+
+* Merge pull request #534 from simonsigre/patch-1. [Alexandre Dulaunoy]
+
+  Added 'wget' as a dependency
+
+* Added 'wget' as a dependency. [Simon Sigré]
+
+  'wget' is a dependency as without this additional components won't download as part of initial install, one such example is;
+  ```
+  wget -O /ail-framework/ardb/src/../deps/jemalloc-5.1.0.tar.bz2 https://github.com/jemalloc/jemalloc/releases/download/5.1.0/jemalloc-5.1.0.tar.bz2 && \
+  ```
+
+* Merge branch 'master' into crawler_manager. [Terrtia]
+
+* Merge branch 'master' into crawler_manager. [Terrtia]
+
+* Merge branch 'master' into crawler_manager. [Terrtia]
+
+
+## v3.4 (2020-12-20)
+
+### Changes
+
+* [Languages]detect + search domains languages. [Terrtia]
+
+* [Tracker] edit tracker. [Terrtia]
+
+* [web] we process items nowadays not only pastes ;-) [Alexandre Dulaunoy]
+
+### Fix
+
+* [install] pycld3 dependency. [Jean-Louis Huynen]
+
+  Without this Flask fails starting
+
+* [update v3.4] updater. [Terrtia]
+
+* [Languages] import + update message. [Terrtia]
+
+* [Languages] update. [Terrtia]
+
+* [UI trackers] None trackers values. [Terrtia]
+
+* [Tracker] edit tracker ACL. [Terrtia]
+
+* [Yara Tracker] catch yara timeout. [Terrtia]
+
+* [Terms Trackcers] fix item link. [Terrtia]
+
+### Other
+
+* Merge pull request #70 from ail-project/gallypette-patch-1. [Jean-Louis Huynen]
+
+  fix: [install] pycld3 dependency
+
+* Merge branch 'master' of https://github.com/ail-project/ail-framework. [Terrtia]
+
+
+## v3.3 (2020-10-13)
+
+### Changes
+
+* [UI show Item] refactoring + bootstrap 4 migration. [Terrtia]
+
+* [UI show domain] add last origin table: domain + item. [Terrtia]
+
+* [travis] -> bionic. [Alexandre Dulaunoy]
+
+* [yara trackers UI] add yara trackers, show default yara rule. [Terrtia]
+
+* [bitcoin tags + correlation] add bech32 adresses. [Terrtia]
+
+### Fix
+
+* [UI correlation graph] fix item links. [Terrtia]
+
+* [UI correlation graph] fix item links. [Terrtia]
+
+* [users management] hide API keys by default + fix delete/edit users. [Terrtia]
+
+* [crawler] fix ResponseNeverReceived retry time. [Terrtia]
+
+* [crawler] fix ResponseNeverReceived hanlder, check if splash restarted. [Terrtia]
+
+* [Yara tracker] fix mail notification. [Terrtia]
+
+* [Yara tracker] fix mail notification. [Terrtia]
+
+* [RegexTracker] fix missing hostname in mail notification. [Terrtia]
+
+* [Flask server] change default host. [Terrtia]
+
+* [ardb] switch to ail-project ardb fork #38. [Jean-Louis Huynen]
+
+* [Launcher] fix virtualenv loader. [Terrtia]
+
+### Other
+
+* Merge branch 'master' of https://github.com/ail-project/ail-framework. [Terrtia]
+
+* Merge branch 'master' of https://github.com/ail-project/ail-framework. [Terrtia]
+
+
+## v3.2 (2020-08-27)
+
+### Changes
+
+* [update] add v3.2. [Terrtia]
+
+* [yara trackers] add debug. [Terrtia]
+
+* [tracker yara] show rule content. [Terrtia]
+
+* [correlation] basic correlation: get_correlation_all_object function. [Terrtia]
+
+* [submodule + YARA] add submodule auto update + update v3.1.1. [Terrtia]
+
+* [trackers] add yara trackers. [Terrtia]
+
+* [Trackers] email notifications: add tracker description in email subject. [Terrtia]
+
+* [username correlation + login redirection] add twitter username correlation + redirect to the requested page on login. [Terrtia]
+
+* [Item delete] delete father/child link + remove from domain tree + delete all child from the same domain. [Terrtia]
+
+* [feeder pystemon] add debug. [Terrtia]
+
+* [whosh index] add data retention fct. [Terrtia]
+
+* [core] disable Release module. [Terrtia]
+
+* [tor crawler] nyt added. [Alexandre Dulaunoy]
+
+* [API + item library] add a way to check if a user can access the API + item import (use item_basic) [Terrtia]
+
+* [black-list onion] keybase added. [Alexandre Dulaunoy]
+
+* [core crawler] add screen script create screen + windows + kill them + get list. [Terrtia]
+
+* [crawler proxy] interact with the splash manager API (get list of proxies + splash containers + launch them) [Terrtia]
+
+* [launcher] add option to reset UI admin password. [Terrtia]
+
+* [UI dashboard] sort module by name. [Terrtia]
+
+* [LAUNCH] launch telegram module by default. [Terrtia]
+
+### Fix
+
+* [install] canevasjs. [Terrtia]
+
+* [UI tags] fix add tags template. [Terrtia]
+
+* [install] travis git unshallow. [Terrtia]
+
+* [trackers yara] remove sleep time. [Terrtia]
+
+* [trackers] typo. [Terrtia]
+
+* [updater] tag subversion. [Terrtia]
+
+* [update v3.1.1] init submodule. [Terrtia]
+
+* [travis] [Terrtia]
+
+* [crawler] fix auto crawler creation. [Terrtia]
+
+* [travis] fetch git last tag. [Terrtia]
+
+* [update thirparty] fix canevasjs install. [Terrtia]
+
+* [install crawler] remove old python requirement. [Terrtia]
+
+* [TheHive feeder] create alert, get item full path. [Terrtia]
+
+* [TheHive feeder] create alert. [Terrtia]
+
+* Typo. [Terrtia]
+
+* Typo. [Terrtia]
+
+* Typo. [Terrtia]
+
+* [username correlation] fix domain correlation. [Terrtia]
+
+* [RegexTracker] fix search regex helper. [Terrtia]
+
+* [regex_helper] [Terrtia]
+
+* [regex tracker] fix timeout. [Terrtia]
+
+* [reset_AIL] add helper + fix soft reset. [Terrtia]
+
+* [Exporter] ad missing file. [Terrtia]
+
+* [update_thirparty] fix popper install. [Terrtia]
+
+* [UI popper version] use popper v1 (https://github.com/twbs/bootstrap/issues/29842) [Terrtia]
+
+* [MISP auto Export] fix import path. [Terrtia]
+
+* [MISP auto export] fix MISP_TheHive_feeder. [Terrtia]
+
+* [travis] virtualenv. [Terrtia]
+
+* [install] unshallow clone. [Terrtia]
+
+* [requirement] remove old crawler requirements (installed by default) [Terrtia]
+
+* [crawler] option to disable screenshots and har. [Terrtia]
+
+* [crawlers lib] missing config file. [Terrtia]
+
+* [create au to crawler] save crawler_delta time. [Terrtia]
+
+* [updater] return boolean. [Terrtia]
+
+* [Credential] fix timeout error. [Terrtia]
+
+* [Credential] fix timeout error. [Terrtia]
+
+* [Credential] force lowercase of mail address. [Terrtia]
+
+* [Credential] fix timeout message. [Terrtia]
+
+* [Mail module] regex timeout. [Terrtia]
+
+* [update v1.5] [Terrtia]
+
+* [Mail module] remove debug. [Terrtia]
+
+* [Mail module] fix dns caching + use redis queue. [Terrtia]
+
+* [UI Decoded items] fix download decoded file. [Terrtia]
+
+### Other
+
+* Merge pull request #519 from myasn1k/docker_fixes. [Thirion Aurélien]
+
+  Docker fixes
+
+* Update update_thirdparty.sh. [Pietro Mazzini]
+
+* Remove useless copy. [Pietro Mazzini]
+
+* Uncomment update and explain in docker readme. [Pietro Mazzini]
+
+* Add tz as argument. [Pietro Mazzini]
+
+* Update docker readme (cp) [Pietro Mazzini]
+
+* Update docker readme. [Pietro Mazzini]
+
+* Fix canvas folder name. [Pietro Mazzini]
+
+* Add to docker start crawlers launch. [Pietro Mazzini]
+
+* Update Dockerfile: use ubuntu 18, remove redundant update_thirdparty, remove old crawler requirements pip install. [Pietro Mazzini]
+
+* Comment git repo tag in installing_deps, git repo not recognised. [Pietro Mazzini]
+
+* LAUNCH update function fail because the folder isn't a git repo, comment it. [Pietro Mazzini]
+
+* Merge pull request #22 from C00kie-/master. [Alexandre Dulaunoy]
+
+  allow to configure binding interface
+
+* Update Flask_server.py. [C00kie-]
+
+* Update core.cfg.sample. [C00kie-]
+
+* Typo fixed as ail repo is now lower-case. [Alexandre Dulaunoy]
+
+  Typo fixed as ail repo is now lower-case
+
+* Merge pull request #16 from ChilliSec/patch-1. [Thirion Aurélien]
+
+  Update HOWTO.md
+
+* Update HOWTO.md. [ChilliSec]
+
+* Merge branch 'master' of https://github.com/ail-project/ail-framework. [Terrtia]
+
+* Merge pull request #497 from ronaldtf/fix-case-thehive. [Thirion Aurélien]
+
+  Fix create case with TheHive
+
+* Fix create case with TheHive. [Ronald Teijeira Fernandez]
+
+
+## v3.1 (2020-05-12)
+
+### Changes
+
+* [update] add update v3.1 + install crawler python requirements by default. [Terrtia]
+
+* [UI correlation] add username correlation card. [Terrtia]
+
+* [UI correlation] add username correlation graph. [Terrtia]
+
+* [UI correlation] add username correlation: daterange pages. [Terrtia]
+
+* [telegram module] add new tag: telegram invite code. [Terrtia]
+
+* [telegram backend] add username correlation + save invite hash. [Terrtia]
+
+* [importer] add map twitter id - item id, add parents link between twitter and url extracted. [Terrtia]
+
+* [travis install] shallow clone. fetch tags + commit id. [Terrtia]
+
+* [travis install] shallow clone. fetch tags. [Terrtia]
+
+* [install] debug travis. [Terrtia]
+
+* [README] update gitter link. [Terrtia]
+
+* [import er url_extract] add item twitter parent. [Terrtia]
+
+* [importer url_extract] fix item id. [Terrtia]
+
+* [importer] add url_extract importer. [Terrtia]
+
+* [API json import] take list as imput. [Terrtia]
+
+* [core import] add AIL JSON import format, API endpoint added (AIL feeders) [Terrtia]
+
+* [update doc] update doc install + logo + fix updater. [Terrtia]
+
+* [Updater] change default branch origin. [Terrtia]
+
+* [Updater] change default branch origin. [Terrtia]
+
+* [update Readme logo + links] [Terrtia]
+
+* [add new logo] [Terrtia]
+
+* [AIL logo UI] [Terrtia]
+
+* [doc] add cookiejar screenshot. [Terrtia]
+
+* [Crawler] default docker memory usage. [Terrtia]
+
+* [MISP export] export domain as domain-crawled object. [Terrtia]
+
+* [domain explorer UI] add shortcut button: misp export + correlation. [Terrtia]
+
+* [crawler] edit cookie and cookiejar + add cookie to cookiejar + fix screenshot duplicate. [Terrtia]
+
+* [Crawler core + UI] crawler lua: handle retry + fix cookie loader and selector. [Terrtia]
+
+* [cookiejar UI] add cookiejar + show all. [Terrtia]
+
+* [crawler cookies] use cookiejar. [Terrtia]
+
+* [crawler - cookies] add/show/select cookies. [Terrtia]
+
+* [crawler] add cookies list by user/global, save cookies from file + dict(name, value), TODO: API + handle errors. [Terrtia]
+
+* [crawler] bypass login: use cookie provided by user and accept cookie from server + refractor. [Terrtia]
+
+* [Splash Crawler] use cookies to bypass login. [Terrtia]
+
+* [UI] bump jquery to 3.4.1. [Terrtia]
+
+* [import_dir] fix is_gzip test, use magic number. [Terrtia]
+
+* [MISP Importer] files: handle missing sha1/sha256 attributes + fix Items and Screenshots dir. [Terrtia]
+
+* [Updater] relauch updater on change (git pull) [Terrtia]
+
+### Fix
+
+* [Mail module] add debug output. [Terrtia]
+
+* [Mail module] replace signal by multiprocessing (https://docs.python.org/3.4/library/signal.html#execution-of-python-signal-handlers) [Terrtia]
+
+* [Mail] debug signal. [Terrtia]
+
+* [Mail] debug. [Terrtia]
+
+* [Mail module] remove test time.wait. [Terrtia]
+
+* [Mail module] debug signal timeout. [Terrtia]
+
+* [Mail module] debug signal timeout. [Terrtia]
+
+* [telegram module] typo. [Terrtia]
+
+* [telegram module] fix tagging. [Terrtia]
+
+* [telegram module] check username length. [Terrtia]
+
+* [telegram module] remove debug. [Terrtia]
+
+* [Mails] regex timeout. [Terrtia]
+
+* [Mails] change module output. [Terrtia]
+
+* [Mails] remove print + test. [Terrtia]
+
+* [Mails] refactor Mail module. [Terrtia]
+
+* [urlextract importer] fix parent map + replace set JSON queue by list. [Terrtia]
+
+* [import urlextract parent] fix typo. [Terrtia]
+
+* [travis install] shallow clone. fetch missing commit id. [Terrtia]
+
+* [Mails regex timeout] reduce default timeout. [Terrtia]
+
+* [Mails dns resolver] update timeout exception. [Terrtia]
+
+* [Mails] typo. [Terrtia]
+
+* [Mails] import. [Terrtia]
+
+* [Mails] import. [Terrtia]
+
+* [Mails] add regex timeout. [Terrtia]
+
+* [Credential] add regex timeout. [Terrtia]
+
+* [Credential] add regex timeout. [Terrtia]
+
+* [urlexport importer] fix item name + redis config. [Terrtia]
+
+* [urlexport importer] item_id, force str type. [Terrtia]
+
+* [urlexport importer] add missing import. [Terrtia]
+
+* [urlextract importer] class name. [Terrtia]
+
+* [importer] fix typo. [Terrtia]
+
+* [Global] extend ungzip error catching, catch invalid compressed file. [Terrtia]
+
+* [json import API] remove list input. [Terrtia]
+
+* [install create default user] default passwd file: add missing new line. [Terrtia]
+
+* [installer] get last git version. [Terrtia]
+
+* [Readme travis badge] [Terrtia]
+
+* [Readme travis badge] [Terrtia]
+
+* [Readme logo size] [Terrtia]
+
+* [show item UI] return 404. [Terrtia]
+
+* [Cookiejar UI] fix typo. [Terrtia]
+
+* [Flask session cookie name] add uuid to cookie name. [Terrtia]
+
+* [crawler] typo. [Terrtia]
+
+* [Crawler splash ResponseNeverReceived] add retry. [Terrtia]
+
+* [crawler] error catcher. [Terrtia]
+
+* [MISP export UI] fix input: name + value overwrite. [Terrtia]
+
+* [update thirdparty] update taxonomies. [Terrtia]
+
+* [crawler] cleanup. [Terrtia]
+
+* [PgpDump parser] remove header comment (rfc4880) + remove empty lines. [Terrtia]
+
+* [Pgp Dump] remove tool version. [Terrtia]
+
+* [ZMQ Feeder] performance: replace zmq recv NOBLOCK by Poller. [Terrtia]
+
+* [pgpdump] fix subtype save. [Terrtia]
+
+* [Updater] force updater update. [Terrtia]
+
+* [Updater] fix current_tag parser. [Terrtia]
+
+* [import_dir] remove special characters. [Terrtia]
+
+* [import_dir] remove dir whitespaces #475. [Terrtia]
+
+### Other
+
+* Merge pull request #492 from sunil3590/master. [Thirion Aurélien]
+
+  crawler_time -> crawler_delta
+
+* Crawler_time -> crawler_delta. [Sunil D S]
+
+* Chg [telegram + correlation] new module: telegram (username + login code + join_chat) + add simple_correlation backend. [Terrtia]
+
+* Chg [telegram + correlation] new module: telegram (username + login code + join_chat) + add simple_correlation backend. [Terrtia]
+
+* Merge pull request #487 from CIRCL/crawler_v2. [Thirion Aurélien]
+
+  fix: [crawler] error catcher
+
+* Merge pull request #486 from CIRCL/crawler_v2. [Thirion Aurélien]
+
+  Crawler v2 - Add cookiejar - use cookie to bypass login form
+
+* Merge branch 'master' into crawler_v2. [Terrtia]
+
+
+## v3.0 (2020-02-21)
+
+### Changes
+
+* [MISP export] remove pythonify. [Terrtia]
+
+* [MISP export] save event uuid - global_id. [Terrtia]
+
+* [presentation] add MISP export screenshot. [Terrtia]
+
+* [core] Drop python 3.5 support. [Terrtia]
+
+* [update v3.0] add update v3.0. [Terrtia]
+
+* [UI MISP export] add object export picker by user. [Terrtia]
+
+* [SentimentAnalysis] clean. [Terrtia]
+
+* [UI MISP export] export to MISP instance. [Terrtia]
+
+* [UI MISP import]show  error +imported uuid/global_id. [Terrtia]
+
+* [UI MISP export] add error output. [Terrtia]
+
+* [UI MISP export] add MISP export. [Terrtia]
+
+* [UI MISP import] add MISP import. [Terrtia]
+
+* [MISP import export] item with relationships (domain not handled) [Terrtia]
+
+* [MISP import export] decoded with relationships. [Terrtia]
+
+* [MISP import-export] screenshots with relationships. [Terrtia]
+
+* [MISP import-export] pgp and cryptocurrency with relationships. [Terrtia]
+
+* [MISP import] import files obj: decoded + screenshot. [Terrtia]
+
+* [MISP import] import files obj: decoded + screenshot. [Terrtia]
+
+* [add MISP import] correlation TODO: create correlation. [Terrtia]
+
+* [add MISP import](no correlations) import item + pgp(incomplete) + screenshot(incomplete) [Terrtia]
+
+* [MISP export] add pgp object + add relationship: item + pgp + cryptocurrency. [Terrtia]
+
+* [export MISP] export Items + Screenshots objects with relationships. [Terrtia]
+
+### Fix
+
+* [MISP export] get full list. [Terrtia]
+
+* [MISP export] misp response parsing. [Terrtia]
+
+* [MISP export import] [Terrtia]
+
+* [misp export] force event uuid. [Terrtia]
+
+* [MISP export] fix pgp-meta template. [Terrtia]
+
+* [Update] force str tags. [Terrtia]
+
+* [Update] force str tags. [Terrtia]
+
+* [update thirdparty] #473. [Terrtia]
+
+* [misp keys import] fix #471. [Terrtia]
+
+* [Update] support subversion + fix #472. [Terrtia]
+
+* [Pytaxonomies install] [Terrtia]
+
+* [SentimentAnalysis] download nltk punkt. [Terrtia]
+
+* [IPAdress] remove leading zeros #465. [Terrtia]
+
+* [module Webstats + BankAccount-Decoder] fix faup return type + remove old Paste library from BankAccount-Decoder #465. [Terrtia]
+
+* [Global catch incomplete file error] fix #464. [Terrtia]
+
+* [search items tag] fix daterange. [Terrtia]
+
+* [core Global] catch and log incomplete files. [Terrtia]
+
+* [domain explorer web] fix pagination by daterange. [Terrtia]
+
+* [domain explorer web] fix pagination by daterange. [Terrtia]
+
+### Other
+
+* Merge branch 'master' of https://github.com/CIRCL/AIL-framework. [Terrtia]
+
+* Merge pull request #467 from petmi627/master. [Thirion Aurélien]
+
+  Added characters limitation in trackersManagement.html
+
+* Added characters limition in trackersManagement.html. [Mike Peters]
+
+* Merge master => import_export_v1. [Terrtia]
+
+* Merge pull request #463 from petmi627/master. [Thirion Aurélien]
+
+  Added support for username as notification credentials
+
+* Added support for username as notification credentials. [Mike Peters]
+
+
+## v2.9 (2020-02-03)
+
+### Changes
+
+* [domain explorer] domains explorer v2, filter domains by daterange. [Terrtia]
+
+### Fix
+
+* [IPAddress] catch empty config error. [Terrtia]
+
+* [Global: already saved filename] save updated + filter duplicated items. [Terrtia]
+
+* [Global: filename provided by all feeders] avoid path tranversal. [Terrtia]
+
+* [Domain explorer UI] fix daterange pagination links. [Terrtia]
+
+* [Tag core] check if item_date type is an integer. [Terrtia]
+
+
+## v2.8 (2020-01-23)
+
+### Changes
+
+* [domain core + UI] add domain explorer v1. [Terrtia]
+
+* [test api] increase import timeout. [Terrtia]
+
+* [UI + core] tag decoded items, fix: #455. [Terrtia]
+
+* [UI item tags search] refractor: search item tag by object, use new functions. [Terrtia]
+
+* [UI tags] add + delete image (screenshot) tags. [Terrtia]
+
+* [UI tags] add + delete image (screenshot) tags. [Terrtia]
+
+### Fix
+
+* [MISP export] force pymisp version. [Terrtia]
+
+* [tag core] typo. [Terrtia]
+
+* [tag core] item date type. [Terrtia]
+
+* [Tag core] add tag, update tag last seen. [Terrtia]
+
+* [Flask server + cookie session] chg default cookie name (also use port number) + add Flask port number to config. [Terrtia]
+
+* [expand btc adress] filter empty addr fields. [Terrtia]
+
+* [UI navbar] chg icon decoded tags. [Terrtia]
+
+* [UI show item min] fix empty modal. [Terrtia]
+
+* Change name popper.js-1.14.3 to popper-core-1.14.3. [mangelft]
+
+* [UI] screenshot url. [Terrtia]
+
+### Other
+
+* Merge pull request #453 from mangelft/master. [Thirion Aurélien]
+
+  fix: change name popper.js-1.14.3 to popper-core-1.14.3
+
+* Merge pull request #450 from CIRCL/tags_v2. [Thirion Aurélien]
+
+  Tags v2
+
+
+## v2.7 (2020-01-13)
+
+### Changes
+
+* [UI domain] add input: show domain by name. [Terrtia]
+
+* [tags blueprint] clean code. [Terrtia]
+
+* [update v2.7] sort domain full_onion_up and full_regular_up. [Terrtia]
+
+* [UI tags] search domains by tags. [Terrtia]
+
+* [core + UI] search domain by tags. [Terrtia]
+
+* [Update v2.7] add update v2.7 scripts. [Terrtia]
+
+* [tags UI] edit object tags (delete tags) [Terrtia]
+
+* [Tag core] objects tagging, Part 2/2 TODO: UI tags domain + screenshot + object rename paste=>item. [Terrtia]
+
+* [Tag core] objects tagging, Part 1/2 TODO UI (tags) + rename paste=>item. [Terrtia]
+
+* [Tag core] objects tagging, Part 1/2. [Terrtia]
+
+* [README] remove top terms. [Terrtia]
+
+* [correlation graph UI] add json error handler + add loading status. [Terrtia]
+
+* [UI correlation graph + UI domain] correlation screenshot: show img in toolip + show hash in ShowDomain TODO: pixelate images. [Terrtia]
+
+### Fix
+
+* [UI tags] fix domain links. [Terrtia]
+
+* [UI term] remove deprecated trending charts, fix #446 #447. [Terrtia]
+
+* [Crawler] typo. [Terrtia]
+
+* [UI decoded item] sort mimetype. [Terrtia]
+
+* [Crawler] fix screenshot-domain typo. [Terrtia]
+
+* [Crawler] fix screenshot-domain typo. [Terrtia]
+
+* [Crawler] fix screenshot-domain map. [Terrtia]
+
+* [UI showDomain] fix screenshot accordeon. [Terrtia]
+
+### Other
+
+* Merge pull request #449 from CIRCL/tags_v2. [Alexandre Dulaunoy]
+
+  Tags v2 - Tagging system refractoring
+
+* Merge branch 'master' into tags_v2. [Terrtia]
+
+* Update README.md. [Thirion Aurélien]
+
+
+## v2.6 (2019-12-17)
+
+### New
+
+* [slides] source code added. [Alexandre Dulaunoy]
+
+### Changes
+
+* [screenshot correlation + v2.6] add screenshot-domain correlation + v2.6 update. [Terrtia]
+
+* [API] get domain min metadata (first up, last up) + get crawled domain by daterange and status. [Terrtia]
+
+* [Domain + Date] get domain up range + get date days and months by daterange. [Terrtia]
+
+* [Domain] get all/by month domains up. [Terrtia]
+
+* [API] get domain metadata (minimal) [Terrtia]
+
+* [UI correlation graph] tooltip: show domain tags. [Terrtia]
+
+* [UI correlation graph] popover: add loading status + chg css. [Terrtia]
+
+* [correlation UI] add basic popover. [Terrtia]
+
+* [slide] update slide. [Terrtia]
+
+* [pgpdump] add debug. [Terrtia]
+
+* Linked TOR installation instruction in the README. [Sami Mokaddem]
+
+* [Onion] add discovery queue. [Terrtia]
+
+* [Showpaste] check if tags are safe (img) + fix domain link. [Terrtia]
+
+* [crawler dashboard UI] add UP/Down domains url. [Terrtia]
+
+### Fix
+
+* [update v2.6] fix faup encoding. [Terrtia]
+
+* [update v2.6] performance. [Terrtia]
+
+* [UI correlation graph] typo. [Terrtia]
+
+* [UI showDomain] fix down domain history. [Terrtia]
+
+* [Domain] domain was up. [Terrtia]
+
+* [Domain] is_domain_up. [Terrtia]
+
+* Typo. [Terrtia]
+
+* [Update] force manual update, fix #443. [Terrtia]
+
+* [UI] fix show paste modal. [Terrtia]
+
+* [screenshot canevas + domain link] fix item domain link + screenshot canevas: chg colors and  icons for unsafe tags. [Terrtia]
+
+* [PgpDump] catch bs4 error. [Terrtia]
+
+* Placed Tor installation instruction in the installation section. [Sami Mokaddem]
+
+* [Update v2.4] fix empty set. [Terrtia]
+
+* [Update v2.4] fix empty set. [Terrtia]
+
+* [Item lib] fix import. [Terrtia]
+
+* [Paste submit] fix tags unpack. [Terrtia]
+
+* [Show Domain UI] fix screenshot link, fix #431. [Terrtia]
+
+* [Update] filter invalid tags. [Terrtia]
+
+
+## v2.5 (2019-11-25)
+
+### Changes
+
+* [MispModules] use ConfigLoader. [Terrtia]
+
+* [MispModules] mv misp modules to lib. [Terrtia]
+
+* [merge] merge master in misp_modules. [Terrtia]
+
+* [misp_modules] parse modules result. [Terrtia]
+
+* [misp_modules] add enrichment request. [Terrtia]
+
+* [misp_modules] create misp modules + generate config. [Terrtia]
+
+* [Correlation UI] btc address: get related transaction input/output. [Terrtia]
+
+* [Domain UI] add total_nb_correlation. [Terrtia]
+
+* [Domain UI] add unsafe_tags_check (taxo: dark-web + copine-scale) + hide unsafe domain img. [Terrtia]
+
+* [Corrrelation UI] add 404 return. [Terrtia]
+
+* [Correlation UI] add metadata card and item link: paste + domain. [Terrtia]
+
+* [Correlation UI + default taxonomies] add dark-web to default taxonomies + fix domain correlation url. [Terrtia]
+
+* [UI] show correlation (pgp. decoded, cryptocurrency) migration. [Terrtia]
+
+* [Correlation UI] add correlation blueprint + UI graph correlation. [Terrtia]
+
+* [doc] fix a typo. [Jean-Baptiste Rouault]
+
+* [Correlation Graph] add correlation by pgp, cryptocurrency, decoded and item + request correlation by type(pgp, ...) + objects(domain, paste) [Terrtia]
+
+* [Correlation Graph] add limit nb max nodes. [Terrtia]
+
+* [Correlation domain] add correlation graph by domain  (union + intersection) [Terrtia]
+
+### Fix
+
+* [update v2.5] [Terrtia]
+
+* [RoleManager] remove debug print. [Terrtia]
+
+* [correlation] merge conflict. [Terrtia]
+
+* [show paste min UI] typo. [Terrtia]
+
+* [show paste min UI] fix correlation url. [Terrtia]
+
+* [show paste min UI] fix correlation url. [Terrtia]
+
+* [Correlation UI] fix decoded file type + exist_correlation_id. [Terrtia]
+
+* [showDomain UI] fix template. [Terrtia]
+
+* [showDomain UI] fix template. [Terrtia]
+
+* [showDomain UI] fix template. [Terrtia]
+
+* [correlation UI] clean script. [Terrtia]
+
+* [showpaste url] fix decoded url. [Terrtia]
+
+* [Domain tag] avoid crawled tags. [Terrtia]
+
+* [Cryptocurrency] fix import conflict. [Terrtia]
+
+### Other
+
+* Merge pull request #422 from CIRCL/misp_modules. [Alexandre Dulaunoy]
+
+  Misp modules
+
+* Merge branch 'master' into misp_modules. [Terrtia]
+
+* Chg; [User role] add roles: user + user_no_api + read_only. [Terrtia]
+
+* Merge branch 'master' into misp_modules. [Terrtia]
+
+* Merge pull request #421 from jbrouault/patch-1. [Thirion Aurélien]
+
+  chg: [doc] fix a typo
+
+
+## v2.4 (2019-11-08)
+
+### Changes
+
+* [update + show decoded items] add background update. [Terrtia]
+
+* [Domain] Show last origin. [Terrtia]
+
+* [Update v2.4] cp config. [Terrtia]
+
+* [Update] add v2.4 update. [Terrtia]
+
+* [core] mv bin/packages/config.cfg configs/core.cfg + use ConfigLoader. [Terrtia]
+
+* [UI Domain] UI: tag domain. [Terrtia]
+
+* [core + UI] refractor Domain + Show Domain, better handle of ports, select screenshot on the UI, ... [Terrtia]
+
+* [Domain + UI Crawler] refractor show domain. [Terrtia]
+
+* [Correlation] get correlation (crypto + pgp) by domain. [Terrtia]
+
+* [Domain] move Domain to lib/ [Terrtia]
+
+* [lib ConfigLoader] add configLoader class. [Terrtia]
+
+* [Domain] add domain object: tag + correlation (decoded items + tags + pgp + cryptocurrency) [Terrtia]
+
+### Fix
+
+* [Decoded] add Decoded file. [Terrtia]
+
+* [showDomain] fix url pgp + cryptocurrency. [Terrtia]
+
+* [tests] add lib path. [Terrtia]
+
+### Other
+
+* Merge pull request #419 from CIRCL/domain_object. [Thirion Aurélien]
+
+  fix: [Decoded] add Decoded file
+
+* Merge pull request #418 from CIRCL/domain_object. [Thirion Aurélien]
+
+  Domain object
+
+* Merge branch 'master' into domain_object. [Terrtia]
+
+
+## v2.3 (2019-10-29)
+
+### Changes
+
+* [Cryptocurrency + Tools] launch by default + remove old Bitcoin module. [Terrtia]
+
+* [Keys module] detect public key. [Terrtia]
+
+* [Tools detection] add tool detection module. [Terrtia]
+
+* [Cryptocurrency, RegexTracker] uptdate cryptocurrency list + fix: RegexTracker typo. [Terrtia]
+
+* [Cryptocurrency] add private_key entry + fix dash regex. [Terrtia]
+
+* [Cryptocurrency] add new Cryptocurrency module. [Terrtia]
+
+* [Tracker] add optionnal description field. [Terrtia]
+
+### Fix
+
+* [Tool] fix searchsploit regex. [Terrtia]
+
+* [Tools] typo. [Terrtia]
+
+* [Tools] typo. [Terrtia]
+
+* [Tools] fix loop. [Terrtia]
+
+* [url_prefix] add root blueprint, fix:#403. [Terrtia]
+
+* [TermTracker] fix performance: disable token stats. [Terrtia]
+
+* [SQL module] fix typo. [Terrtia]
+
+### Other
+
+* Merge branch 'master' of https://github.com/CIRCL/AIL-framework. [Terrtia]
+
+* Merge pull request #417 from andurin/master. [Alexandre Dulaunoy]
+
+  Fix pybgpranking dependency in requirements
+
+* Fix pybgpranking dependency in requirements. [Hendrik]
+
+  Relates #334
+
+* Merge branch 'master' of https://github.com/CIRCL/AIL-framework. [Terrtia]
+
+* Merge pull request #404 from WimpyMan/master. [Thirion Aurélien]
+
+* LAUNCH.py: Added execution of script IPAddress.py. [Bastien Schils]
+
+* IPAddress.py: use ipaddress module. [Bastien Schils]
+
+  Improved readibility, maintainability and use of standard module
+
+* Modules.cfg: Minor: Added \n to seperate sections. [WimpyMan]
+
+* Config.cfg.sample: Improved example for IP module. [WimpyMan]
+
+  By default, the list of networks to monitor is now empty.
+  The previous value is now given as example.
+
+* Added: IP matching module. [Bastien Schils]
+
+* Merge pull request #411 from krial057/patch-1. [Alexandre Dulaunoy]
+
+  Fixed some typos
+
+* Fixed some typos. [krial057]
+
+  Fixed some typos in the readme
+
+* Merge pull request #408 from stamparm/master. [Thirion Aurélien]
+
+  Adding more tools
+
+* Adding more tools. [Miroslav Stampar]
+
+* Merge pull request #407 from stamparm/patch-1. [Thirion Aurélien]
+
+  Covering special cases (on pastebin)
+
+* Covering special cases (on pastebin) [Miroslav Stampar]
+
+  There is no need for checking `()` in case of (e.g.) Litecoin and Dash as those are also additionally checked with Bitcoin address verifier
+
+* Merge pull request #406 from stamparm/master. [Thirion Aurélien]
+
+  Adding tool regexes
+
+* Adding tool regexes. [Miroslav Stampar]
+
+* Merge branch 'master' of https://github.com/CIRCL/AIL-framework. [Terrtia]
+
+* Merge pull request #405 from stamparm/master. [Thirion Aurélien]
+
+  Enforcing Base58 check on Litecoin and Dash addresses
+
+* Enforcing Base58 check on Litecoin and Dash addresses. [Miroslav Stampar]
+
+* Merge branch 'master' of https://github.com/CIRCL/AIL-framework. [Terrtia]
+
+* Merge pull request #401 from stamparm/master. [Thirion Aurélien]
+
+  Improvement of crypto-address regexes (lesser FPs)
+
+* Improvement of crypto-address regexes (lesser FPs) [Miroslav Stampar]
+
+* Merge pull request #398 from stamparm/master. [Thirion Aurélien]
+
+  Implementation for different cryptocurrencies
+
+* Implementation for different cryptocurrencies. [Miroslav Stampar]
+
+* Merge pull request #396 from stamparm/master. [Thirion Aurélien]
+
+  Improvement of SQLi detection
+
+* Improvement of SQLi detection. [Miroslav Stampar]
+
+
+## v2.2 (2019-09-13)
+
+### Changes
+
+* [API] add Tracker documentation. [Terrtia]
+
+* [Tracker] add more info. [Terrtia]
+
+* [update] add v2.2 update + fix default update + fix Empty Item.get_tags() + add new LAUNCHER options. [Terrtia]
+
+* [tracker] add missing btn. [Terrtia]
+
+* [trackers] filter trackers list by type + minor fix. [Terrtia]
+
+* [UI sparklines] sparklines: fix + factory. [Terrtia]
+
+* [merge] master. [Terrtia]
+
+* [UI term tracker] refractor term management: trackers list + show trackers + add new trackers. [Terrtia]
+
+* [api] add endpoint: get tracked item_id by uuid and daterange. [Terrtia]
+
+* [api] add endpoint: delete tracker term (regex/set/word) [Terrtia]
+
+* [Term Tracker] refractor term tracker word/set/regex modules + remove old modules. [Terrtia]
+
+* [Term tracker] add term tracker module (word + set) + API: add new term to track (word + set + regex) [Terrtia]
+
+* [term] refractor + add new tracked word/set. [Terrtia]
+
+* [README] add link to API documentation. [Thirion Aurélien]
+
+* [tests API] use argv api key. [Terrtia]
+
+* [api] add new endpoints: get bitcoin/pgp name/pgp keys/pgp mail metadata + items list. [Terrtia]
+
+### Fix
+
+* [sparkline] datatable drawing. [Terrtia]
+
+* [d3 graph] fix script path. [Terrtia]
+
+* Add missing file. [Terrtia]
+
+* [d3 js plugin] [Terrtia]
+
+* [template] add trackers. [Terrtia]
+
+* [Term Tracker module] chg module flow. [Terrtia]
+
+* [BankAccount] fix #385. [Terrtia]
+
+* [API doc] get bitcoin metadata + list of items. [Terrtia]
+
+* [UI caching] avoid domain archive caching. [Terrtia]
+
+* Typo. [Terrtia]
+
+* [UI caching] fix: #373 avoid screenshot caching. [Terrtia]
+
+### Other
+
+* Merge pull request #391 from CIRCL/term_trackerv1. [Thirion Aurélien]
+
+  fix: add missing file
+
+* Merge pull request #390 from CIRCL/term_trackerv1. [Thirion Aurélien]
+
+  fix: [d3 js plugin]
+
+* Merge pull request #389 from CIRCL/term_trackerv1. [Alexandre Dulaunoy]
+
+  Term trackerv1
+
+
+## v2.1 (2019-08-14)
+
+### Changes
+
+* [api] 405 response: add url to api endpoint documentation. [Terrtia]
+
+* [api doc] test anchor link. [Terrtia]
+
+* [api doc] test anchor link. [Terrtia]
+
+* [api] add bruteforce protection. [Terrtia]
+
+* [api] use POST with parameters + add API unittest. [Terrtia]
+
+* [api] use POST with parameters + add API unittest. [Terrtia]
+
+* [api] add api versioning. [Terrtia]
+
+* [api] add new endpoints: get tag metadata + get all tags. [Terrtia]
+
+* [api] add advanced get item via POST + use same query for each get item. [Terrtia]
+
+* [api] add 404 errors code + add future endpoints in doc. [Terrtia]
+
+* [API v1] add API documentation + update/delete items tags + Flask_tags refractor. [Terrtia]
+
+* [API] add GET: item metadata + item content + item tags. [Terrtia]
+
+* [API] import item (text) [Terrtia]
+
+* [API + import] add API format + item_import refractor. [Terrtia]
+
+* [rest API] access: check token user role. [Terrtia]
+
+* [reset_AIL] add echo message. [Terrtia]
+
+* [Crawler] add default crawler config + update default user_agent. [Terrtia]
+
+* [requirements] fix pycountry force 18.12.8 as recommended in #366. [Alexandre Dulaunoy]
+
+* [README] add python minimal supported version. [Thirion Aurélien]
+
+* [doc] add huge screencast. [Alexandre Dulaunoy]
+
+* [doc] screenshot added. [Alexandre Dulaunoy]
+
+* [doc] cleanup. [Alexandre Dulaunoy]
+
+* [doc] move the Docker junk. [Alexandre Dulaunoy]
+
+* [doc] old Python 3 upgrade added. [Alexandre Dulaunoy]
+
+### Fix
+
+* [api doc] typo. [Thirion Aurélien]
+
+* [api doc] typo. [Thirion Aurélien]
+
+* [doc] typo. [Terrtia]
+
+* [api] chg api role. [Terrtia]
+
+* [test api] typo. [Terrtia]
+
+* [api doc] typo. [Terrtia]
+
+* [api] fix errors handler 404 405, return json. [Terrtia]
+
+* [api] fix documentation errors output. [Terrtia]
+
+* [Tags + api] fix dict keys name + fix documentation errors output. [Terrtia]
+
+* Typo. [Terrtia]
+
+* [reset_AIL] launch ardb + remove dir. [Terrtia]
+
+* [reset_AIL] launch ardb. [Terrtia]
+
+* [reset_AIL] fix #368. [Terrtia]
+
+* [reset_AIL] #368 fix. [Terrtia]
+
+* [reset_ail] fix directory name. [Terrtia]
+
+* [ansible docker] move files, fix 365. [Terrtia]
+
+* [Crawler] incorrect config. [Terrtia]
+
+### Other
+
+* Merge pull request #370 from CIRCL/api_v1. [Alexandre Dulaunoy]
+
+  Api v1
+
+* So many spelling mistakes have been corrected in this commit. It's totally worth writing so much explanation... [Sascha Rommelfangen]
+
+* Consistency and wording. [Sascha Rommelfangen]
+
+* Merge branch 'master' of https://github.com/CIRCL/AIL-framework. [Terrtia]
+
+
+## v2.0 (2019-07-05)
+
+### Changes
+
+* [helper] dump crawler history by daterange. [Terrtia]
+
+* [UI submit items] bootstrap 4 migration. [Terrtia]
+
+* [Flask login] add brute force protection + log login errors. [Terrtia]
+
+* [helper] generate self signed certificates. [Terrtia]
+
+* [Flask server] https support + create self signed certificate. [Terrtia]
+
+* [user_management 2.0] add update scripts + fix create_default_user. [Terrtia]
+
+* [UI user_management] user_role acl: hide admin panel. [Terrtia]
+
+* [UI user_management] incorrect passwords: display errors. [Terrtia]
+
+* [user_management endpoint] check user roles + add 503 template. [Terrtia]
+
+* [UI dashboard + search] bootstrap 4 migration: dashbaord + fix search input. [Terrtia]
+
+* [UI crawler, show_domain] domain history: remove target blank. [Terrtia]
+
+* [UI crawler, show_domain] add domain history list + navigation. [Terrtia]
+
+* [user_managemant] clean code + check password and email length. [Terrtia]
+
+* [user_management UI] add admin section: edit + create users. [Terrtia]
+
+* [user_management UI] edit my_profile + renew api tokens. [Terrtia]
+
+* [user_management] create default admin user (temp passwd save in AIL_HOME) + change password UI + logout UI + create random password. [Terrtia]
+
+* [restapi] add rest api authentification  + create default user. [Terrtia]
+
+* [user_management] add user role_management. [Terrtia]
+
+* [user_management] create + check user password. [Terrtia]
+
+* [UI] add basic user management. [Terrtia]
+
+### Fix
+
+* [role_manager] add password characters. [Terrtia]
+
+* [secrets import] use urandom. [Terrtia]
+
+* [items submit UI] fix tags dropdown. [Terrtia]
+
+* [helper dump_crawler] fix files not found. [Terrtia]
+
+* [helper dump_crawler] fix empty dict. [Terrtia]
+
+* [MISP export] fix event creation. [Terrtia]
+
+* [UI items_submit] add active tag + fix template name. [Terrtia]
+
+* [UI login/change_password] add missing ail-logo. [Terrtia]
+
+* [Update] clean output. [Terrtia]
+
+* [Update] add default update script. [Terrtia]
+
+* [install_dep] create update current_version. [Terrtia]
+
+* [UI settings] fix toggle_sidebar. [Terrtia]
+
+* [install_dep] create default user. [Terrtia]
+
+* [user_management] fix tokens duplicate + check user_acl_integrity + add login errors messages. [Terrtia]
+
+* [server endpoint] unknow users: avoid endpoint enumeration. [Terrtia]
+
+* [TheHive feeder] create_alert: push all items tags TODO check items status + add more item metadata. [Terrtia]
+
+* [domain history] fix domain status. [Terrtia]
+
+### Other
+
+* Update README.md. [Thirion Aurélien]
+
+* Merge pull request #359 from CIRCL/user_management. [Alexandre Dulaunoy]
+
+  User/role management
+
+* Merge branch 'master' into user_management. [Terrtia]
+
+* Merge branch 'master' into user_management. [Terrtia]
+
+* Merge branch 'master' of https://github.com/CIRCL/AIL-framework. [Terrtia]
+
+* Update README.md. [Thirion Aurélien]
+
+* Merge branch 'master' into user_management. [Terrtia]
+
+* Merge branch 'user_management' of https://github.com/CIRCL/AIL-framework into user_management. [Terrtia]
+
+* Update README.md. [Thirion Aurélien]
+
+  Update install instructions
+
+* Merge branch 'master' into user_management. [Terrtia]
+
+* Merge branch 'master' into user_management. [Terrtia]
+
+
+## v1.8 (2019-06-12)
+
+### Changes
+
+* [UI crawled domains] Download all domain content (HTML + HAR + screenshot) [Terrtia]
+
+* [backend crawler] domains: download 1 archive by crawled (most recent) [Terrtia]
+
+* [paste_submit UI] add debug. [Terrtia]
+
+* [template] the "item" project. [Alexandre Dulaunoy]
+
+### Fix
+
+* [PgpDump] catch UnicodeDecodeError error. [Terrtia]
+
+* [backend crawler] rename downloaded archive. [Terrtia]
+
+* [paste_submit UI] filter empty file field. [Terrtia]
+
+* [PgpDump] process large pgp blocks. [Terrtia]
+
+* [paste_submit UI] filter empty file field. [Terrtia]
+
+* [UI crawler endpoints] display crawler status + fix #353. [Terrtia]
+
+* [update v1.7] add bs4 requirement. [Terrtia]
+
+
+## v1.7 (2019-05-24)
+
+### Changes
+
+* [PgpDump] PMF fix - longer keys are truncated. [Alexandre Dulaunoy]
+
+* [correlation] clean files. [Terrtia]
+
+* [update v1.7] update thirdparty. [Terrtia]
+
+* [correlation] add cryptocurrency + refractor correlation. [Terrtia]
+
+* [Bitcoin] map cryptocurrency: bitcoin (DB pivot) [Terrtia]
+
+* [update v1.7] add update scripts. [Terrtia]
+
+* [pgpdump] reprocess tagged items + fix pgpdump. [Terrtia]
+
+* [Update] force update order. [Terrtia]
+
+* [PgpDump] fix graph + add new tags: pgp-signature pgp-public-key-block + avoid keys injection in pgp user_id. [Terrtia]
+
+* [decoded UI] add PgpDump UI + fix hashdecoded js. [Terrtia]
+
+* [decoded items] bootstrap 4 migration. [Terrtia]
+
+* [PgpDump] add PgpDump backend TODO: UI. [Terrtia]
+
+* [crawler] manual/auto crawler: always save screenshots. [Terrtia]
+
+* [crawler] manual/auto crawler: always save screenshots. [Terrtia]
+
+### Fix
+
+* [correlation] fix graph node endpoint. [Terrtia]
+
+* [correlation] fix endpoint. [Terrtia]
+
+### Other
+
+* Merge branch 'master' of https://github.com/CIRCL/AIL-framework. [Terrtia]
+
+* Update README.md. [Thirion Aurélien]
+
+* Merge branch 'master' of https://github.com/CIRCL/AIL-framework. [Terrtia]
+
+* Merge pull request #349 from kovacsbalu/fix-paste-encoding. [Thirion Aurélien]
+
+  Fix #314
+
+* Use default encoding error from redis. [kovacsbalu]
+
+* Fix #314 Replace char on redis encoding error. Try to use local file on other error. [kovacsbalu]
+
+* Merge pull request #350 from kovacsbalu/fix-crawler-rotation. [Thirion Aurélien]
+
+  fix: [crawler] rotation
+
+* Hopp, single quote :) [kovacsbalu]
+
+* Fix crawler rotation. [kovacsbalu]
+
+  Before this, crawler processed prioritized onions and after all starts prioritized regular.
+
+
+## v1.6 (2019-05-13)
+
+### Changes
+
+* [travis] Travis has his own venv where it installs "stuff". Now we detect and us it in the launcher. [Steve Clement]
+
+* [travis] Require Python 3.6 to make build faster. [Steve Clement]
+
+* [doc] Some stats on build status/gitter etc. [Steve Clement]
+
+* [hashDecoded] cleanup for the VT message + PEP. [Alexandre Dulaunoy]
+
+### Fix
+
+* [faup] fix new return types (bytes to str) [Terrtia]
+
+* [Crawler] force domains/subdomains lower case (rfc4343) [Terrtia]
+
+* [showpaste] fix: #346, avoid None screenshots. [Terrtia]
+
+* [python requirements] rename file. [Terrtia]
+
+* [crawler] typo: domains down. [Terrtia]
+
+* [travis] LAUNCH.sh needs -l to launch... [Steve Clement]
+
+* [travis] Next round of travis fixes. LAUNCH.sh is the only launch script needed. chg: [installer] Be way more quiet, watching unzips is only fun during development. chg: [installer] Make the arch one +x. [Steve Clement]
+
+* [installer] Avoid doing funky **sudo pip install** moves, it breaks python on package managed python installs, if ever, use the **--user** flag. [Steve Clement]
+
+* [travis] Try and require xenial (16.04) and see if it works better. [Steve Clement]
+
+* [travis ] There are issues on the 14.04 build system of Travis. This fixes it temporarily. [Steve Clement]
+
+* [Onion] typo. [Terrtia]
+
+### Other
+
+* Merge branch 'master' of https://github.com/CIRCL/AIL-framework. [Terrtia]
+
+* Chg; [doc crawler] use the torproject torrc. [Terrtia]
+
+
+## v1.5 (2019-04-26)
+
+### New
+
+* [slides] Added training slides december 2018. [Sami Mokaddem]
+
+### Changes
+
+* [crawler UI] bootstrap 4 migration: show domains by daterange + bug fix hidden services tags. [Terrtia]
+
+* [overview] update db doc. [Terrtia]
+
+* [update v1.5] add background update: screenshots_crawled. [Terrtia]
+
+* [crawled screenshot] use sha256 as filepath. [Terrtia]
+
+* [config update] refractor, auto update, create config if file doesnt exist. [Terrtia]
+
+* [UI crawler] add splash dashboard. [Terrtia]
+
+* [Onion, crawler config] auto crawler: add config by url, fix onions tagging + filter subdomains. [Terrtia]
+
+* [UI crawler] status/remove auto crawler. [Terrtia]
+
+* [UI DOC] add dynamic update message + add bootstrap 4 migration message + add update doc (DB) [Terrtia]
+
+* [v1.5 background update] create update stats. [Terrtia]
+
+* [settings UI] add background update progress. [Terrtia]
+
+* [git directory] add git helper. [Terrtia]
+
+* [UI] add server Management, check if new update/version are available + background update status + link to new realease/commits. [Terrtia]
+
+* [UI] update nav bar endpoint. [Terrtia]
+
+* [Update v1.5] update tracked terms path. [Terrtia]
+
+* [OVERVIEW] add doc termfred DB. [Terrtia]
+
+* [Update + Launcher] use background update + add new options in launcher. [Terrtia]
+
+* [update] add update script Redis ARDB + add background update. [Terrtia]
+
+* [DB] update items tags metadata. [Terrtia]
+
+* [DB] remove absolute path. [Terrtia]
+
+* [merge] merge update into advanced_crawler. [Terrtia]
+
+* [merge] merge master into update branche. [Terrtia]
+
+* [Overview] add doc. [Terrtia]
+
+* Update Overview. [Terrtia]
+
+* [DB Migration] add hash dynamic update. [Terrtia]
+
+* [update DB] add migration script. [Terrtia]
+
+* [Update] add debug. [Terrtia]
+
+* [Launch] remove old launchers. [Terrtia]
+
+* [Launch] remove old launchers. [Terrtia]
+
+* [update 1.5] add update bash. [Terrtia]
+
+* [Update] add 1.5 update, remove absolute paths from DB. [Terrtia]
+
+* [Update] add additonal update. [Terrtia]
+
+* [Update] generate current version. [Terrtia]
+
+* [gitignore] add update version. [Terrtia]
+
+* [LAUNCH] update: launch + check BDD. [Terrtia]
+
+* [LAUNCH] add AIL update by default. [Terrtia]
+
+* [Update] add update script. [Terrtia]
+
+* [CVE] add stat script. [Terrtia]
+
+* [doc] badge release updated. [Alexandre Dulaunoy]
+
+* [Crawler] handle port: crawling + history. [Terrtia]
+
+* [UI + item submit] remove browse paste from UI + fix pasteSubmit tagging. [Terrtia]
+
+* [Tags alertHandler] remove alertHandler + add quick tag search sidebar + use tag last_seen to display tagged items. [Terrtia]
+
+* [tags] remove/add tags by daterange + improve item loading time. [Terrtia]
+
+* [Tags] add backend, daterange selector. [Terrtia]
+
+* [UI preview items] b4 migration + new template + better display + decrease item loading time + add basic animation/transition. [Terrtia]
+
+* [UI Tags search] bootstrap 4 migration. [Terrtia]
+
+* [UI Tags] start b4 migration + add date range selector. [Terrtia]
+
+* [Flask UI] refractor crawler frontend + show crawled domain. [Terrtia]
+
+* [Crawler UI] add basic tooltips. [Terrtia]
+
+* [Crawler UI Flask] refractor functions, templates. [Terrtia]
+
+* [css] add basic toggle sidebar. [Terrtia]
+
+* [Crawler UI] Crawler major refractor (end) + basic UI for manual crawler. [Terrtia]
+
+* [Crawler] major refractor. [Terrtia]
+
+* [Crawler] refractor. [Terrtia]
+
+* [Crawler] refractor. [Terrtia]
+
+* [thirdparty_update] get b4 datatable. [Terrtia]
+
+* [Crawler UI Tags] add tag by day + add crawler status + UI onion blacklist. [Terrtia]
+
+* [Overview] add db map tag. [Terrtia]
+
+* [Tags] tags by day. [Terrtia]
+
+* [Crawler UI] fix css + bootstrap4 migration. [Terrtia]
+
+* [UI] font icon v5 + navbar + sidebar. [Terrtia]
+
+* [UI] basic navbar + sidebar + refractor. [Terrtia]
+
+* [Crawler] add bootsrap4 src + refractor crawler. [Terrtia]
+
+* [Crawler] add onion to blacklist. [Thirion Aurélien]
+
+* [doc] how to cite AIL in academic publications. [Alexandre Dulaunoy]
+
+* [Crawler] add priority queue, fix #263. [Terrtia]
+
+* [hiddenServices] crawlers status, dynamic update. [Terrtia]
+
+* [hiddenServices] auto update last crawled domains. [Terrtia]
+
+* [OVERVIEW] update db map. [Terrtia]
+
+* [hashDecoded] add top5 types piechart (v0.1) [Terrtia]
+
+* [hashDecoded] add option to display decoded files, fix #271. [Terrtia]
+
+* [UI Crawled Domains] show crawled domains by date range (options: domains tags, up domains, down domains) todo: Shows domain history. [Terrtia]
+
+* [bash] Small PATH precedence issue. [Steve Clement]
+
+* [bash] Replace '' with "" [Steve Clement]
+
+* [doc] Added note that redis-server is bundled during install. [Steve Clement]
+
+* [python] Added necessary checks in LAUNCH.sh to be able to launch the script without doing bin/activate chg: [doc] Added correct pystemon path fix: [zmq] Small ZMQ test fix. fix: [doc] Moved the print statement in feeder so it is less verbose but still useful. [Steve Clement]
+
+* [Mixer] config default feeder name #291. [Terrtia]
+
+* [terms_management] delete terms tags. [Terrtia]
+
+* [terms_management] delete email. [Terrtia]
+
+* [tag export] UI, add custom tags. [Terrtia]
+
+* [auto push tag] delete unwanted tags. [Terrtia]
+
+* [Terms] tag tracked terms. [Terrtia]
+
+* [NotificationHelper] add error traceback. [Terrtia]
+
+* [doc] cannot type in the train... [Alexandre Dulaunoy]
+
+* [doc] Tor hidden services updated. [Alexandre Dulaunoy]
+
+* [doc] Tor crawler screenshot added. [Alexandre Dulaunoy]
+
+### Fix
+
+* [submit paste] remove item full path, use rel path. [Terrtia]
+
+* [paste submit] update broken endpoint + get item date. [Terrtia]
+
+* [update v1.5] create update config file. [Terrtia]
+
+* [update v1.5] fix update thirdparty. [Terrtia]
+
+* [Update] typo. [Terrtia]
+
+* [v1.5 background update screenshot] remove duplicate files. [Terrtia]
+
+* [update v1.5] remove unbuffer. [Terrtia]
+
+* [Crawler] unpack_url. [Terrtia]
+
+* [LAUNCH] fix typo. [Terrtia]
+
+* [update] fix is_fork check. [Terrtia]
+
+* [UI dashboard] typo. [Terrtia]
+
+* [UI show domain] fix domain/port unpacking. [Terrtia]
+
+* [Update tags + UI] use srandmember + display update warning. [Terrtia]
+
+* [tracked terms] show mime type. [Terrtia]
+
+* [dynamic update v1.5] make sure updates are excuted in the correct order + fix nb_seen_hash dynamic update. [Terrtia]
+
+* [Update DB] remove indexErrors. [Terrtia]
+
+* [background update] avoid multiple update on the same key. [Terrtia]
+
+* [Global] remove absolute path from item path. [Terrtia]
+
+* [UI showpaste] min preview. [Terrtia]
+
+* [AIL] use only relative paths pastes duplicates are fixed on the fly. [Terrtia]
+
+* [Scripts] Remove absolute path. [Terrtia]
+
+* [update_thirdparty] detect and use virtualenv. [Terrtia]
+
+* [update v1.5] [Terrtia]
+
+* [DB fix] performance. [Terrtia]
+
+* [update 1.4] typo. [Terrtia]
+
+* [LAUNCH] add update in helper. [Terrtia]
+
+* [Update] cleaning. [Terrtia]
+
+* [CVE] fix stat regex. [Terrtia]
+
+* [Onion] filter too many subdomain. [Terrtia]
+
+* [Crawler] typo. [Terrtia]
+
+* [Crawler] typo. [Terrtia]
+
+* [Crawler] typo. [Terrtia]
+
+* [Global Crawler] max filename size. [Terrtia]
+
+* [Crawler] fix index + redis history key. [Terrtia]
+
+* [UI terms] update tags endpoint. [Terrtia]
+
+* [Tags] cast nb_max_page to int. [Terrtia]
+
+* [UI Tags] paste preview. [Terrtia]
+
+* [UI crawler manual] fix min input. [Terrtia]
+
+* [UI] fix flot js install. [Terrtia]
+
+* Reset alarm timeout. [Xavier Mertens]
+
+* [Crawler] change max page crawled. [Terrtia]
+
+* [Crawler] first_seen. [Terrtia]
+
+* [hiddenServices] catch empty data. [Terrtia]
+
+* [Onion] typo. [Terrtia]
+
+* [Crawler] limit max crawled pages. [Terrtia]
+
+* [Onion] loop. [Terrtia]
+
+* [Crawler] typo. [Terrtia]
+
+* [Crawler] fix crawler cache info. [Terrtia]
+
+* [Crawler] fix onion blacklist + add crawler info. [Terrtia]
+
+* [Onion] add timeout signal. [Terrtia]
+
+* [hiddenServices] typo. [Terrtia]
+
+* [Crawler] Restart Splash on failure, limit unbound in memory cache (maxrss) [Terrtia]
+
+* Cleaning ... [Terrtia]
+
+* [hiddenServices UI] fix none type. [Terrtia]
+
+* [Splash server] add debug output. [Terrtia]
+
+* [Crawler] retry when splash is not available. [Terrtia]
+
+* [requirements] remove duplicate entry, #296. [Thirion Aurélien]
+
+* [requirement] force redis version. [Thirion Aurélien]
+
+* [install script] use virtualenv package. [Terrtia]
+
+* [bash] fixed log_subscriber path. [Steve Clement]
+
+* [bash] evoking bash -c and splitting vars in this fashion wants to be changed in future revisions. [Steve Clement]
+
+* [bash] As we instantiate from a subdirectory, we need to take this into account. [Steve Clement]
+
+* [lib_refine] add dns configuration. [Terrtia]
+
+* [MISP_The_Hive_feeder] handle not saved pastes. [Terrtia]
+
+* [term_management] delete tags. [Terrtia]
+
+* [term_management] delete emails. [Terrtia]
+
+* [tag export] limit custom tag lenght. [Terrtia]
+
+* [MISP_the_Hive_feeder] force absolute path. [Terrtia]
+
+* [update_thirdparty] upgrade github source. [Terrtia]
+
+* [MISP_The_Hive_feeder] typo. [Terrtia]
+
+* Typo. [Terrtia]
+
+* [NotificationHelper] add config. [Terrtia]
+
+* [Search] tags display. [Terrtia]
+
+* [Search] Improve search performance note: search by paste name is temporary disabled. [Terrtia]
+
+* [MISP_The_Hive_feeder] set default values. [Terrtia]
+
+* [Duplicate] show duplicate with relative path. [Terrtia]
+
+* [README] typo docker install. [Thirion Aurélien]
+
+* [Paste] create absolute path. [Terrtia]
+
+### Other
+
+* Merge pull request #342 from CIRCL/advanced_crawler. [Alexandre Dulaunoy]
+
+  Advanced_crawler + tag by daterange + bootstrap 4 migration + bugs fix
+
+* Merge branch 'master' into update. [Terrtia]
+
+* Merge master. [Terrtia]
+
+* Merge branch 'master' into advanced_crawler. [Terrtia]
+
+* Merge pull request #336 from 5thColumn/docker. [Thirion Aurélien]
+
+  Add indexdir volume to docker-compose
+
+* Add indexdir volume to docker-compose. [Jason Hedden]
+
+  Make the indexdir data persistent and shared with Flask for searching pastes.
+
+* Merge pull request #335 from 5thColumn/docker. [Alexandre Dulaunoy]
+
+  Add docker-compose support
+
+* Add docker-compose support. [Jason Hedden]
+
+  This commit separates the AIL Framework services into individual Docker
+  containers that can be managed with docker-compose. It's intended to ease the
+  installation, development and troubleshooting procedures for all-in-one
+  deployments.
+
+  No changes to architecture or base code are required in this commit.
+
+  Changes to existing files:
+  .gitignore
+    * Ignore pystemon archive directory
+
+  Dockerfile:
+    * Add AIL shell environment variables
+    * Install pystemon and crawler pip requirements into AIL virtual environment
+
+  Docker-compose notes:
+    * All containers are participating in a service network `network_mode:
+    service:flask`.  This allows the containers to share the same IP namespace
+    to accommodate hard-coded localhost entries.
+    * By default persistent data is saved to the following directories in the
+    local AIL framework git directory: PASTES, HASHS, CRAWLED_SCREENSHOTS,
+    pystemon/archives
+
+  This was tested with docker-ce on Ubuntu 16.04 and MacOS. A typical deployment
+  would look like:
+  ```
+  git clone https://github.com/CIRCL/AIL-framework.git
+  cd AIL-framework
+  cp bin/packages/config.cfg.docker-compose-sample bin/packages/config.cfg
+  	(optionally enable activate_crawler in config.cfg)
+  docker-compose build
+  docker-compose up -d
+  ```
+
+* Merge pull request #334 from 5thColumn/pybgpranking. [Alexandre Dulaunoy]
+
+  Add pybgpranking to install deps
+
+* Add pybgpranking to install deps. [Jason Hedden]
+
+  The python module DomainClassifier requires pybgpranking which is not
+  available in the community PyPI repository. This commit installs pybgpranking
+  from git using the same version required by DomainClassifier https://github.com/adulau/DomainClassifier
+
+  Fixes the following installation error when using installing_deps.sh:
+  ```
+  Could not find a version that satisfies the requirement pybgpranking (from DomainClassifier->-r pip3_packages_requirement.txt (line 50)) (from versions: )
+  No matching distribution found for pybgpranking (from DomainClassifier->-r pip3_packages_requirement.txt (line 50))
+  ```
+
+* Merge pull request #333 from 5thColumn/fix_modulesinformationv2. [Thirion Aurélien]
+
+  Fix current_selected amount and action vars
+
+* Fix current_selected amount and action vars. [Jason Hedden]
+
+  This commit fixes issue #268
+
+  ```
+    File "./bin/ModulesInformationV2.py", line 319, in _setValue
+      action = current_selected_action + " " + str(current_selected_amount) + "x"
+  ```
+
+  `current_selected_action` was defined twice. The second occurance should be `current_selected_amount`.
+
+  This also fixes the generic exception from failing when `current_selected_value` is not defined.
+
+* Merge pull request #338 from CIRCL/pre_update. [Thirion Aurélien]
+
+  Merge Pre update
+
+* Merge branch 'master' into pre_update. [Terrtia]
+
+* Chg [Update] update AIL clone and fork. [Terrtia]
+
+* Merge branch 'master' into advanced_crawler. [Terrtia]
+
+* Merge pull request #319 from xme/master. [Thirion Aurélien]
+
+  fix: [Onion] Timeout error in Onion.py
+
+* Cleanup. [Xavier Mertens]
+
+* Merge remote-tracking branch 'upstream/master' [Xavier Mertens]
+
+* Merge branch 'master' of https://github.com/CIRCL/AIL-framework. [Terrtia]
+
+* Merge pull request #318 from raggadhub/master. [Thirion Aurélien]
+
+  [Redis] by default just listen on loopback interface [security hardening]
+
+* 6381 - by default just listen on loopback interface [security hardening] [raggadhub]
+
+  user will change explicitly the bind option if necessary
+
+* 6380 - by default just listen on loopback interface [security hardening] [raggadhub]
+
+  user will change explicitly the bind option if necessary
+
+* 6379 - by default just listen on loopback interface [security hardening] [raggadhub]
+
+  user will change explicitly the bind option if necessary
+
+* Blacklist onion debian manpages. [Thirion Aurélien]
+
+* Merge pull request #311 from raggadhub/patch-2. [Thirion Aurélien]
+
+  fix path_to_send path
+
+* Fix path_to_send path. [raggadhub]
+
+  Hi,
+
+  Missing slash between pastes_directory and paste in path_to_send = pastes_directory+paste
+
+  path error example:
+  /opt/AIL-framework/PASTESarchive/pastebin.com_pro/2019/01/07/cAgqsY2U.gz
+
+* Merge branch 'master' of https://github.com/CIRCL/AIL-framework. [Terrtia]
+
+* Merge branch 'master' of https://github.com/CIRCL/AIL-framework. [Terrtia]
+
+* Merge pull request #297 from swedishmike/Dockerfile. [Alexandre Dulaunoy]
+
+  Change to the Dockerfile
+
+* Changed the Dockerfile so that it starts with installing any and all outstanding updates for Ubuntu. [Mike Eriksson]
+
+* Merge branch 'master' of github.com:CIRCL/AIL-framework. [Alexandre Dulaunoy]
+
+* Training added. [Alexandre Dulaunoy]
+
+* Merge pull request #287 from CIRCL/term_management. [Sami Mokaddem]
+
+  Term management upgrade
+
+* Merge pull request #282 from xme/master. [Alexandre Dulaunoy]
+
+  Added Tor binding config
+
+* Update LAUNCH.sh. [Xavier Mertens]
+
+* Fixed line counter (count all lines) [Xavier Mertens]
+
+* Added timeout for Regex module. [Xavier Mertens]
+
+* Added timeout to avoid blocking regexes. [Xavier Mertens]
+
+* Added module Regex.py. [Xavier Mertens]
+
+* Added Tor binding config. [Xavier Mertens]
+
+* Merge branch 'master' of https://github.com/CIRCL/AIL-framework. [Terrtia]
+
+* Merge pull request #266 from kovacsbalu/fix-regexp-timeout. [Sami Mokaddem]
+
+  Stop regexp processing after timeout (60sec)
+
+* Fix config section name. [kovacsbalu]
+
+* RegexpForTerm timeout from config Critical log removed. [kovacsbalu]
+
+* Stop regexp processing after timeput (60sec) Minor pep8 fixes. [kovacsbalu]
+
+* Common onion addresses. [Alexandre Dulaunoy]
+
+* Merge branch 'master' of github.com:CIRCL/AIL-framework. [Alexandre Dulaunoy]
+
+* Merge pull request #262 from kovacsbalu/feat-smtp-test. [Alexandre Dulaunoy]
+
+  Test notification
+
+* Test notification Minor pep8 fixes. [kovacsbalu]
+
+
+## v1.4 (2018-10-02)
+
+### Changes
+
+* [HOWTO] add a warning regarding the Tor configuration and SOCKS5 proxy. [Alexandre Dulaunoy]
+
+* [HOWTO] clarify that AIL framework is required for the crawler part. [Alexandre Dulaunoy]
+
+* [config] Tor crawler disabled by default in sample configuration (to match HOWTO when enabling it) [Alexandre Dulaunoy]
+
+* [Crawler] add domains blacklist. [Terrtia]
+
+* [Crawler] domains stats + logs + clean. [Terrtia]
+
+* [Crawler] css + limit splash RAM. [Terrtia]
+
+* [Crawler] add docs. [Terrtia]
+
+* [crawler] add infos. [Terrtia]
+
+* [Flask] add prefix in config to flask routes. [Terrtia]
+
+* [Flask] add prefix in config to flask routes. [Terrtia]
+
+* [statistics] clean scripts. [Terrtia]
+
+* [statistics] add domain statistics. [Terrtia]
+
+* [statistics] add script to generate pie chart png. [Terrtia]
+
+* [sglinjection Phone] add tld statistic, fix phone regex. [Terrtia]
+
+* [Mail Credential] add tld statistic. [Terrtia]
+
+* [Mail] add country statistic. [Terrtia]
+
+* Slides from workshop in Luxembourg added. [Alexandre Dulaunoy]
+
+* [Crawler] add launcher and install. [Terrtia]
+
+* [HiddenServices] get domain related to other domains. [Terrtia]
+
+* [UI] pixelate crawled screenshot by default. [Terrtia]
+
+* [Crawler] catch server response. [Terrtia]
+
+* [Crawler UI] display domain information. [Terrtia]
+
+* [Crawled Domain] show crawled pastes by domain. [Terrtia]
+
+* [Domain crawled] add random screenshot. [Terrtia]
+
+* [I2P] add default config. [Terrtia]
+
+* [Crawler] crawler accept all kind of domains. [Terrtia]
+
+* [Crawler] change BDD, save i2p links. [Terrtia]
+
+* [Showpaste] add screenshot + improve onion db. [Terrtia]
+
+* [Onion] change onion regex, fix crawler. [Terrtia]
+
+* [Onion] add onion splash crawler. [Terrtia]
+
+### Fix
+
+* Typo. [Terrtia]
+
+* [pystemon-feeder] paste save path. [Terrtia]
+
+* [Crawler] remove hardcoded url. [Terrtia]
+
+* [Flask] remove hardcoded url. [Terrtia]
+
+* [Flask] remove hardcoded url. [Terrtia]
+
+* [Flask] remove hardcoded url. [Terrtia]
+
+* [Crawler] detect splash connection to proxy error. [Terrtia]
+
+* [pystemon] pystemon encoding. [Terrtia]
+
+* [MISP feeder] typo filename-config name. [Terrtia]
+
+* [ModulesInformationV2] fix #244. [Terrtia]
+
+* [hashDecoded] range_type_json. [Terrtia]
+
+* [config] add virus total API key sample, fix #253. [Terrtia]
+
+* [import_dir] fix #251, fix paste import if the date directory tree don't exist, he will be generated. [Terrtia]
+
+* [LAUNCH.sh] make pystemon optionnal. [Terrtia]
+
+  AIL and Pystemon are independent, pystemon shouldn't be launch by default.
+
+* [LAUNCH.sh] remove old decoders. [Terrtia]
+
+* [Install] add python and package requirements. [Terrtia]
+
+* [Install] add python requirements. [Terrtia]
+
+* [statistics] remove unused graph. [Terrtia]
+
+* [showpaste] path transversal. [Terrtia]
+
+* [Crawler] clean. [Terrtia]
+
+* [Crawler] clean. [Terrtia]
+
+* [crawled screenshot] fix img error. [Terrtia]
+
+* [Crawler] save domain to crawl on splash error. [Terrtia]
+
+* Merge. [Terrtia]
+
+* [doc] IBAN feature added. [Alexandre Dulaunoy]
+
+### Other
+
+* Merge branch 'master' of github.com:CIRCL/AIL-framework. [Alexandre Dulaunoy]
+
+* Merge pull request #260 from CIRCL/onion_crawler. [Alexandre Dulaunoy]
+
+  Onion crawler
+
+* Merge branch 'master' into onion_crawler. [Terrtia]
+
+* Merge branch 'onion_crawler' of https://github.com/CIRCL/AIL-framework into onion_crawler. [Terrtia]
+
+* Update HOWTO.md. [Sami Mokaddem]
+
+* Update HOWTO.md. [Sami Mokaddem]
+
+* Merge branch 'master' into onion_crawler. [Terrtia]
+
+* Merge branch 'master' of https://github.com/CIRCL/AIL-framework. [Terrtia]
+
+* Merge pull request #243 from kovacsbalu/docker-with-pystemon. [Alexandre Dulaunoy]
+
+  Docker build with pystemon
+
+* Fix docekrfile CMD. [kovacsbalu]
+
+* Install pystemon and start pystemon-feeder in docker. [kovacsbalu]
+
+* Merge pull request #250 from CIRCL/statistic. [Alexandre Dulaunoy]
+
+  Statistics
+
+* Merge branch 'master' into statistic. [Terrtia]
+
+* Add iban country statistic. [Terrtia]
+
+* Merge branch 'master' into statistic. [Terrtia]
+
+* Merge pull request #248 from CIRCL/revert-242-moreComments. [Thirion Aurélien]
+
+  Revert "Added more documentation/descriptions/..."
+
+* Revert "Added more documentation/descriptions/..." [Thirion Aurélien]
+
+* Merge pull request #242 from mokaddem/moreComments. [Thirion Aurélien]
+
+  Added more documentation/descriptions/...
+
+* Added more documentation/descriptions/... [Sami Mokaddem]
+
+* Pixelate paste screenshot. [Terrtia]
+
+* Merge branch 'master' into onion_crawler. [Terrtia]
+
+* Merge branch 'master' into onion_crawler. [Terrtia]
+
+
+## v1.3 (2018-08-24)
+
+### New
+
+* Add base64 display on paste + base64 statistics. [Terrtia]
+
+* Added pass the SALT workshop slides. [Sami Mokaddem]
+
+### Changes
+
+* [doc] screenshots for 1.3 release. [Alexandre Dulaunoy]
+
+* [doc] new screenshots for hashed file functionality in 1.3. [Alexandre Dulaunoy]
+
+* [Hash] add Help on graph node. [Terrtia]
+
+* [Hash] add reprocess regex order. [Terrtia]
+
+* [UI-Hash] add decoder pie. [Terrtia]
+
+* [UI-Hash] add decoded type on graph. [Terrtia]
+
+* Refractor base64 encoded to hash. [Terrtia]
+
+* Use json to submit hash. [Terrtia]
+
+* Change base64 icon. [Terrtia]
+
+* [Mixer] add submitted paste. [Terrtia]
+
+* [UI] add AIL icon, fix li links. [Terrtia]
+
+* [Keys] typo. [Terrtia]
+
+* [Keys] detect ssh2 private key. [Terrtia]
+
+* [BankAccount] regex. [Terrtia]
+
+* [UI-dashboard] add logs number configuration. [Terrtia]
+
+* [UI-dashboard] convert time to local. [Terrtia]
+
+* Display last logs. [Terrtia]
+
+* [doc] Marked unmaintained efforts as such. [Steve Clement]
+
+* [docker] allow arg as a parameter. [Steve Clement]
+
+* [UI] Typo fixed as requested by our favourite German. [Alexandre Dulaunoy]
+
+* Screenshots updated to the latest version. [Alexandre Dulaunoy]
+
+### Fix
+
+* [doc] badges are cool. [Alexandre Dulaunoy]
+
+* [doc] new 1.3 features. [Alexandre Dulaunoy]
+
+* [HashDecoded] typo. [Terrtia]
+
+* [HashDecoded] change template title. [Terrtia]
+
+* [UI-Hash] pie chart json. [Terrtia]
+
+* [UI-Hash] pie decoder. [Terrtia]
+
+* Remove experimental modules. [Terrtia]
+
+* Decoder bdd. [Terrtia]
+
+* Binary decoder base2 string to bytes. [Terrtia]
+
+* Paste submit css. [Terrtia]
+
+* Release tiemeout alarm, chg:icon graph node. [Terrtia]
+
+* [pystemon-feeder] fix #234. [Terrtia]
+
+* Add miss config. [Thirion Aurélien]
+
+* [UI-Showpaste] show raw paste, force text/plain mimetype. [Terrtia]
+
+* Typo. [Terrtia]
+
+* [Queues] module with no subscriber. [Terrtia]
+
+* [hive auto export] fix #221. [Terrtia]
+
+* [LAUNCH] script checking. [Terrtia]
+
+* [LAUNCH] use envar, add options (launch all, flask, killall) [Terrtia]
+
+* Remove hardcoded mail url. [Terrtia]
+
+* Add LibInjection to LAUNCH.sh. [Terrtia]
+
+* Date format https://github.com/CIRCL/AIL-framework/issues/219. [Terrtia]
+
+* Term_management UI bug ,https://github.com/CIRCL/AIL-framework/issues/214. [Terrtia]
+
+* Hive_feeder hiveApi declaration. [Thirion Aurélien]
+
+* File submission, content type. [Thirion Aurélien]
+
+* Catch file error in paste submission. [Terrtia]
+
+* Update submitted tags link. [Terrtia]
+
+* LevelDB not more used. [Alexandre Dulaunoy]
+
+### Other
+
+* Merge pull request #237 from CIRCL/base64. [Alexandre Dulaunoy]
+
+  Hashed Files
+
+* Merge branch 'master' into base64. [Terrtia]
+
+* [fix: [UI-hash] fix graph node zoom. [Terrtia]
+
+* Merge branch 'master' into base64. [Terrtia]
+
+* Add: Decoder module. [Terrtia]
+
+* Add: Decoder Module, decode binary, hex and base64. [Terrtia]
+
+* Add: Binary decoder. [Terrtia]
+
+* Add: hash download. [Terrtia]
+
+* Add: hash line_graph (nb/day) [Terrtia]
+
+* Add: base 64 node graph. [Terrtia]
+
+* Add: show hash info. [Terrtia]
+
+* Add: stacked barchart, resize chart. [Terrtia]
+
+* Add date_range stacked bar. [Terrtia]
+
+* Add: base64 date and type selector. [Terrtia]
+
+* Change import d3.js to d3.min.js. [Terrtia]
+
+* Add d3 and daterange js. [Terrtia]
+
+* Fix submit paste. [Terrtia]
+
+* Merge branch 'master' into base64. [Terrtia]
+
+* Update OVERVIEW. [Terrtia]
+
+* Merge pull request #235 from P4rs3R/patch-2. [Thirion Aurélien]
+
+  Very little typo
+
+* Very little typo. [A. Cristallo]
+
+  [Grammar Nazi mode] Sorry guys, I just HAD to :D [/Grammar Nazi mode]
+
+* Merge pull request #232 from CIRCL/iban. [Thirion Aurélien]
+
+  Add Iban detection
+
+* Clean. [Terrtia]
+
+* Add: [BankAccount] iban detection. [Terrtia]
+
+* Merge pull request #231 from CIRCL/logs. [Thirion Aurélien]
+
+  chg: [UI-dashboard] display last logs, fix #41
+
+* Merge pull request #230 from CIRCL/launch. [Thirion Aurélien]
+
+  fix: [LAUNCH] use envar, add options (launch all, flask, killall)
+
+* Update README.md. [Steve Clement]
+
+* Merge pull request #229 from SteveClement/master. [Steve Clement]
+
+  chg: [doc] Marked unmaintained efforts as such.
+
+* Merge pull request #226 from schutzwerk/sw-direct-io-note. [Steve Clement]
+
+  chg: [doc] README.md: Add note regarding Direct I/O
+
+* README.md: Add note regarding Direct I/O. [Philipp Schmied]
+
+* Add: new mail body and starttls. [Terrtia]
+
+* Merge pull request #215 from buixor/master. [Thirion Aurélien]
+
+  [WIP] LibInjection Module
+  add: LibInjection Module
+
+* Add libinjection bindings to pip requirements. [bui]
+
+* Add LibInjection Module. [bui]
+
+* Initial LibInjection module. [bui]
+
+* Merge pull request #222 from raw-data/master. [Thirion Aurélien]
+
+  [fix] switch from git:// to https:// while cloning tlsh.git
+
+* [fix] switch from git:// to https:// while cloning tlsh.git. [raw-data]
+
+* Fix submit paste. [Terrtia]
+
+* Merge branch 'master' of https://github.com/CIRCL/AIL-framework. [Terrtia]
+
+* Change: feeder name separator. [Terrtia]
+
+* Merge pull request #211 from GoSecure/docker-fix-encoding. [Alexandre Dulaunoy]
+
+  Fixes encoding issue with MISP Galaxies JSON files
+
+* Fixes encoding issue with MISP Galaxies JSON files. [Olivier Bilodeau]
+
+* Merge pull request #212 from GoSecure/docker-fix-ardb-not-redis. [Alexandre Dulaunoy]
+
+  Fixes the docker start script to use ardb instead of redis
+
+* Fixes the docker start script to use ardb instead of redis. [Olivier Bilodeau]
+
+  The switch happened but the docker_start.sh script was left behind.
+
+* Merge pull request #210 from GoSecure/docker-fix-pip-issue. [Alexandre Dulaunoy]
+
+  Using pip3 instead of pip fixes docker issues
+
+* Using pip3 instead of pip fixes docker issues. [Olivier Bilodeau]
+
+
+## v1.2 (2018-06-20)
+
+### Changes
+
+* README improvement. [Alexandre Dulaunoy]
+
+* GDPR document reference added. [Alexandre Dulaunoy]
+
+### Fix
+
+* Tp and fp, errors messages on paste submission. [Terrtia]
+
+### Other
+
+* Add module manager screenshot. [Thirion Aurélien]
+
+* Add api submit doc + add module information screenshot. [Terrtia]
+
+* Merge pull request #208 from CIRCL/tags. [Alexandre Dulaunoy]
+
+  Tags
+
+* Merge branch 'master' into tags. [Thirion Aurélien]
+
+* Merge pull request #207 from garanews/patch-1. [Thirion Aurélien]
+
+  removed -y from pip install command
+
+* Removed -y from pip install command. [garanews]
+
+  removed -y from pip install command
+
+* Update README.md. [Thirion Aurélien]
+
+* Add screenshot. [Terrtia]
+
+* Fix hive and misp error. [Terrtia]
+
+* Add tag fp and tp. [Terrtia]
+
+* Fix path-event id map. [Terrtia]
+
+* Fix db init. [Terrtia]
+
+* Fix. [Terrtia]
+
+* Fix hive connection + add keys sample. [Terrtia]
+
+* Fix hive connection + submitted dir creation. [Terrtia]
+
+* Update ail-leak object. [Terrtia]
+
+* Add img + fix upload api. [Terrtia]
+
+* Change default submit tag, event-path map, publish events. [Terrtia]
+
+* Fix duplicate export attribute + tag export whitelist. [Terrtia]
+
+* Misp event creation, auto and manual + the hive alert auto creation, manual case creation. [Terrtia]
+
+* Modify navbar + decompress file password. [Terrtia]
+
+* Add feature, user can submit paste on the web interface. [Terrtia]
+
+* Verify file upload extention. [Terrtia]
+
+* Submit users input paste. [Terrtia]
+
+
+## v1.1 (2018-06-06)
+
+### Changes
+
+* New author Thirion Aurélien added as copyright holder. [Alexandre Dulaunoy]
+
+### Other
+
+* Fix tags enabled by default. [Thirion Aurélien]
+
+* Merge pull request #206 from CIRCL/tags. [Sami Mokaddem]
+
+  Addition of tagging system
+
+* Clean Flask_tags + gitignore. [Terrtia]
+
+* Add tag screenshot. [Terrtia]
+
+* Clean. [Terrtia]
+
+* Merge branch 'tags' of https://github.com/CIRCL/AIL-framework into tags. [Terrtia]
+
+* Update README.md. [Thirion Aurélien]
+
+* Clean. [Terrtia]
+
+* Add screenshots. [Terrtia]
+
+* Fix install. [Terrtia]
+
+* Fix install. [Terrtia]
+
+* Fix install. [Terrtia]
+
+* Fix install. [Terrtia]
+
+* Fix install. [Terrtia]
+
+* Taxonomies and galaxies update via LAUNCH. [Terrtia]
+
+* Add taxonomies and galaxies update and install. [Terrtia]
+
+* Fix duplicate. [Terrtia]
+
+* Galaxy tag info + fix. [Terrtia]
+
+* Galaxies synonyms. [Terrtia]
+
+* Galaxy description and tags. [Terrtia]
+
+* Taxonomie + add tags + tags display. [Terrtia]
+
+* Add and delete tags features. [Terrtia]
+
+* Display tag on important paste and search. [Terrtia]
+
+* Add tag js and css. [Terrtia]
+
+* Tags. [Terrtia]
+
+* Merge pull request #204 from CIRCL/python3. [Alexandre Dulaunoy]
+
+  Python3
+
+* Merge branch 'python3' of https://github.com/CIRCL/AIL-framework into python3. [Terrtia]
+
+* Fix Duplicate, save list of duplicates on disk + prevent empty hash creation. [Terrtia]
+
+* Merge pull request #202 from meauses/patch-1. [Alexandre Dulaunoy]
+
+  tor install fails in Docker build
+
+* Tor install fails in Docker build. [Niels]
+
+  added -y parameter to tor install
+
+
+## v1.0 (2018-05-11)
+
+### Fix
+
+* Features updated. [Alexandre Dulaunoy]
+
+* Correct package names and more privilege for installing tlsh. [Sami Mokaddem]
+
+* Added missing python3 dependencies for alertHandler (running under p3 for pymisp) [Sami Mokaddem]
+
+* Renamed Credentials into Credential sectiont title config change: By default, zmq listen to both local and CRF. [Sami Mokaddem]
+
+* Asciimatics introduced the '_required_height' property in the Label class. Just updating here to mirror the change. [Sami Mokaddem]
+
+* Create a directory for the last year (named as such) in LEVEL_DB_DATA/. This is done to prevent Duplicates.py to fail connecting to the database, as directories are created when starting install_dependencies.sh. [Sami Mokaddem]
+
+* Added a backoff time if an IOError happens. [Sami Mokaddem]
+
+* We are in 2018. [Alexandre Dulaunoy]
+
+* Canvasjs changed its folder hierarchy. [Sami Mokaddem]
+
+* As JSON decode needs a string, the empty list is a string. [Alexandre Dulaunoy]
+
+### Other
+
+* Merge pull request #201 from CIRCL/python3. [Alexandre Dulaunoy]
+
+  Python 3 migration + many new features + fixes
+
+* Fix duplicate + get raw paste. [Terrtia]
+
+* Fix duplicate + fix issue #200. [Terrtia]
+
+* Update README.md. [Thirion Aurélien]
+
+* Python 3 upgrade mv old redis db. [Terrtia]
+
+* Python 3 upgrade instructions. [Terrtia]
+
+* Clean. [Terrtia]
+
+* Change leveldb to ardb. [Terrtia]
+
+* Clean. [Terrtia]
+
+* Decode with redis connection. [Terrtia]
+
+* Fix bash python 2 to 3. [Terrtia]
+
+* Add bash python 2 to 3. [Terrtia]
+
+* Use feeder name. [Terrtia]
+
+* Add python 2 to 3 bash + fix Duplicate + clean. [Terrtia]
+
+* Improve Duplicate + tlsh + add time out handler + debug + clean. [Terrtia]
+
+* Create json metadata for base64 module. [Terrtia]
+
+* Fix travis tests 2. [Terrtia]
+
+* Fix travis tests. [Terrtia]
+
+* Add apiKeys module. [Terrtia]
+
+* Create new dashbord alert. [Terrtia]
+
+* Fix track term and avoid duplicate mail address. [Terrtia]
+
+* Merge branch 'python3' of https://github.com/CIRCL/AIL-framework into python3. [Terrtia]
+
+* Delete config.cfg.backup. [Thirion Aurélien]
+
+* Fix Onion module. [Terrtia]
+
+* Add bitcoin module. [Terrtia]
+
+* Add Base64 module. [Terrtia]
+
+* Fix python 3 compqtibility issues. [Terrtia]
+
+* Frontend python 3.5 upgrade. [Terrtia]
+
+* Add python 3 requirements. [Terrtia]
+
+* Clean. [Terrtia]
+
+* Fix ModulesInnformationV2. [Terrtia]
+
+* Fix python3 types issue. [Terrtia]
+
+* Fix python3 types issue. [Terrtia]
+
+* Python 3 backend upgrade. [Terrtia]
+
+* Fix incoming encoding file issue. [Terrtia]
+
+* Python3.5 Mixer and Global module. [Terrtia]
+
+* Fix travis. [Terrtia]
+
+* Fix travis. [Terrtia]
+
+* Fix travis. [Terrtia]
+
+* Fix travis build. [Thirion Aurélien]
+
+* Create first test. [Terrtia]
+
+* Merge pull request #196 from Terrtia/master. [Sami Mokaddem]
+
+  add optional tor install for onion module
+
+* Add optional tor install for onion module. [Terrtia]
+
+* Merge pull request #194 from Terrtia/master. [Sami Mokaddem]
+
+  fix doc graph generator and add a data flow graph
+
+* Improve doc graphs display. [Terrtia]
+
+* Fix doc graph generator and add a data flow graph. [Terrtia]
+
+* Merge pull request #193 from Terrtia/master. [Sami Mokaddem]
+
+  Keys module improvement
+
+* Keys module improvement. [Terrtia]
+
+* Merge pull request #192 from Terrtia/master. [Sami Mokaddem]
+
+  add python 3 requirement langid
+
+* Add python 3 requirement langid. [Terrtia]
+
+* Merge pull request #191 from drnguyen/master. [Sami Mokaddem]
+
+  support non-TLS SMTP servers for email notifications
+
+* Refactor NotificationHelper code. [CD Nguyen]
+
+* Support non TSL SMTP servers. [CD Nguyen]
+
+* Merge pull request #184 from schutzwerk/ansible. [Sami Mokaddem]
+
+  Install AIL using Ansible
+
+* Ansible folder: Add Ansible role, README.md: Add reference to ansible readme. [Philipp Schmied]
+
+* Merge pull request #189 from P4rs3R/patch-1. [Alexandre Dulaunoy]
+
+  launching Flask_server.py
+
+* Launching Flask_server.py. [A. Cristallo]
+
+  someone just forgot `./` ;)
+
+* Merge pull request #183 from schutzwerk/email-notifications. [Sami Mokaddem]
+
+  New feature: E-Mail notifications for tracked terms
+
+* Fixed typo. [Philipp Schmied]
+
+* README: Reset to upstream file for PR. [Philipp Schmied]
+
+* README: Reset to upstream file for PR. [Philipp Schmied]
+
+* Fixed e-mail notificatins for sets and regexes. [Philipp Schmied]
+
+* Flask_terms.py: Fixed mapping of notifcation e-mails to terms with uppercase letters. [Philipp Schmied]
+
+* Config.cfg.sample: Merged overwritten changes from upstream. [Philipp Schmied]
+
+* Removed previously copied files. [Philipp Schmied]
+
+* Implemented email notifications (bin: config.cfg additions, email sending via analyzer scripts; var: Changes to add notifications via terms management); terms_management: Fixed click handlers not being added to all tracked terms. [Philipp Schmied]
+
+* README.md: Add note. [Philipp Schmied]
+
+* Merge pull request #181 from mokaddem/fix-dependencies. [Sami Mokaddem]
+
+  Added missing python3 dependencies
+
+* Merge pull request #164 from mokaddem/showDiff. [Alexandre Dulaunoy]
+
+  Show differences between duplicates
+
+* Merge branch 'iss160' into showDiff Preemptively preventing merge-conflict with branch iss160 (moving to configuration) [Sami Mokaddem]
+
+* Typo: added word + deleted trailing spaces. [Sami Mokaddem]
+
+* Update: Possibility to change the authorized max line length in the config for the diff of duplicates. [Sami Mokaddem]
+
+* Feature: diff in the web interface for duplicates pastes. [Sami Mokaddem]
+
+* Merge pull request #163 from mokaddem/iss160. [Alexandre Dulaunoy]
+
+  Moving more to config
+
+* Typo: added word + deleted trailing spaces. [Sami Mokaddem]
+
+* Update: Moved filtering operation (thresholds, number of matching in the categ file) in the configuration file. It permits to better control the flow of pastes. Also set default mixer duplicate filtering to 3 (Do not filter) [Sami Mokaddem]
+
+* Merge pull request #179 from mokaddem/fix-177. [Sami Mokaddem]
+
+  fix: Added _required_height in CLabel class
+
+* Merge pull request #178 from mokaddem/fix-176. [Sami Mokaddem]
+
+  fix: Create a directory for the last year in ``LEVEL_DB_DATA/``
+
+* Merge pull request #170 from mokaddem/iss_169. [Alexandre Dulaunoy]
+
+  Iss 169
+
+* Fixing no such file. [Sami Mokaddem]
+
+* Duplicate diff features added. [Alexandre Dulaunoy]
+
+* Merge pull request #166 from mokaddem/fix_165. [mokaddem]
+
+  fix: canvasjs changed its folder hierarchy
+
+* Merge pull request #162 from mokaddem/sentimentBugfix. [mokaddem]
+
+* Fixed from front-end date representation bug. [Sami Mokaddem]
+
+* Merge pull request #159 from eurodude/patch-1. [Alexandre Dulaunoy]
+
+  Allow for multiple entries like 1 2 3 4 5
+
+* Allow for multiple entries like 1 2 3 4 5. [Fabien Mathey]
+
+  Should replace the need to type
+  1<Enter>2<Enter>
+  etc. and allows for
+  1 2 3 4 5<Enter>
+
+* Add: Python script to test if the ZMQ feed works as expected. [Alexandre Dulaunoy]
+
+* Merge pull request #153 from mokaddem/ail_training_november. [mokaddem]
+
+  update slides
+
+* Updated: slides. [Sami Mokaddem]
+
+* Update slides. [Sami Mokaddem]
+
+* Merge pull request #152 from mokaddem/ail_training_november. [mokaddem]
+
+  Added slides of AIL Training November Edition
+
+* Added slides. [Sami Mokaddem]
+
+* Features updated to add MISP export + random minor fixes. [Alexandre Dulaunoy]
+
+* Merge pull request #151 from mokaddem/misp_obj. [Alexandre Dulaunoy]
+
+  Alert to MISP
+
+* Update: removed useless comments. [Sami Mokaddem]
+
+* Added pip3 in dependencies. [Sami Mokaddem]
+
+* Feature: try to send data to MISP if keys are provided, else do nothing. [Sami Mokaddem]
+
+* Update/feature: Max number of duplicate push to MISP + duplicate are pushed as attachment. [Sami Mokaddem]
+
+* Added a seemingly working version of ailleak to misp. [Sami Mokaddem]
+
+* Better support of python3  in Helper.py. [Sami Mokaddem]
+
+* Support of add_object to a MISP instance. [Sami Mokaddem]
+
+* Starting support of python3. [Sami Mokaddem]
+
+* Updated alertHandler and ailleakObject. [Sami Mokaddem]
+
+* Merge branch 'launcher_update' into misp_obj. [Sami Mokaddem]
+
+* Added draft support of MISP ail-leak object. [Sami Mokaddem]
+
+* Renamed BrowseWarningPaste into alertHandler. [Sami Mokaddem]
+
+* Added seconds args in import_dir. [Sami Mokaddem]
+
+* Merge pull request #150 from mokaddem/launcher_update. [mokaddem]
+
+  Launcher update
+
+* Added '_AIL' to the end of screen session name to better check an kills sessions. Also, gracefully close redis server + Check 1 time if redis-servers are running. [Sami Mokaddem]
+
+* Merge remote-tracking branch 'upstream/master' [=]
+
+* Merge branch 'import_dir' [=]
+
+* Improvement of import_dir.py. Added feed name parameter, send the correct path (without potential ../) and gzipEncode it if needed. [=]
+
+* Merge branch 'bugfix' [=]
+
+* Merge remote-tracking branch 'upstream/master' [=]
+
+* Merge branch 'bugfix' [=]
+
+* Updated AIL presentation from SHA2017. [=]
+
+* Merge pull request #146 from PaulSec/master. [mokaddem]
+
+  refactor (without deleting)
+
+* Changed the README.md file. [Paul A]
+
+* Quick refactor for the JavaScript. [Paul A]
+
+* Merge pull request #145 from PaulSec/master. [mokaddem]
+
+  Removed duplicate function update_values()
+
+* Modified the README.md. [Paul A]
+
+* Fixed some code for the JavaScript (coding-style) [Paul A]
+
+* Removed duplicate function. [Paul A]
+
+* Merge pull request #143 from ngsimon/master. [mokaddem]
+
+  Updated Docker image + Fixed Web UI dependencies installation
+
+* Updated Docker documentation typo. [Simon Tran]
+
+* Updated Dockerfile - Migrated Dockerfile to Ubuntu 16.04 LTS - Fixed dependency to "sudo" - Fixed AIL Web dependencies installation - Added Docker documentation. [Simon Tran]
+
+* Migrated Dockerfile to Ubuntu 16.04 LTS Fixed AIL Web dependencies installation Added Docker documentation. [Simon Tran]
+
+* Merge pull request #139 from mokaddem/indexer_register_fix. [Alexandre Dulaunoy]
+
+  Fixed bug: No CR between indexes in all_index.txt file
+
+* Typo2.. [=]
+
+* Typo. [=]
+
+* Fixed bug: No CR between indexes in all_index.txt file. [=]
+
+* Merge pull request #138 from mokaddem/import_dir_update. [Alexandre Dulaunoy]
+
+  Improvement of import_dir
+
+* Improvement of import_dir.py. Added feed name parameter, send the correct path (without potential ../) and gzipEncode it if needed. [=]
+
+* Merge pull request #137 from mokaddem/rst_script. [Alexandre Dulaunoy]
+
+  Added AIL reset script
+
+* Added AIL reset script. [=]
+
+* Merge pull request #136 from mokaddem/bugfix. [Alexandre Dulaunoy]
+
+  LevelDB auto-directory
+
+* Removed useless import. [=]
+
+* Removed 301x Dir in install_deps. [=]
+
+* Updated individual launch scripts. [=]
+
+* Flask: Added support of LevelDB database depending of the year. [=]
+
+* Automatically start redis_levelDB with the correct date. [=]
+
+* Dynamically choose correct port for LevelDB in script. [=]
+
+* Added LevelDB Curve for 2017 (3017, used for backward compatibility) [=]
+
+* Semi-automated directory creation with date as name in LAUNCH and installing_deps. [=]
+
+* Merge pull request #135 from mokaddem/bugfixes. [Alexandre Dulaunoy]
+
+  Bugfixes and slides
+
+* Restored adns dependency. [=]
+
+* Updated KillAll in LAUNCH. [=]
+
+* BrowseImportantPaste: Fixed a bug where onClickListener was not set when the table was only 1 page long. [=]
+
+* Deleted data-flow graph and header.html from the index + Added fixed typo where 10min was in fact 3min. [=]
+
+* Updated slides. [=]
+
+* Updated workshop slides. [=]
+
+* Added sha2017-workshop-slides. [=]
+
+* Merge pull request #133 from mokaddem/quickNewFeature. [mokaddem]
+
+  Quick new features
+
+* Added operation mode 3 for Mixer (do not filter) and added possibility to recurse through dir for import_dir. [Mokaddem]
+
+* Merge pull request #132 from mokaddem/quickFix. [mokaddem]
+
+  Quick fix
+
+* Quick fix: commented not working dependencies and added support of python3 in generate_flow_graph. [=]
+
+* Merge pull request #131 from mokaddem/credentialsTracker. [Alexandre Dulaunoy]
+
+  Credentials seeker
+
+* Added comments, cleanup and added credentials search progress in Flask. [Mokaddem]
+
+* Added comments. [Mokaddem]
+
+* Finished basic link web interface + solved some bugs. [Mokaddem]
+
+* Added similarity checks + started link webInterface. [Mokaddem]
+
+* Draft module + web link. [Mokaddem]
+
+* Dirty draft webpage credential_tracking. [Mokaddem]
+
+* Merge pull request #129 from mokaddem/master. [mokaddem]
+
+  Avoid loosing the first message in import_dir.py
+
+* Restaured old example webpage. [Mokaddem]
+
+* Prevent the loss of the 1 message in import_dir.py. [Mokaddem]
+
+* Merge pull request #128 from mokaddem/doc. [mokaddem]
+
+  Doc
+
+* Merged with previous changes for PR. [Mokaddem]
+
+* Merge pull request #127 from mokaddem/auto-web-interface. [Alexandre Dulaunoy]
+
+  Auto web interface
+
+* Merge branch 'master' into auto-web-interface. [Mokaddem]
+
+* Merge pull request #126 from ninoseki/Add-a-missing-screenshot. [Alexandre Dulaunoy]
+
+  Add a missing screenshot
+
+* Add a missing screenshot. [ninoseki]
+
+  `./doc/screenshots/sentiment.png` is missing and I fixed it.
+
+* Merge pull request #120 from PaulSec/master. [Alexandre Dulaunoy]
+
+  Added Python Phonenumbers module to parse numbers and retrieves stats…
+
+* Added Python Phonenumbers module to parse numbers and retrieves stats from countrycode. [Paul A]
+
+* Merge pull request #115 from mokaddem/regexInTerms. [Alexandre Dulaunoy]
+
+  New features for terms frequency
+
+* Merge pull request #116 from mokaddem/auto-conf. [Alexandre Dulaunoy]
+
+  Auto-configuration
+
+* Merge pull request #114 from mokaddem/newIndexer. [Raphaël Vinot]
+
+  New indexer behavior
+
+* Merge pull request #113 from mokaddem/master. [Alexandre Dulaunoy]
+
+  Improvement of terms - Behavior and webpage
+
+* Merge remote-tracking branch 'origin/auto-conf' into auto-web-interface. [Mokaddem]
+
+* Added possibility to keep a backup of the old config + check if config is valid before starting scripts. [Mokaddem]
+
+* Added all_modules.txt rule in gitignore. [Mokaddem]
+
+* Merge branch 'newIndexer' into auto-conf. [Mokaddem]
+
+* Merge remote-tracking branch 'origin/newIndexer' into auto-web-interface. [Mokaddem]
+
+* Modified check_size timeout + utilisation of shutil instead of os.system() [Mokaddem]
+
+* Added link towards HOWTO in README.md. [Mokaddem]
+
+* Added ore info on new webpage creation. [Mokaddem]
+
+* Removed screenshot for module information (will be added later) [Mokaddem]
+
+* Added new information to Howto. [Mokaddem]
+
+* Improved description of modules inside the scripts. [Mokaddem]
+
+* Improved overview. [Mokaddem]
+
+* Modified README order. [Mokaddem]
+
+* Split README with HOWTO and OVERVIEW. [Mokaddem]
+
+* Improved phone regex to handle end with 4 digits and presence of parenthesis. [Mokaddem]
+
+* Added support of onion in browseWarningPaste. [Mokaddem]
+
+* Bug fixes, jinja2 iter0 and typo. [Mokaddem]
+
+* Deleted print + Added curve fill for Mixer graph in Index. [Mokaddem]
+
+* New script create_new_web_module permits to rapidly create a new pre-configured webpage from a template. [Mokaddem]
+
+* Modified skeleton template name into rawSkeleton + Added possibility to hide modules in the header. [Mokaddem]
+
+* Auto organisation of the navbar -> Web page are auto-inserted. Created skeleton webpage. [Mokaddem]
+
+* Draft of new organisation of the web interface. Usage of Flask's blueprint. [Mokaddem]
+
+* Merge branch 'regexInTerms' into production. [Mokaddem]
+
+* Updated TermsFrequency related modules + Fixed bugs (encoding, behaviors, ...) [Mokaddem]
+
+* New feature in Terms: regex and set of words support (draft) [Mokaddem]
+
+* Merge branch 'terms-improvements' [Mokaddem]
+
+* Merge pull request #111 from mokaddem/update-archlinux-installer-script. [Alexandre Dulaunoy]
+
+  Updated archlinux installer
+
+* Updated docker_start dataset year + Mixer. [Mokaddem]
+
+* Updated archlinux instaler. [Mokaddem]
+
+* Merge pull request #108 from mokaddem/newModuleInformation. [Alexandre Dulaunoy]
+
+  New version of ModuleInformation
+
+* Merge pull request #110 from mokaddem/bugfix_categ. [mokaddem]
+
+  Fixed bug in Categ and Mail
+
+* Merge branch 'newIndexer' into auto-conf. [Mokaddem]
+
+* Remplaced usage of global variable by a function param. [Mokaddem]
+
+* Removed wierd line. [Mokaddem]
+
+* Typo. [Mokaddem]
+
+* Keep original section order while updating. [Mokaddem]
+
+* Added script that checks configuration and may auto-fix it + added missing field in config.cfg.sample. [Mokaddem]
+
+* Fixed all_index newline bug + added print of what's happening. [Mokaddem]
+
+* Changed os.system by os.mkdir + fixed bug during rotation. [Mokaddem]
+
+* Indexer max size now in config. [Mokaddem]
+
+* Added backward support + renamed index with timestamp. [Mokaddem]
+
+* Added display of number of elements inside the index + changed variables names. [Mokaddem]
+
+* Added possibility to choose the index in search + Updated search page with jinja2 iter0. [Mokaddem]
+
+* Indexer now create an index_dir when it became too large (search in index not updated yet) [Mokaddem]
+
+* Merge branch 'terms-improvements' into production. [Mokaddem]
+
+* Added support of per_paste for term-management and plot-term. [Mokaddem]
+
+* Fixed a bug in manage_term (usage of loop.index0) + fixed bug in top_set where graph was not displaying the correct per_paste value. [Mokaddem]
+
+* Merge branch 'production' into terms-improvements. [Mokaddem]
+
+* Merge branch 'production' into terms-improvements. [Mokaddem]
+
+* Added possibility to select in top_terms the data per_paste or not (need module testing) [Mokaddem]
+
+* Merge branch 'newModuleInformation' into production. [Mokaddem]
+
+* Added a catch for psutils if process get stopped by user. [Mokaddem]
+
+* Merge branch 'newModuleInformation' into production. [Mokaddem]
+
+* Fixed bug - If we move the cursor from a line that has dissapear. [Mokaddem]
+
+* Merge branch 'newModuleInformation' into production. [Mokaddem]
+
+* ModuleInformation create the all_modules files if missing. [Mokaddem]
+
+* Added possibility to show or not in dashboard text that is logged. [Mokaddem]
+
+* Merge branch 'bugfix_categ' into production. [Mokaddem]
+
+* Fixed bug closing parenthesis in categ + changed behavior of sending to browseWarningPaste in Mail. [Mokaddem]
+
+* Merge pull request #107 from mokaddem/fix-linkPaste-debug. [Alexandre Dulaunoy]
+
+  Fixed Link to download a paste is undefined when in DEBUG
+
+* Merge pull request #106 from mokaddem/master. [mokaddem]
+
+  Updated readme - feeding AIL with pystemon
+
+* Merge branch 'newModuleInformation' into production. [Mokaddem]
+
+* Fixed a bug (str+float) [Mokaddem]
+
+* Merge branch 'fix-linkPaste-debug' into production. [Mokaddem]
+
+* Added path for debug in SQLInjection. [Mokaddem]
+
+* Merge branch 'newModuleInformation' into production. [Mokaddem]
+
+* Fixed str and int concat + Added sorting by queue name in queue not running. [Mokaddem]
+
+* Deleted all_modules.txt added by error. [Mokaddem]
+
+* Merge branch 'newModuleInformation' into production. [Mokaddem]
+
+* Added all_modules file. [Mokaddem]
+
+* Added support of ENTER for navigation. [Mokaddem]
+
+* Moved logging into a function. [Mokaddem]
+
+* Renamed variables + added comments. [Mokaddem]
+
+* Removed useless comments + commented. [Mokaddem]
+
+* Added comments. [Mokaddem]
+
+* Added comments and moved portion of code for slightly better visibility. [Mokaddem]
+
+* Added a way to quit application with 'q' more or less properly. [Mokaddem]
+
+* Added end of paste marker + handling screen resize. [Mokaddem]
+
+* Merge branch 'newModuleInformation' into production. [Mokaddem]
+
+* Fixed screen bug by adding an input before starting asciimatics + improved path localisation in the logs from modules. [Mokaddem]
+
+* Merge branch 'newModuleInformation' into production. [Mokaddem]
+
+* Added support of display of the last paste processed by a module. [Mokaddem]
+
+* Merge branch 'fix-linkPaste-debug' into production. [Mokaddem]
+
+* Added path of the paste in the log of Categ.py. [Mokaddem]
+
+* Updated feeding AIL with pystemon. [Mokaddem]
+
+* Merge remote-tracking branch 'upstream/master' [Mokaddem]
+
+* Merge remote-tracking branch 'upstream/master' [Mokaddem]
+
+* Updated feeding AIL with pystemon. [Mokaddem]
+
+* Merge remote-tracking branch 'upstream/master' into production. [Mokaddem]
+
+* Merge branch 'master' of github.com:CIRCL/AIL-framework. [Alexandre Dulaunoy]
+
+* (partially fix #90 too) using a simple Alarm (SIGNAL) when exec-timeout. [Alexandre Dulaunoy]
+
+  Introducing a timer (in this case 60 seconds) to ensure that the
+  execution time of the analysis takes less than 60 seconds. This
+  is a simple and standard POSIX signal handler. If the timeout
+  is reached, the module will process the next one.
+
+  This approach fixes the specific issues we have currently
+  with some inputs where the sentiment analysis takes too much time. This
+  fix should be improved and be more generic:
+
+   - Introducing statistics of content which timeouts.
+   - Keeping a list/queue to further process those files using a different
+     analysis approach. Maybe a set of "dirty" processes to handle the edge cases
+     and to not impact the overall processing and analysis.
+   - Make the timer configurable per module (at least for this one).
+
+* Merge remote-tracking branch 'upstream/master' into production. [Mokaddem]
+
+* Merge pull request #102 from ptitdoc/bugfix1. [mokaddem]
+
+  Bug fixes in Workers and improvement of pystemon-feeder
+
+* Pystemon-feeder: add the option bind in configuration file instead of address. [Olivier MEDOC]
+
+  This is essentially because multiple feeds can be used in the address
+  configuration variable.
+
+* SentimentAnalysis: use lexicon file path from the ail configuration file. [Olivier MEDOC]
+
+* Add pystemon path in configuration sample. [ptitdoc]
+
+* Import pystemon-feeder configuration from the central configuration file. [Olivier MEDOC]
+
+* Add all_modules.txt file so that the WebGUI can do proper cleanup. [Olivier MEDOC]
+
+* Fix invalid variable propagation. [Olivier MEDOC]
+
+* Fix to use the new pycountry API. [Olivier MEDOC]
+
+* (partially) Fix #91 using a simple Alarm (SIGNAL) when exec-timeout. [Alexandre Dulaunoy]
+
+  Introducing a timer (in this case 5 seconds) to ensure that the
+  execution time of the tokenizer takes less than 5 seconds. This
+  is a simple and standard POSIX signal handler.
+
+  This approach fixes the specific issues we have currently
+  with some inputs where the tokenization takes too much time. This
+  fix should be improved and be more generic:
+
+   - Introducing statistics of content which timeouts.
+   - Keeping a list/queue to further process those files using a different
+     tokenizer approach. Maybe a set of "dirty" processes to handle the edge cases
+     and to not impact the overall processing and analysis.
+   - Make the timer configurable per module (at least for this one).
+
+* Merge pull request #99 from mokaddem/more-feed. [Alexandre Dulaunoy]
+
+  Usage of sha1 to filter paste content in Mixer.py
+
+* Merge pull request #98 from mokaddem/more-feed. [Alexandre Dulaunoy]
+
+  Config 2017
+
+* Merge pull request #96 from mokaddem/more-feed. [Alexandre Dulaunoy]
+
+  Handling of multiple feeders
+
+* Merge pull request #95 from mokaddem/module_handling. [Alexandre Dulaunoy]
+
+  Module handling
+
+* Merge pull request #94 from mokaddem/website-refacto. [Alexandre Dulaunoy]
+
+  Website refacto, support and fixes
+
+* Merge pull request #88 from mokaddem/Issue-Feeding-AIL. [Alexandre Dulaunoy]
+
+  Pystemon tuto
+
+* Fixed typo 5. [Mokaddem]
+
+* Fixed typo 4. [Mokaddem]
+
+* Fixed typo 3. [Mokaddem]
+
+* Fixed typos 2. [Mokaddem]
+
+* Fixed typos. [Mokaddem]
+
+* Added pystemon instruction section. [Mokaddem]
+
+* Added requirement, better behaviors and confirmation box. [Mokaddem]
+
+* Improved module + Added support of click and keyboard navigation for killing and starting modules. [Mokaddem]
+
+* Added action button and support of logs. [Mokaddem]
+
+* Added color in front of queue related to its state. [Mokaddem]
+
+* Overwritted listbox update function to add formating. [Mokaddem]
+
+* Added new ModuleInformation. [Mokaddem]
+
+* Usage of sha1 to filter paste content in Mixer.py. [Mokaddem]
+
+* Merge branch 'more-feed' of github.com:mokaddem/AIL-framework into more-feed. [Mokaddem]
+
+* Added a line separator between the two graphs in dashboard. [Mokaddem]
+
+* Added 2017. [Mokaddem]
+
+* Added sleep in helper for multiple listening interfaces (reduce useless work), Added a simple way to pre-process feed before sending it to the global feed. [Mokaddem]
+
+* BUG FIX in Flask_trendingmodule, Fixed member_set when get_top_relevant_data is None. [Mokaddem]
+
+* Commented Mixer.py for further multiple feeds support. [Mokaddem]
+
+* Improved interface for multiple feeds and refresh_script. [Mokaddem]
+
+* Fixed bug multiple refresh instances and harmonized interface. [Mokaddem]
+
+* Reduced refresh rate of processed_pastes, synchro graphs and adjusted max on each graphs. [Mokaddem]
+
+* Updated web interface to handle new mixer module. and fixed one dependency bug. [Mokaddem]
+
+* Added basic mixer with confirugable behavior. It handles muliple feeders and performs some basic stats on them. [Mokaddem]
+
+* Merge branch 'module_handling' into production. [Mokaddem]
+
+* Prepared moduleInfo to handle module click with curses (will come back later). [Mokaddem]
+
+* Added legend + added more info if restarting disabled. [Mokaddem]
+
+* Added new config. [Mokaddem]
+
+* Removed typo in the number of remaining pastes to display in browseImportantPaste. [Mokaddem]
+
+* Added sub-flask in a directory. [Mokaddem]
+
+* Added missing depency datetime in dashboard. [Mokaddem]
+
+* Added missing json dependency in dashboard. [Mokaddem]
+
+* Splitted Flask_server into module related to website sections. [Mokaddem]
+
+* Merge branch 'website-improvement' into production. [Mokaddem]
+
+* Webstats should correctly updates top_progression_zset (Not fully tested because not enough data. Will be tested latter) [Mokaddem]
+
+* Terms top_sets correctly supports blacklisted terms. [Mokaddem]
+
+* Added support of re-plotting the plotted terms. [Mokaddem]
+
+* Started plotting same data with different dates. [Mokaddem]
+
+* Merge branch 'module_handling' into production. [Mokaddem]
+
+* Do not try to restart not running queue if autokill is not set. [Mokaddem]
+
+* ModuleInformation sort by name as well as elapsed time. [Mokaddem]
+
+* Added row coloring in ModuleInformation. [Mokaddem]
+
+* ModuleInfo correctly handle CurveManageTopSets, Changed queue coloring in dashboard, ModuleInformation now have a history of executed command and better handle module killing. [Mokaddem]
+
+* Better handle stuck modules. Differentiate between not running and no info and tries to restart stuck ones. [Mokaddem]
+
+* Merge branch 'website-improvement' into production. [Mokaddem]
+
+* Added date in Duplicate for better distinguish duplicate. Also, added a timeout for the dataTable in duplicate inside the modal. [Mokaddem]
+
+* Added dynamic data loading in dataTable in search.html. [Mokaddem]
+
+* Prevent browser to request reconnection for the eventStream + Added dynamic data loading in the dataTable of BrowseImportantPastes. [Mokaddem]
+
+* Removed server overhead for paste preview data. [Mokaddem]
+
+* Fixed bug in show concerned pastes previex en (terms managements) [Mokaddem]
+
+* Fixed bun in terms management, where action_button was not bind in other dataTable pages. [Mokaddem]
+
+* Pastes dataTable now display only the latest clicked paste even if there were discarded queries. [Mokaddem]
+
+* Fixed modal background stacking bug + button leading to saved paste bug fixed in search. [Mokaddem]
+
+* Tryed to fix html display problem in tooltip + fixed problem button showPaste in modal not pointing to the paste. [Mokaddem]
+
+* Partially solved the browser freezing problem + tootlip is also binded at a new page generation of the DataTable. [Mokaddem]
+
+* Added event source for getImportantPaste. [Mokaddem]
+
+* Dynamic table in search now load all the data + fixed bugs where tooltip where not shown on other than the first page displayed and tooltip interpret html (not supposed to...) [Mokaddem]
+
+* Added support of html formatting in search result dynamic loading table. [Mokaddem]
+
+* Added draft of dynamic update table with search result. [Mokaddem]
+
+* Fixed bug in modal show paste (show more button not showing) [Mokaddem]
+
+* Added dataTable for duplicate in show saved paste. [Mokaddem]
+
+* Bootstrap support in show saved paste. [Mokaddem]
+
+* Added support of browsing concerned paste in dashboard for all modules + Show in the page what was the concerned module. [Mokaddem]
+
+* Added support of local paste view in dashboard for Mails event only. [Mokaddem]
+
+* Modified provider name into no data when there is no data. [Mokaddem]
+
+* Added msgs when queues or feed is not running/coming. [Mokaddem]
+
+* Merge branch 'installation-fix' into production. [Mokaddem]
+
+* Fixed missing dependency in sentimentAnalysis. [Mokaddem]
+
+* Use latest version off tlsh. [Raphaël Vinot]
+
+  #82 fixed upstream
+
+* Merge pull request #89 from mokaddem/installation-fix. [Raphaël Vinot]
+
+  Installation fix
+
+* Fixed path issues in doc + added dependencies related to ssdeep. [Mokaddem]
+
+* Merge branch 'production' of github.com:mokaddem/AIL-framework into production. [Mokaddem]
+
+* Stuck not stucked. [Alexandre Dulaunoy]
+
+* Merge pull request #84 from jumojer/fix/web-interface. [Raphaël Vinot]
+
+  Fixed dependency fetching for the web interface
+
+* Fixed dependency fetching for the web interface. [Jerome St-Hilaire]
+
+* Fix tlsh python module. [Raphaël Vinot]
+
+* Fix tlsh installer. [Raphaël Vinot]
+
+* Merge branch 'master' of github.com:CIRCL/AIL-framework. [Raphaël Vinot]
+
+* Merge pull request #81 from madhuakula/master. [Raphaël Vinot]
+
+  Added -y option for packages installation
+
+* Added -y option for packages installation. [Madhu Akula]
+
+  This will break docker installation, because it's a non-interactive.
+
+* Update download link for adns. [Raphaël Vinot]
+
+* Merge pull request #77 from rivenz/docker. [Alexandre Dulaunoy]
+
+  Added Dockerfile to automate the build of a Docker image based on Ubuntu 14.04 LTS.
+
+* Added Dockerfile to automate the build of a Docker image based on Ubuntu 14.04 LTS. [Simon Tran]
+
+* Merge branch 'master' of github.com:CIRCL/AIL-framework. [Alexandre Dulaunoy]
+
+* Typo fixed and screencast added. [Alexandre Dulaunoy]
+
+* Merge branch 'master' of github.com:CIRCL/AIL-framework. [Alexandre Dulaunoy]
+
+* Update Flask_server.py. [Raphaël Vinot]
+
+* Update update_thirdparty.sh. [Raphaël Vinot]
+
+* Merge branch 'master' of github.com:CIRCL/AIL-framework. [Alexandre Dulaunoy]
+
+* Merge pull request #75 from mokaddem/multiple-modif. [Raphaël Vinot]
+
+  Multiple modif v4
+
+* Updated screenshot. [Mokaddem]
+
+* Fixed introduced bug relative to chart in index webpage. [Mokaddem]
+
+* Added support of PID in ModuleInformation and index.html. [Mokaddem]
+
+* Removed auto-reload in dashboard if window in undefined. [Mokaddem]
+
+* Updated dependencies. [Mokaddem]
+
+* Merge branch 'master' of github.com:CIRCL/AIL-framework. [Alexandre Dulaunoy]
+
+* Merge branch 'master' of github.com:CIRCL/AIL-framework. [Alexandre Dulaunoy]
+
+* Merge branch 'master' of github.com:CIRCL/AIL-framework. [Alexandre Dulaunoy]
+
+* Merge branch 'master' of github.com:CIRCL/AIL-framework. [Alexandre Dulaunoy]
+
+  Conflicts:
+  	bin/launch_scripts.sh
+
+* Merge branch 'master' of github.com:CIRCL/AIL-framework. [Alexandre Dulaunoy]
+
+  Conflicts:
+  	bin/packages/modules.cfg
+
+* Merge branch 'master' of github.com:CIRCL/AIL-framework. [Alexandre Dulaunoy]
+
+  Conflicts:
+  	bin/packages/modules.cfg
+
+* Prod config. [Alexandre Dulaunoy]
+
+* Fix update 3rd party website updater. [Raphaël Vinot]
+
+* Fix travis. [Raphaël Vinot]
+
+* Update install script. [Raphaël Vinot]
+
+  Fix #76
+
+* Add dependency. [Raphaël Vinot]
+
+* Fix install script. [Raphaël Vinot]
+
+* Update travis. [Raphaël Vinot]
+
+* Merge pull request #74 from mokaddem/multiple-modif. [Raphaël Vinot]
+
+  Multiple modif v3
+
+* Added comments. [Mokaddem]
+
+* Added comment in moduleInformation. [Mokaddem]
+
+* Deleted useless parsing function. [Mokaddem]
+
+* Added not running module info + swapped order of module launch. [Mokaddem]
+
+* Added dataTable support in browse paste modal. [Mokaddem]
+
+* Changed lots of code into zrank. [Mokaddem]
+
+* Updated individual launch script. [Mokaddem]
+
+* Suppressed metismenu import. [Mokaddem]
+
+* Added module number info in index webpage. [Mokaddem]
+
+* Added number of same module running in ModuleInformation. [Mokaddem]
+
+* Auto generate graph div + possibility to query all sentiments data. [Mokaddem]
+
+* Individualized sentiments-graph loading. [Mokaddem]
+
+* Merge pull request #71 from mokaddem/multiple-modif. [Raphaël Vinot]
+
+  Multiple modif v2
+
+* Removed autokill feature if not specified. [Mokaddem]
+
+* Removed autokill feature if not specified. [Mokaddem]
+
+* Added directory creation. [Mokaddem]
+
+* Fixed bug in WebStats not deleting correct key + fixed typo in CurveSetManager preventing connecting to redis + modified display in moduleInfo. [Mokaddem]
+
+* Added color in web-index reprenting modules states. [Mokaddem]
+
+* Removed useless import. [Mokaddem]
+
+* Added pip dependency. [Mokaddem]
+
+* Added moduleInfo + Renamed modules. [Mokaddem]
+
+* ModuleInfo support autokill and auto restart after logging. [Mokaddem]
+
+* ModuleInfo now support logs. [Mokaddem]
+
+* Fixed typo in creditcard + fixed bug in ModuleInformation (relative to date). [Mokaddem]
+
+* Added new module 'ModuleInformation' which gives real time information on running module. [Mokaddem]
+
+* Added script module-dataflow-graph + fixed bug in module.cfg preventing the credential module to receive data. [Mokaddem]
+
+* Added directory creation. [Mokaddem]
+
+* Merge pull request #70 from mokaddem/multiple-modif. [Alexandre Dulaunoy]
+
+  Update of Readme
+
+* Added install script nltk.vader. [Mokaddem]
+
+* New screenshot + Added titles in readme. [Mokaddem]
+
+* Added title spacing. [Mokaddem]
+
+* Draft modification of Readme. [Mokaddem]
+
+* Fixed typo. [Mokaddem]
+
+* Modified dashboard screenshot. [Mokaddem]
+
+* Added screenshots. [Mokaddem]
+
+* Merge pull request #69 from mokaddem/multiple-modif. [Raphaël Vinot]
+
+  Added config redis 6382
+
+* Added config redis 6382. [Mokaddem]
+
+* Merge pull request #68 from mokaddem/multiple-modif. [Raphaël Vinot]
+
+  Multiple modif
+
+* Added icon in header. [Mokaddem]
+
+* Added new module in individual launch scripts. [Mokaddem]
+
+* Added show/hide curve with legend in terms-top-set. [Mokaddem]
+
+* Added position of each top term in the other sets + highligth ones not present. [Mokaddem]
+
+* Auto hide button add_to_chart when no data plotted. [Mokaddem]
+
+* Added tooltip in graph for terms-plot-tool. [Mokaddem]
+
+* Added multiple terms plot in terms-plot-tool. [Mokaddem]
+
+* Harmonized tooltip and popover display. [Mokaddem]
+
+* Added autohide curves in terms-top-set. [Mokaddem]
+
+* Moved legend place in term-plot-top. [Mokaddem]
+
+* Added config.sample. [Mokaddem]
+
+* Fixed bug in curve preventing to track concerned_pastes. Now all tracked words are put in lower case. [Mokaddem]
+
+* Fixed potential XSS problem with pastes display in 'search' and 'important_paste_by_module'. [Mokaddem]
+
+* Added save of paste_baseName in set for searches. This is done in ModuleStats to not surcharge the Global module. [Mokaddem]
+
+* Replaced negative hour by 24h based. [Mokaddem]
+
+* In sentiment analysis. if today top provider set is empty, try to take yesterday data and then takes from all_providers. [Mokaddem]
+
+* Suppressed useless comms. [Mokaddem]
+
+* Suppressed prints. [Mokaddem]
+
+* Removed commented code. [Mokaddem]
+
+* Fixed stupid line remove in index.html... [Mokaddem]
+
+* Fixed bug in flask with zrange (was taking the bottom of the set instead of the top leading to get only the min instead of max) [Mokaddem]
+
+* Fixed bug with redis where the inserted key was too long, causing a crash + fixed bug taking min instead of max in terms-top-set. [Mokaddem]
+
+* Fixed bug in manage-terms-top-set + added auto sorting in important-paste-by-module. [Mokaddem]
+
+* Fixed bug in terms-management-interface (only display one paste) + removed get_language of all pastes due to the huge overhead. [Mokaddem]
+
+* Added terms trending module and web interface: - Curve module has been rewritten - Added new module curve_manage_top_set - Added all web-pages. [Mokaddem]
+
+* Fixed bug in sentiment trending, if there was no data for the avg -> there was one NaN leading to no display in the gauge. [Mokaddem]
+
+* In sentiment trending, if there are no providers in the today\'s set, get data from random providers. [Mokaddem]
+
+* Fixed typo. [Mokaddem]
+
+* Deleted alert() [Mokaddem]
+
+* Enter simulate button click on input field for terms management and plot tool. [Mokaddem]
+
+* Added terms-plot tool. [Mokaddem]
+
+* Finnished terms-plot-top-set. Also added possibility to add terms to track or blacklist. [Mokaddem]
+
+* Added top set webpage. [Mokaddem]
+
+* Correctly handle and display add or remove a term in term-frequency + started sketch of terms-plot tool. [Mokaddem]
+
+* Added query of the data for the new tracked word. [Mokaddem]
+
+* Added draft of terms_management  + Added copyright in readme. [Mokaddem]
+
+* - Modified redis connection (from levelDB to redis). - Added term frequency in curve. - Modified ModuleStats and WebStats to use redis special command (incrby instead of get-set and zset) and Flask to perform the correct queries. - Added panel color in sentiment trending. [Mokaddem]
+
+* Probably fixed bug in creditcard (not sending to duplicate) [Mokaddem]
+
+* Added support of pasteName in search + added header in search.html + supressed mixed indent and trailing in Flask.py. [Mokaddem]
+
+* Updated isolated launch scripts + Added switch displaying queue in index. [Mokaddem]
+
+* Modified + into append. [Mokaddem]
+
+* Auto unchecked info checkbox in index. [Mokaddem]
+
+* Modified icon sentiment in web-header. [Mokaddem]
+
+* Added dependencies. [Mokaddem]
+
+* Added script flexgauge. [Mokaddem]
+
+* Added tooltips + slight gauge modification. [Mokaddem]
+
+* Added drop of really long line in sentiment-analysis module + Added description of sentiment module. Also, fixed bug in webpage sentiement-trending concerning avg and date range. [Mokaddem]
+
+* Added draft of filter in sentiment analysis (Discard syntaxical languages) + Added nice tooltip for sparkline. Trending displays avg in function of the number of elements processed and not for the complete week + fixed bug in gauge and canvasjs (was performing avg with only 1 graph instead of all 8). [Mokaddem]
+
+* Added autoreload in sentiment-trending. [Mokaddem]
+
+* Added avg text in sentiment-trending + fixed date range bug. [Mokaddem]
+
+* Added all providers for plot_tool in moduleStats + fixed date range bug. [Mokaddem]
+
+* Added stacked choice or not for plot-tool (sentiments) [Mokaddem]
+
+* Tool-plot for sentiment working + Splitted script and webpage. [Mokaddem]
+
+* Created draft of search for plot tool. [Mokaddem]
+
+* Linked plot button with server. [Mokaddem]
+
+* Added provider checkbox. [Mokaddem]
+
+* Added date on slider. [Mokaddem]
+
+* Added link to data in analysis trending + fixed tooltip bug in sparkline. [Mokaddem]
+
+* Added support of week and day average. [Mokaddem]
+
+* Added sentiment analyser module (draft) [Mokaddem]
+
+* Modified webpage display and added js. [Mokaddem]
+
+* Splited js from html + Added some ID + small display modification. [Mokaddem]
+
+* Added page Plot-tool. [Mokaddem]
+
+* Separated options from the plot funcion for sparkline. [Mokaddem]
+
+* Finished first panel in sentiment-today. [Mokaddem]
+
+* Added empty webpages for sentiments modules. [Mokaddem]
+
+* Merge branch 'webpage-header-splitted' into sentiment-analysis. [Mokaddem]
+
+* Added module sentimentAnalyser. [Mokaddem]
+
+* Merge pull request #66 from mokaddem/webpage-header-splitted. [Raphaël Vinot]
+
+  Separated webpage header code from all webpage
+
+* Separated webpage header code from all webpage. [Mokaddem]
+
+* Merge pull request #65 from mokaddem/production. [Raphaël Vinot]
+
+  New modules and upgraded front-end
+
+* Fixed small bug in SQLInjection module. [Mokaddem]
+
+* Added bar chart hover binder in trending charts. [Mokaddem]
+
+* Added the part 'other' in Trending chartscd. [Mokaddem]
+
+* Added new file in gitignore. [Mokaddem]
+
+* Added trendingchart.js. [Mokaddem]
+
+* Slight refacto + sql comments are now placed in injection suspision. [Mokaddem]
+
+* Removed console log. [Mokaddem]
+
+* In index webpage, reset value graph if no paste received. [Mokaddem]
+
+* Fixed one of the small display bug in DUplicate_ssdeep_v2 (was displaying [tlsh, tlsh] instead of simply tlsh) [Mokaddem]
+
+* Added whole config in config.sample. [Mokaddem]
+
+* Fixed bug where Listener was not placed if the row was not displayed (BrowseWarningPaste) [Mokaddem]
+
+* Restaured loading gif when new tab is shown (BrowseWarningPaste) [Mokaddem]
+
+* Bug fix related with redis: Fixed typo key in redis for module creditcard and sqlinjection Modified Curve redisLvlDb server Modified Url.py so that it forwards name of protocol from saved protocolsfile Added Cache control in Flask Modified key-tab name into keys-tab. [Mokaddem]
+
+* Fixeed bug in Duplicate (The comparison value was not saved correctly in redis) + Modified to progression detection algo. [Mokaddem]
+
+* Fixed bug in CVE (always sending to browse_warning even if there was no match) [Mokaddem]
+
+* Fixed bug in flask not correctly displaying the number of paste/providers. [Mokaddem]
+
+* Fixed bug in credential (not sending correctly to ModuleStat) + Fixed date bug in ModuleStats. [Mokaddem]
+
+* Fixed bug CVE, CVE was not sending its data to BrowseWarningPaste. [Mokaddem]
+
+* Merge branch 'master' into production. [Mokaddem]
+
+* Merge pull request #63 from mokaddem/uptodate-duplicate-module. [Raphaël Vinot]
+
+  Uptodate duplicate module
+
+* Fix path to tldsfile. [Raphaël Vinot]
+
+* Added warning_paste module and created related webpages. Fixed a Faup bug in credential (multiple instanciation) and added correc populate_set_out in concerned modules (creditcard, credential, ...). Linked browse_warning_paste module and Flask function with redis (created new sets). [Mokaddem]
+
+* Started browse important paste feature. Still need to link with redis. + Fixed a bug in Flask (String to list parser) [Mokaddem]
+
+* Added few comments. [Mokaddem]
+
+* Draft: added new duplicate hash comparison - tlsh. [Mokaddem]
+
+* Tryed to fix the glob_tabvar bug. [Mokaddem]
+
+* Merge branch 'sql-injection' into production. [Mokaddem]
+
+* Better display printing. [Mokaddem]
+
+* Added SQLInjectionDetection module. [Mokaddem]
+
+* Fixed a bug in the hover of provider graph (happened when there was an 'other' in other graphs) [Mokaddem]
+
+* Fixed a division by 0 in Flask + Harmonized webpage item positioning. [Mokaddem]
+
+* Fixed a bug in the hover of providers graph. When we click on a part in providers graphs, we hover an item, then we click on a random part not belonging to providers graphs, and we re-hover one part of the providers graphs, there was an undefined variable (The random click overrided it). [Mokaddem]
+
+* Fixed bug in case of null elements arrising because of a new month. [Mokaddem]
+
+* Removed prints. [Mokaddem]
+
+* Fixed size bug, which in some cases display the total size instead of the average + few cleanup + commented out log scale in moduleStats.js and added large number division in case of div by 0. [Mokaddem]
+
+* Big refactoring and added lot of comments + fixed bug attaching multiple binder on barChart. [Mokaddem]
+
+* Fixed small race condition bug in ModuleStat.py and Added highlight of bar belonging to the same serie in moduleStats.js. [Mokaddem]
+
+* Added tooltip in moduleStat above each bar chart + Added highlight of the selected bar. (Still not working for category 'Other') [Mokaddem]
+
+* Added tooltip for moduleStats bar chart. [Mokaddem]
+
+* Fixed multiple binding bug in moduleStats + Added multiple bar display for 'other pie part' + Added ModuleStats tab in all other pages. [Mokaddem]
+
+* Clean up and refactoring for back-end moduleStats. [Mokaddem]
+
+* Clean up and refactoring for front-end moduleStats. [Mokaddem]
+
+* Added number of paste by provider in module stats. [Mokaddem]
+
+* In moduleStats, if there is data which have small percentage, display it in an 'other' part + Added stacked chart for them (still draft) [Mokaddem]
+
+* Added the click on a part in module stats. [Mokaddem]
+
+* In moduleStat, display old data if there is no data today and notify the user. [Mokaddem]
+
+* Removed useless comments + prevent trying to add an already present element in the set. [Mokaddem]
+
+* Fixed variable bug in moduleStats and added draft of credential stats. [Mokaddem]
+
+* Added Draft of ModuleStats + Paste size average. [Mokaddem]
+
+* Merge branch 'uptodate-duplicate-module' into production. [Mokaddem]
+
+* Clean not compatible ssdeep hash encountered. [Mokaddem]
+
+* Added ssdeep in pip_requirments. [Mokaddem]
+
+* Fixed bug introduced in merge-conflict. [Mokaddem]
+
+* Added dependency flot.time. [Mokaddem]
+
+* Merge branch 'statistics-v2' into uptodate-statistics-v2. [Mokaddem]
+
+* Re-ordered tab in trending charts. [Mokaddem]
+
+* Added top_progression chart for tld, domain and scheme + Small modification in config file. [Mokaddem]
+
+* Merge branch 'duplicate-module' into uptodate-duplicate-module. [Mokaddem]
+
+* Added related functions and display of duplicated paste in search.py. [Mokaddem]
+
+* Duplicate module takes its messages from other modules and no more from Global. [Mokaddem]
+
+* Added default config. [Mokaddem]
+
+* Added two new version of duplicate module. One with hashes are saved in json on disk The other with only leveldb. [Mokaddem]
+
+* Added new module for Duplicate paste. Seems working but has some small bug (re-check same paste twice) [Mokaddem]
+
+* Added SimHash library. [Mokaddem]
+
+* Bug global_tabvar seems solved: Caused by a race condition, Just switched two functions execution. [Mokaddem]
+
+* Restored deleted part of a failed merge-conflict. [Mokaddem]
+
+* Merge remote-tracking branch 'upstream/master' [Mokaddem]
+
+* Fix default config. [Raphaël Vinot]
+
+* Fix path in config. [Raphaël Vinot]
+
+* Add WebStats in launcher. [Raphaël Vinot]
+
+* Fix pep8. [Raphaël Vinot]
+
+* Update travis. [Raphaël Vinot]
+
+* Update web thirdparty modules. [Raphaël Vinot]
+
+* Fix travis. [Raphaël Vinot]
+
+* Update travis & install script. [Raphaël Vinot]
+
+* Cleanup and remove useless deps. [Raphaël Vinot]
+
+* Added dependency for flot chart. [mokaddem]
+
+* Merge branch 'webpage-splitting' of https://github.com/mokaddem/AIL-framework into mokaddem-webpage-splitting. [Raphaël Vinot]
+
+* Added default configuration. [Mokaddem]
+
+* Merge pull request #59 from mokaddem/processed-pastes-graph. [Raphaël Vinot]
+
+  Processed pastes graph
+
+* Fixed a flexibility issue. [Mokaddem]
+
+* Added default configuration. [Mokaddem]
+
+* Fixed a bug in processed_pastes graph. [Mokaddem]
+
+* In index: Added number of processed pastes chart. [Mokaddem]
+
+* Commented out get_language because it adds too much overhead. [Mokaddem]
+
+* Merge pull request #57 from mokaddem/master. [Raphaël Vinot]
+
+  New web pages and statistics modules
+
+* Added dependency for flot chart. [mokaddem]
+
+* Fixed a bug in processed_pastes graph. [Mokaddem]
+
+* In index: Added number of processed pastes chart. [Mokaddem]
+
+* Commented out get_language because it adds too much overhead. [Mokaddem]
+
+* Display the correct active tab in navbar. [Mokaddem]
+
+* Searching now works in trending graphs. [Mokaddem]
+
+* Deleted redundant code and separeted all trendings chart from the main page. [Mokaddem]
+
+* Merge branch 'mokaddem-testing' [Mokaddem]
+
+* Modified variable name str. [Mokaddem]
+
+* Optimized create_plot and removed test commemts. [Mokaddem]
+
+* Merge branch 'statistics-on-url' [Mokaddem]
+
+  Merge for pull request
+
+* Restored working search>html + Added max curves display to all graphs. [Mokaddem]
+
+* Added a dynamic limit on the number of elements to display. Not fully tested. (recovered old doc, searching not working) [Mokaddem]
+
+* Graphs now displayed the highest value. Plotting and filtering is done in its own script. [Mokaddem]
+
+* Renamed tldstrending into trending and added graphics into their respective pannels. Separated graph generation from html source code for wordtrending and protocoltrending. [Mokaddem]
+
+* Added loading GIF when searching and fixed small display bug in modal. [Mokaddem]
+
+* Added comments and renamed variables and separeted chunks of codes into function. [Mokaddem]
+
+* Fixed small sorting problem (date) [Mokaddem]
+
+* Added dataTable resources in update-third-party.sh. [Mokaddem]
+
+* Added query search display. [Mokaddem]
+
+* Added dynamic table sorting in search page. (Still need to add dependencies) [Mokaddem]
+
+* Search preview modal more dynamic and responsive. [Mokaddem]
+
+* Search preview modal do not duplicate anymore but still needs improvements. [Mokaddem]
+
+* Added load more content in search modal preview. Works fine but may duplicate content (need to fix). [Mokaddem]
+
+* Added pannel in search modal + small fix related to config. [Mokaddem]
+
+* Searching now working with preview, details and redirection to the paste display page. [Mokaddem]
+
+* Added DomainTrending seems working. Started search features with related html pages, not finish yet. [Mokaddem]
+
+* Created new graph pannel for further url stats and dissociate graph script from html. [Mokaddem]
+
+* Merge pull request #56 from mokaddem/mokaddem-testing. [Alexandre Dulaunoy]
+
+  New statistics modules and usage of Faup
+
+* Added few comments. [Mokaddem]
+
+* Added template tld. Modified URL using Faup and refactored WebStats. [Mokaddem]
+
+* Added new modules and started WebTrending web interface. [Mokaddem]
+
+* Getting Started: Initial configuration working on the laptop. [Mokaddem]
+
+* Merge pull request #52 from MaximeStor/master. [Alexandre Dulaunoy]
+
+  Added module SourceCode
+
+* Improve SourceCode, keywords and add description in /doc. [MaximeStor]
+
+* Add first version of Source Code. [MaximeStor]
+
+* Because 0MQ fails. [Raphaël Vinot]
+
+* Fix logging, fix URL regex. [Raphaël Vinot]
+
+* Add Credential in the scripts to launch. [Raphaël Vinot]
+
+* Split filepath and count in credential module. [Raphaël Vinot]
+
+* Add new category (Credential) [Raphaël Vinot]
+
+* Refactoring on Credential, Phone and Release. [Raphaël Vinot]
+
+* Few corrections/additions/changes. [Sascha Rommelfangen]
+
+* How to contribute updated. [Alexandre Dulaunoy]
+
+* Basic feature list added. [Alexandre Dulaunoy]
+
+* Logo added. [Alexandre Dulaunoy]
+
+* CIRCL AIL logo added. [Alexandre Dulaunoy]
+
+* Installation of AIL simplified and documentation updated. [Alexandre Dulaunoy]
+
+* Broken links fixed. [Alexandre Dulaunoy]
+
+* Document the simplified version of creating modules. [Alexandre Dulaunoy]
+
+  Describe the new template location and how to create your new AIL
+  module. The old and outdated description has been removed.
+
+* Merge branch 'pgp' of https://github.com/Rafiot/AIL-framework. [Alexandre Dulaunoy]
+
+  Conflicts:
+  	bin/packages/modules.cfg
+
+* Add module to find PGP encrypted blobs. [Raphaël Vinot]
+
+* Merge pull request #48 from MaximeStor/module. [Alexandre Dulaunoy]
+
+  Add modules Credential and Release
+
+* Merge branch 'master' of https://github.com/CIRCL/AIL-framework into module. [MaximeStor]
+
+* Merge pull request #46 from blackbern/blackbern. [Alexandre Dulaunoy]
+
+  Blackbern
+
+* Autre correction de installing_deps.sh. [Blackbern]
+
+* Correction de installing_deps.sh. [Blackbern]
+
+* Ajout d'un script d'installation pour archlinux via pacman et yaourt. [Blackbern]
+
+* Merge pull request #49 from Alainfou/master. [Alexandre Dulaunoy]
+
+  Phone module added (regex needs optimization)
+
+* Phone regex updated. [Alain]
+
+  Might still need to be fixed / optimized, in case of maths or random numbers starting with a 0. Do not capture dates, hours, coordinates anymore. Captured formats are: e.g. +331234567890 ; 09 12 34 56 78 ; +4177/123.45.69 ; +352(0)6-23-23-23...
+
+* Update module.cfg (adding Keys and Phone section) [Alain]
+
+* Starting Phone number recognition. [Alain]
+
+* Add modules Credential and Release. [MaximeStor]
+
+* Listen locally for 0MQ. [Raphaël Vinot]
+
+* Launch redis and leveldb from local directory. [Raphaël Vinot]
+
+* Update install script. [Raphaël Vinot]
+
+* Add script to import from local directory, use local python from env. [Raphaël Vinot]
+
+* Merge branch 'master' of github.com:CIRCL/AIL-framework. [Raphaël Vinot]
+
+* Add Travis logo. [Raphaël Vinot]
+
+* Merge pull request #45 from Rafiot/travis. [Raphaël Vinot]
+
+  Travis, print logs
+
+* Travis, print logs. [Raphaël Vinot]
+
+* Add template file for writing a new module. [Raphaël Vinot]
+
+* Merge pull request #44 from Rafiot/travis. [Raphaël Vinot]
+
+  Add initial Travis file
+
+* Add initial Travis file. [Raphaël Vinot]
+
+* Merge branch 'master' of github.com:CIRCL/AIL-framework. [Alexandre Dulaunoy]
+
+* Merge pull request #38 from cudeso/master. [Alexandre Dulaunoy]
+
+  libsnappy-dev dependecy
+
+* Libsnappy-dev dependecy. [Koen Van Impe]
+
+* This fix #36 update distribute version before install matplotlib. [Debra Jules]
+
+* -v option added to list the path. [Alexandre Dulaunoy]
+
+* Web: basic search functionality added. [Alexandre Dulaunoy]
+
+* Font awesome link fixed. [Alexandre Dulaunoy]
+
+* Logo added and layout changed. [Alexandre Dulaunoy]
+
+* Onion fetching loop deactivated by default. [Alexandre Dulaunoy]
+
+* Re-add config option. [Raphaël Vinot]
+
+* Revert changes on the config file due to merging messup. [Raphaël Vinot]
+
+* Update start-bootstrap urls. [Alexandre Dulaunoy]
+
+* Remove double requirement. [Alexandre Dulaunoy]
+
+* Merge branch 'master' of github.com:CIRCL/AIL-framework. [Raphaël Vinot]
+
+* Add contributors. [Raphaël Vinot]
+
+* Update README.md. [Alexandre Dulaunoy]
+
+  Framework for Analysis of Information Leaks
+
+* Update README.md. [Alexandre Dulaunoy]
+
+* Update README.md. [Alexandre Dulaunoy]
+
+* Merge pull request #30 from adulau/master. [Alexandre Dulaunoy]
+
+  A simple feeder script feeding data from pystemon to AIL.
+
+* A simple feeder script feeding data from pystemon to AIL. [Alexandre Dulaunoy]
+
+  The configuration matches the default Redis parameters used
+  in the pystemon configuration.
+
+  https://github.com/cvandeplas/pystemon/blob/master/pystemon.yaml#L16
+
+* Spelling/language corrections. [Sascha Rommelfangen]
+
+* Merge pull request #29 from adulau/master. [Alexandre Dulaunoy]
+
+  Old tag cloud removed
+
+* Ultag removed. [Alexandre Dulaunoy]
+
+* Removed ultag. [Alexandre Dulaunoy]
+
+* Merge branch 'master' of https://github.com/CIRCL/AIL-framework. [Alexandre Dulaunoy]
+
+* Merge pull request #27 from adulau/master. [Alexandre Dulaunoy]
+
+  Add proper publisher for classified domains/hostnames
+
+* Add proper publisher for classified domains/hostnames. [Alexandre Dulaunoy]
+
+* Merge pull request #26 from adulau/master. [Alexandre Dulaunoy]
+
+  DomainClassifier module added
+
+* DomainClassifier sample configuration added. [Alexandre Dulaunoy]
+
+* First version of the DomainClassifier. [Alexandre Dulaunoy]
+
+* DomainClassifier requirements added. [Alexandre Dulaunoy]
+
+* Merge branch 'master' of https://github.com/CIRCL/AIL-framework. [Alexandre Dulaunoy]
+
+* Merge pull request #23 from adulau/master. [Alexandre Dulaunoy]
+
+  ZMQ Publisher removed
+
+* Global queue for DomainClassifier. [Alexandre Dulaunoy]
+
+* ZMQ Publisher removed. [Alexandre Dulaunoy]
+
+  ZMQ Publisher removed to allow concurrent use of the scripts.
+  In short term, we would replace all publishing part within AIL
+  into pub-sub Redis to avoid ZMQ limitation.
+
+* Add hotfixes. [Raphaël Vinot]
+
+* Publish the fetched onions on a ZMQ feed. [Raphaël Vinot]
+
+* Ultag removed. [Alexandre Dulaunoy]
+
+* Removed ultag. [Alexandre Dulaunoy]
+
+* Add config file for DomainClassifier, proper reporting. [Raphaël Vinot]
+
+* Fix onions, cc and domain classifier modules. [Raphaël Vinot]
+
+* Categ now listen to the Global queue. [Raphaël Vinot]
+
+* More cleanup. [Raphaël Vinot]
+
+* Add Domain Classifier module. [Raphaël Vinot]
+
+  Cleanup in the config files.
+
+* Fix the exceptions. [Raphaël Vinot]
+
+* Stop killing the disk when creating the word curve. [Raphaël Vinot]
+
+* Update starting script. [Raphaël Vinot]
+
+* Fix the onion module, log the valid onions. [Raphaël Vinot]
+
+* The onion module now fetches the URLs it finds. [Raphaël Vinot]
+
+* Big refactoring, make the queues more flexible. [Raphaël Vinot]
+
+* Cleanup. [Raphaël Vinot]
+
+  * Remove useless subscriber
+  * Fix typo in the config file
+  * Update Helper accordingly
+
+* Make sure the webserver fails properly if there is no config file. [Raphaël Vinot]
+
+  Create the queue list in a more pythonesque fashion.
+
+* Merge pull request #22 from adulau/master. [Alexandre Dulaunoy]
+
+* Cleanup: removed unused parameter. [Alexandre Dulaunoy]
+
+* Readme updated. [Starow]
+
+* Add missing dependencies. [Starow]
+
+* Automatically copy the config file if there is no. [Raphaël Vinot]
+
+* Merge pull request #21 from adulau/master. [Jules]
+
+  cymruwhois uses dotted decimal format
+
+* Cymruwhois uses dotted decimal format. [Alexandre Dulaunoy]
+
+* Merge pull request #20 from CIRCL/testing. [Jules]
+
+  Big refactoring, make the workflow much easyer to follow.
+
+* Update deps and install script to work out of the box. [Raphaël Vinot]
+
+* Disable the sockets and the pid files from the redis config files. [Raphaël Vinot]
+
+* Small fixes to make the refactoring production ready. [Raphaël Vinot]
+
+  * the port for the logging is 6380
+  * use os.environ properly
+  * fix typos
+
+* Update gitignore to have a clean dev directory. [Raphaël Vinot]
+
+* Use env variables everywhere. [Raphaël Vinot]
+
+* Cleanup, add FIXME. [Raphaël Vinot]
+
+* Move Redis_Data_Merging to Paste. [Raphaël Vinot]
+
+* Update config. [Raphaël Vinot]
+
+  Make all paths in the config file relative to the home directory.
+
+* Fix subscriber names, update default config. [Raphaël Vinot]
+
+* Merge remote-tracking branch 'origin/master' into testing. [Raphaël Vinot]
+
+  Conflicts:
+  	bin/ZMQ_Sub_Urls.py
+
+* Merge branch 'rewrite_zmq' into testing. [Raphaël Vinot]
+
+  Conflicts:
+  	bin/indexer_lookup.py
+
+* Completely remove ZMQ_PubSub.py. [Raphaël Vinot]
+
+* Do not create a ZMQ sub if it is not required. [Raphaël Vinot]
+
+* Improve the cleanup. Still some to do. [Raphaël Vinot]
+
+* Cleanup the queues. [Raphaël Vinot]
+
+* Merge pull request #19 from adulau/master. [Alexandre Dulaunoy]
+
+  Redis explanation added
+
+* Markdown fixed. [Alexandre Dulaunoy]
+
+* Overview of Redis database added. [Alexandre Dulaunoy]
+
+* Merge pull request #18 from adulau/master. [Alexandre Dulaunoy]
+
+  Fix one assignment before use and remove duplicate call to libmagic
+
+* MIME type guessing - removed one duplicate call to libmagic. [Alexandre Dulaunoy]
+
+* Remove undeclared variable. [Alexandre Dulaunoy]
+
+* Assignment before use (if Enumerate fails) [Alexandre Dulaunoy]
+
+* Merge branch 'master' of github.com:CIRCL/AIL-framework. [Raphaël Vinot]
+
+* Merge pull request #15 from adulau/master. [Alexandre Dulaunoy]
+
+  Configuration path fixed
+
+* Configuration path fixed. [Alexandre Dulaunoy]
+
+* Fix install script. [Raphaël Vinot]
+
+* Big cleanup, pep8. [Raphaël Vinot]
+
+* Merge pull request #14 from adulau/master. [Jules]
+
+  Requirements updated for CC/ASN lookup in URL module
+
+* Requirements updated for CC/ASN lookup in URL module. [Alexandre Dulaunoy]
+
+* Merge pull request #13 from adulau/master. [Jules]
+
+  Log where URLs are hosted - cc_critical option added
+
+* Log where URLs are hosted - cc_critical option added. [Alexandre Dulaunoy]
+
+  It logs where the hostname of the URL is hosted (ASN and geographic location).
+  A simple option cc_critical added to set the country code to log as critical.
+
+* Cleanup (remove unused imports, more pep8 compatible) [Raphaël Vinot]
+
+* Maxi cleanup old code :'( [Starow]
+
+* Adding a js library for the tag cloud (to install with update_thirdparty.sh. [Starow]
+
+* Javascript modif (Tagclouds) ... [Starow]
+
+* Printing set of domain for debugging. [Starow]
+
+* Merge branch 'master' of https://github.com/CIRCL/AIL-framework. [Starow]
+
+* Cleanup of main Paste module. [Raphaël Vinot]
+
+* Remove script installed by pubsublogger. [Raphaël Vinot]
+
+* Remove 3rd party code (pubsublogger), add it in the deps. [Raphaël Vinot]
+
+* Logs display modifications. [Starow]
+
+* Minor logs modifications. [Starow]
+
+* Splitting the graph in two one for words, one for paste monitoring. [Starow]
+
+* Padding log hours + adding some super nice bootstrap icon :) [Starow]
+
+* Minor javascript update. [Starow]
+
+* Harmonising logs messages + Changing some dygraph options. [Starow]
+
+* Adding an option to have better view of the curves. [Starow]
+
+* Merge branch 'master' of https://github.com/CIRCL/AIL-framework. [Starow]
+
+* Merge pull request #12 from adulau/master. [Jules]
+
+  Indexer script updated to dump documents and find similar documents
+
+* -s option added to find similar documents. [Alexandre Dulaunoy]
+
+  By default, the index is not storing the vector of the document (Whoosh
+  document schema). It won't work if you don't change the schema of the
+  index for the content. It depends of your storage strategy.
+
+* -f option added: dump full document for each match. [Alexandre Dulaunoy]
+
+* Merge branch 'master' of https://github.com/CIRCL/AIL-framework. [Alexandre Dulaunoy]
+
+* Merge branch 'master' of https://github.com/CIRCL/AIL-framework. [Alexandre Dulaunoy]
+
+* Merge branch 'master' of https://github.com/CIRCL/AIL-framework. [Alexandre Dulaunoy]
+
+* Merge branch 'master' of https://github.com/CIRCL/AIL-framework. [Alexandre Dulaunoy]
+
+* Improving javascript and Fixing minor curves drawing bug Everything now is fully "dynamic" [Starow]
+
+* Major javascript update: Queues curves are now being set dynamically. Now the javacript part is a little bit less disgusting than before. [Starow]
+
+* Adding logging proc time inside the table. [Starow]
+
+* Updating the screenshot. [Starow]
+
+* Checkbox default checked at true. [Starow]
+
+* Merge pull request #11 from adulau/master. [Jules]
+
+  Indexer tool - statistics added
+
+* Indexer: Some index statistics added. [Alexandre Dulaunoy]
+
+  usage: indexer_lookup.py [-h] [-q Q] [-n] [-t] [-l]
+
+  Fulltext search for AIL
+
+  optional arguments:
+    -h, --help  show this help message and exit
+    -q Q        query to lookup (one or more)
+    -n          return number of indexed documents
+    -t          dump top 500 terms
+    -l          dump all terms encountered in indexed documents
+
+* -l added -> dumping all terms indexed. [Alexandre Dulaunoy]
+
+* Return the number of indexed documents. [Alexandre Dulaunoy]
+
+* Merge branch 'master' of https://github.com/CIRCL/AIL-framework. [Starow]
+
+* Javascript modification dashboard log table. [Starow]
+
+* Index.html log table modification. [Starow]
+
+* Merge pull request #10 from adulau/master. [Jules]
+
+  Whoosh requirements added for Indexer modules
+
+* Configuration that should not be there... [Alexandre Dulaunoy]
+
+* Whoosh requirements added. [Alexandre Dulaunoy]
+
+* Whoosh added for the indexer modules. [Alexandre Dulaunoy]
+
+* Indexer queue and script added to "BBS-like" LAUNCH script. [Alexandre Dulaunoy]
+
+* Merge branch 'master' of https://github.com/CIRCL/AIL-framework. [Alexandre Dulaunoy]
+
+* Merge pull request #9 from adulau/master. [Jules]
+
+  Indexer module: script to query the index
+
+* Merge branch 'master' of https://github.com/CIRCL/AIL-framework. [Alexandre Dulaunoy]
+
+* Making bigger the graph. [Starow]
+
+* Removing "Dashboard" Title to win some place for displaying infos.. [Starow]
+
+* Hardcoded path from ZMQ_Curve are now referring correctly in config.cfg.sample fix #6. [Starow]
+
+* Indexer module: script to query the index. [Alexandre Dulaunoy]
+
+  Test script to query the index generated from the Indexer module.
+
+  python indexer_lookup.py -q Visa -q Mastercard
+
+* Merge pull request #8 from adulau/master. [Jules]
+
+  Indexer module added - initial version with Whoosh full-text indexer
+
+* Indexer module added - initial version with Whoosh full-text indexer. [Alexandre Dulaunoy]
+
+  The indexer module indexes all the pastes using Whoosh. The module
+  can be extended to support additional full-text indexers in the future.
+
+* Queue name tab moved to left side of the dashboard. [Starow]
+
+* Updating dashboard navigation menu list. [Starow]
+
+* Updating installing script + adding another required package to the list. [Starow]
+
+* Update of installing_deps.sh and pip_requirement.txt. [Starow]
+
+* Importing dns.exeption fix #4 fix #7. [Starow]
+
+* Merge branch 'master' of https://github.com/CIRCL/AIL-framework. [Starow]
+
+* Catching the exception dns.exception.Timeout fix #4. [Starow]
+
+* Fixing a bug about caching paste inside Redis :) [Starow]
+
+* Adding a letter (s) [Starow]
+
+* Adding a . [Starow]
+
+* Fixing last commit ... [Starow]
+
+* Fixing last commit. [Starow]
+
+* Improving cache code. [Starow]
+
+* Merge branch 'master' of https://github.com/CIRCL/AIL-framework. [Starow]
+
+* Merge branch 'master' of github.com:CIRCL/AIL-framework. [Alexandre Dulaunoy]
+
+* Clarification for the env variable. [Alexandre Dulaunoy]
+
+* Redis cache added fix #5. [Starow]
+
+  The paste will be add in Redis during 5min and also saved on disk.
+  Now if a module want to get the paste for further processing, it will first try to get it in the cache
+  instead of getting it directly on the disk and wasting I/O.
+
+* Removing the hardcoded IP adress. [Starow]
+
+* README fixed for bare bone install. [Alexandre Dulaunoy]
+
+* Catching the exception dns.exception.Timeout fix #7. [Starow]
+
+* Editing redis .conf file I change the dir as it was originally to avoid editing these 3 files during the installation. [Starow]
+
+* Update pubsublogger with the last version. [Starow]
+
+* Changing ZMQ Curve Module comment. [Starow]
+
+* Initial import of AIL framework - Analysis Information Leak framework. [Starow]
+
+  AIL is a modular framework to analyse potential information leak from unstructured data source like pastes from Past
+  ebin or similar services. AIL framework is flexible and can be extended to support other functionalities to mine sen
+  sitive information
+
+
