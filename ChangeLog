@@ -1,6 +1,97 @@
 # Changelog
 
 
+## v4.0 (2021-11-26)
+
+### Changes
+
+* [ail sync] add sync api (ping, version) + UI/client error handler. [Terrtia]
+
+* [doc] GI Badge. [Steve Clement]
+
+* [v4.0 AIL SYNC / AIL 2 AIL] SYNC Manager + fixs + views. [Terrtia]
+
+* [crawler] add auto crawler functions. [Terrtia]
+
+### Fix
+
+* [doc] Remove Travis. [Steve Clement]
+
+* [py] Minor python dependency change. [Steve Clement]
+
+* Inherit AbstractModule to prevent stuck queues. [osagit]
+
+  regex compiled only at start, not in the loop
+  no duplicate warning string
+  comments
+
+* Error message contains http protocol twice. [osagit]
+
+  Error Can't connect to AIL Splash Manager, http://https://localhost:7001/
+
+### Other
+
+* Merge branch 'master' of github.com:ail-project/ail-framework. [Terrtia]
+
+* Merge branch 'master' of github.com:ail-project/ail-framework. [Alexandre Dulaunoy]
+
+* Merge pull request #569 from SteveClement/master. [Steve Clement]
+
+* Chg_ [AIL 2 AIL] add backend. [Terrtia]
+
+* Merge branch 'master' of github.com:ail-project/ail-framework. [Terrtia]
+
+* Merge pull request #129 from TonyJabbour/master. [Thirion Aurélien]
+
+  Webhook implementation
+
+* Webhook unnecessarily line removed Removed unnecessarily parentheses. [TonyJabbour]
+
+* Type fixed. [TonyJabbour]
+
+* Added a try/catch to handle exceptions Replaced the raise to send message to redis_logger. [TonyJabbour]
+
+* Fixed tracker_metadata. [TonyJabbour]
+
+* Typo Fixed. [TonyJabbour]
+
+* Fixed UI Datatable in showTracker Page Removed "Advanced Search" text from menu misleading button. [TonyJabbour]
+
+* Fixed Webhook integration with Trackers. [TonyJabbour]
+
+* -Fixed "get_tracker_metedata" typo -Typo Fixed. [TonyJabbour]
+
+* -Fixed "description" arg -Typo Fixed. [TonyJabbour]
+
+* -Fixed the 500 error issue when installing new instance of ail when adding new trackers -Fixed missing arguments -Typo Fixed. [TonyJabbour]
+
+* Fix webhook. [TonyJabbour]
+
+* Remove dict from Trackers. [TonyJabbour]
+
+* Add webhook post support in yara and regex trackers. [TonyJabbour]
+
+* Fix get_term_webhook. [TonyJabbour]
+
+* Add some changes for webhook. [TonyJabbour]
+
+* Add initial support for Webhook in Term Trackers. [TonyJabbour]
+
+* Fix spelling issue in Webhook. [TonyJabbour]
+
+* Add more support for Webhook URL. [TonyJabbour]
+
+* Add initial UI support for Webhook in tracker. [TonyJabbour]
+
+* Merge pull request #127 from osagit/patch-3. [Thirion Aurélien]
+
+  fix: inherit AbstractModule to prevent stuck queues
+
+* Merge pull request #126 from osagit/patch-2. [Thirion Aurélien]
+
+  fix: error message contains http protocol twice
+
+
 ## v3.7 (2021-08-27)
 
 ### Changes
