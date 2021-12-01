@@ -38,5 +38,7 @@ layout: info
 * Browser hidden services are screenshot and integrated in the analysed output including a blurring screenshot interface (to avoid "burning the eyes" of the security analysis with specific content)
 * Tor hidden services is part of the standard framework, all the AIL modules are available to the crawled hidden services
 * Generic web crawler to trigger crawling on demand or at regular interval URL or Tor hidden services
-
+* An advanced detection engine per keyword supporting words, set, regular expression and [YARA rules](https://github.com/ail-project/ail-yara-rules)
+* A YARA retro-hunting to perform searches on collected items
+* AIL Synchronisation features to sync with other AIL instances
 
