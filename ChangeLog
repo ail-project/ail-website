@@ -1,9 +1,23 @@
 # Changelog
 
 
-## v4.0 (2021-11-26)
+## v4.0 (2021-12-01)
 
 ### Changes
+
+* [sync UI] disable pull. [Terrtia]
+
+* [sync UI] dashboard, show nb of imported items + launch/kill ail servers when a queue is subscribed/unsubscribed. [Terrtia]
+
+* [ail sync UI] restarr/launch/kill sync connections + show sync mode api/pull/push. [Terrtia]
+
+* [ail sync server] add server controller + list connected clients ail_uuid->sync_modes. [Terrtia]
+
+* [ail sync ui] copy to clipboard ail_uuid, ail server key. [Terrtia]
+
+* [ail sync] edit ail_servers/sync_queues + fix logs. [Terrtia]
+
+* [api] rename endpoints. [Terrtia]
 
 * [ail sync] add sync api (ping, version) + UI/client error handler. [Terrtia]
 
@@ -14,6 +28,26 @@
 * [crawler] add auto crawler functions. [Terrtia]
 
 ### Fix
+
+* [sync client] don't launch client if ail server not linked with a sync queue. [Terrtia]
+
+* [sync server] remove hardcoded host. [Terrtia]
+
+* [sync server] host. [Terrtia]
+
+* [sync client] fix websockets client connect for python >= 3.8. [Terrtia]
+
+* [ail sync] fix refresh_ail_instance_connection. [Terrtia]
+
+* [ail sync] fix refresh_ail_instance_connection. [Terrtia]
+
+* [ail sync] server + client: resend object in queue on ConnectionClosedError. [Terrtia]
+
+* [crawler] add comment. [Terrtia]
+
+* [UI ail sync] fix nav. [Terrtia]
+
+* [UI ail sync] add missing ail icon. [Terrtia]
 
 * [doc] Remove Travis. [Steve Clement]
 
@@ -31,6 +65,12 @@
 
 ### Other
 
+* Merge pull request #130 from TonyJabbour/master. [Thirion Aurélien]
+
+  New restAPIs
+
+* Merge branch 'dev' into master. [Thirion Aurélien]
+
 * Merge branch 'master' of github.com:ail-project/ail-framework. [Terrtia]
 
 * Merge branch 'master' of github.com:ail-project/ail-framework. [Alexandre Dulaunoy]
@@ -41,9 +81,37 @@
 
 * Merge branch 'master' of github.com:ail-project/ail-framework. [Terrtia]
 
+* Add tracker fixed api function replaced it with internal function. [TonyJabbour]
+
+* Added get_tracker_metadata_api Removed unnecessarily parentheses. [TonyJabbour]
+
+* New API Endpoint: Fixed get_item_content_encoded_text Added get_item_sources Added get_check_item_source Added get_default_yara_rule_content. [TonyJabbour]
+
+* Removed unnecessarily parentheses. [TonyJabbour]
+
+* New API Endpoint: Return Item Content in base64 in non JSON format. [TonyJabbour]
+
+* Merge remote-tracking branch 'origin/master' [TonyJabbour]
+
+* Merge branch 'ail-project:master' into master. [Tony]
+
 * Merge pull request #129 from TonyJabbour/master. [Thirion Aurélien]
 
   Webhook implementation
+
+* Unnecessarily parenthesis removed. [TonyJabbour]
+
+* Base64 Problem. [TonyJabbour]
+
+* Base64 Problem. [TonyJabbour]
+
+* Type fixed. [TonyJabbour]
+
+* Type fixed. [TonyJabbour]
+
+* Error Fixed. [TonyJabbour]
+
+* Add new API endpoint that return only content encoded in base64. [TonyJabbour]
 
 * Webhook unnecessarily line removed Removed unnecessarily parentheses. [TonyJabbour]
 
