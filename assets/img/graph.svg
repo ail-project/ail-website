@@ -1,0 +1,787 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<svg width="1800pt" height="410pt" viewBox="0.00 0.00 1800.00 409.66" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(.6694 .6694) rotate(0) translate(36 576)">
+<title>unix</title>
+<polygon fill="#ffffff" stroke="transparent" points="-36,36 -36,-576 2653.0762,-576 2653.0762,36 -36,36"/>
+<!-- Global -->
+<g id="node1" class="node">
+<title>Global</title>
+<ellipse fill="#b2dfee" stroke="#b2dfee" cx="919.6308" cy="-378" rx="37.1386" ry="18"/>
+<text text-anchor="middle" x="919.6308" y="-373.8" font-family="Times,serif" font-size="14.00" fill="#000000">Global</text>
+</g>
+<!-- Decoder -->
+<g id="node2" class="node">
+<title>Decoder</title>
+<ellipse fill="#b2dfee" stroke="#b2dfee" cx="1660.6308" cy="-162" rx="43.9808" ry="18"/>
+<text text-anchor="middle" x="1660.6308" y="-157.8" font-family="Times,serif" font-size="14.00" fill="#000000">Decoder</text>
+</g>
+<!-- Global&#45;&gt;Decoder -->
+<g id="edge1" class="edge">
+<title>Global-&gt;Decoder</title>
+<path fill="none" stroke="#000000" d="M947.4268,-365.5763C953.3338,-363.377 959.6076,-361.3587 965.6308,-360 1076.0287,-335.0963 1369.057,-367.2691 1473.6308,-324 1545.9538,-294.0752 1610.0621,-224.6739 1641.0077,-187.1556"/>
+<polygon fill="#000000" stroke="#000000" points="1643.8637,-189.1907 1647.4491,-179.221 1638.429,-184.7788 1643.8637,-189.1907"/>
+</g>
+<!-- Categ -->
+<g id="node3" class="node">
+<title>Categ</title>
+<ellipse fill="#b2dfee" stroke="#b2dfee" cx="2249.6308" cy="-306" rx="33.6247" ry="18"/>
+<text text-anchor="middle" x="2249.6308" y="-301.8" font-family="Times,serif" font-size="14.00" fill="#000000">Categ</text>
+</g>
+<!-- Global&#45;&gt;Categ -->
+<g id="edge13" class="edge">
+<title>Global-&gt;Categ</title>
+<path fill="none" stroke="#000000" d="M946.9059,-365.625C952.9575,-363.363 959.4209,-361.3074 965.6308,-360 1027.5227,-346.9693 1987.424,-314.6474 2205.7013,-307.4401"/>
+<polygon fill="#000000" stroke="#000000" points="2205.9424,-310.9342 2215.8216,-307.1064 2205.7117,-303.938 2205.9424,-310.9342"/>
+</g>
+<!-- Bitcoin -->
+<g id="node8" class="node">
+<title>Bitcoin</title>
+<ellipse fill="#b2dfee" stroke="#b2dfee" cx="916.6308" cy="-162" rx="39.4428" ry="18"/>
+<text text-anchor="middle" x="916.6308" y="-157.8" font-family="Times,serif" font-size="14.00" fill="#000000">Bitcoin</text>
+</g>
+<!-- Global&#45;&gt;Bitcoin -->
+<g id="edge5" class="edge">
+<title>Global-&gt;Bitcoin</title>
+<path fill="none" stroke="#000000" d="M919.3802,-359.9555C918.8585,-322.3938 917.6524,-235.5541 917.0254,-190.4103"/>
+<polygon fill="#000000" stroke="#000000" points="920.5215,-190.0955 916.8828,-180.1451 913.5221,-190.1927 920.5215,-190.0955"/>
+</g>
+<!-- Keys -->
+<g id="node16" class="node">
+<title>Keys</title>
+<ellipse fill="#b2dfee" stroke="#b2dfee" cx="1012.6308" cy="-234" rx="30.7577" ry="18"/>
+<text text-anchor="middle" x="1012.6308" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">Keys</text>
+</g>
+<!-- Global&#45;&gt;Keys -->
+<g id="edge32" class="edge">
+<title>Global-&gt;Keys</title>
+<path fill="none" stroke="#000000" d="M930.8488,-360.6302C947.1356,-335.412 977.4312,-288.5026 996.2263,-259.4005"/>
+<polygon fill="#000000" stroke="#000000" points="999.1767,-261.2835 1001.6618,-250.9842 993.2964,-257.4858 999.1767,-261.2835"/>
+</g>
+<!-- DomClassifier -->
+<g id="node17" class="node">
+<title>DomClassifier</title>
+<ellipse fill="#b2dfee" stroke="#b2dfee" cx="405.6308" cy="-306" rx="67.2081" ry="18"/>
+<text text-anchor="middle" x="405.6308" y="-301.8" font-family="Times,serif" font-size="14.00" fill="#000000">DomClassifier</text>
+</g>
+<!-- Global&#45;&gt;DomClassifier -->
+<g id="edge42" class="edge">
+<title>Global-&gt;DomClassifier</title>
+<path fill="none" stroke="#000000" d="M882.8569,-374.5068C808.2304,-367.1728 633.7714,-348.78 488.6308,-324 481.5362,-322.7887 474.1295,-321.385 466.7877,-319.9061"/>
+<polygon fill="#000000" stroke="#000000" points="467.353,-316.4491 456.8518,-317.8541 465.9371,-323.3044 467.353,-316.4491"/>
+</g>
+<!-- ModuleStats -->
+<g id="node21" class="node">
+<title>ModuleStats</title>
+<ellipse fill="#b2dfee" stroke="#b2dfee" cx="2497.6308" cy="-90" rx="59.7089" ry="18"/>
+<text text-anchor="middle" x="2497.6308" y="-85.8" font-family="Times,serif" font-size="14.00" fill="#000000">ModuleStats</text>
+</g>
+<!-- Global&#45;&gt;ModuleStats -->
+<g id="edge70" class="edge">
+<title>Global-&gt;ModuleStats</title>
+<path fill="none" stroke="#000000" d="M946.8914,-365.5548C952.9438,-363.2972 959.4113,-361.2611 965.6308,-360 1254.7447,-301.3772 2000.9079,-367.8313 2292.6308,-324 2446.4578,-300.8875 2558.6764,-326.2627 2611.6308,-180 2617.0776,-164.9557 2620.1868,-157.5202 2611.6308,-144 2599.241,-124.4217 2577.6217,-111.8029 2556.5174,-103.7351"/>
+<polygon fill="#000000" stroke="#000000" points="2557.4869,-100.3657 2546.8921,-100.3398 2555.1583,-106.9671 2557.4869,-100.3657"/>
+</g>
+<!-- Tracker_Regex -->
+<g id="node23" class="node">
+<title>Tracker_Regex</title>
+<ellipse fill="#b2dfee" stroke="#b2dfee" cx="770.6308" cy="-234" rx="70.6065" ry="18"/>
+<text text-anchor="middle" x="770.6308" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">Tracker_Regex</text>
+</g>
+<!-- Global&#45;&gt;Tracker_Regex -->
+<g id="edge24" class="edge">
+<title>Global-&gt;Tracker_Regex</title>
+<path fill="none" stroke="#000000" d="M884.6864,-371.2905C841.7335,-362.2508 772.6685,-344.8637 757.6308,-324 744.6606,-306.0049 749.8443,-280.6512 757.1611,-261.4375"/>
+<polygon fill="#000000" stroke="#000000" points="760.4697,-262.5974 761.097,-252.0212 754.0112,-259.8978 760.4697,-262.5974"/>
+</g>
+<!-- IP -->
+<g id="node29" class="node">
+<title>IP</title>
+<ellipse fill="#b2dfee" stroke="#b2dfee" cx="1119.6308" cy="-162" rx="27" ry="18"/>
+<text text-anchor="middle" x="1119.6308" y="-157.8" font-family="Times,serif" font-size="14.00" fill="#000000">IP</text>
+</g>
+<!-- Global&#45;&gt;IP -->
+<g id="edge25" class="edge">
+<title>Global-&gt;IP</title>
+<path fill="none" stroke="#000000" d="M947.5241,-365.9688C953.424,-363.741 959.6704,-361.612 965.6308,-360 1015.5702,-346.4942 1161.9969,-363.3078 1195.6308,-324 1232.6219,-280.7686 1177.7853,-216.4781 1143.5791,-183.388"/>
+<polygon fill="#000000" stroke="#000000" points="1145.894,-180.7601 1136.2207,-176.4382 1141.0876,-185.8491 1145.894,-180.7601"/>
+</g>
+<!-- Tracker_Yara -->
+<g id="node31" class="node">
+<title>Tracker_Yara</title>
+<ellipse fill="#b2dfee" stroke="#b2dfee" cx="272.6308" cy="-234" rx="64.7847" ry="18"/>
+<text text-anchor="middle" x="272.6308" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">Tracker_Yara</text>
+</g>
+<!-- Global&#45;&gt;Tracker_Yara -->
+<g id="edge29" class="edge">
+<title>Global-&gt;Tracker_Yara</title>
+<path fill="none" stroke="#000000" d="M882.2814,-376.4894C759.9961,-371.2826 376.7452,-352.8051 329.6308,-324 306.473,-309.8417 291.1341,-282.3388 282.26,-261.4445"/>
+<polygon fill="#000000" stroke="#000000" points="285.4847,-260.082 278.5249,-252.0938 278.9842,-262.6787 285.4847,-260.082"/>
+</g>
+<!-- Languages -->
+<g id="node32" class="node">
+<title>Languages</title>
+<ellipse fill="#b2dfee" stroke="#b2dfee" cx="819.6308" cy="-306" rx="52.7315" ry="18"/>
+<text text-anchor="middle" x="819.6308" y="-301.8" font-family="Times,serif" font-size="14.00" fill="#000000">Languages</text>
+</g>
+<!-- Global&#45;&gt;Languages -->
+<g id="edge34" class="edge">
+<title>Global-&gt;Languages</title>
+<path fill="none" stroke="#000000" d="M898.4234,-362.7307C884.5884,-352.7695 866.2919,-339.596 850.8128,-328.451"/>
+<polygon fill="#000000" stroke="#000000" points="852.7098,-325.504 842.5493,-322.5013 848.6196,-331.1848 852.7098,-325.504"/>
+</g>
+<!-- Phone -->
+<g id="node33" class="node">
+<title>Phone</title>
+<ellipse fill="#b2dfee" stroke="#b2dfee" cx="1417.6308" cy="-162" rx="35.3548" ry="18"/>
+<text text-anchor="middle" x="1417.6308" y="-157.8" font-family="Times,serif" font-size="14.00" fill="#000000">Phone</text>
+</g>
+<!-- Global&#45;&gt;Phone -->
+<g id="edge45" class="edge">
+<title>Global-&gt;Phone</title>
+<path fill="none" stroke="#000000" d="M947.4357,-365.6154C953.3421,-363.4133 959.6134,-361.384 965.6308,-360 1014.9461,-348.658 1385.2926,-361.1689 1419.6308,-324 1452.9847,-287.8966 1439.8708,-225.5963 1428.1867,-189.6869"/>
+<polygon fill="#000000" stroke="#000000" points="1431.3748,-188.1944 1424.8145,-179.8749 1424.7548,-190.4696 1431.3748,-188.1944"/>
+</g>
+<!-- Tracker_Term -->
+<g id="node37" class="node">
+<title>Tracker_Term</title>
+<ellipse fill="#b2dfee" stroke="#b2dfee" cx="538.6308" cy="-234" rx="66.592" ry="18"/>
+<text text-anchor="middle" x="538.6308" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">Tracker_Term</text>
+</g>
+<!-- Global&#45;&gt;Tracker_Term -->
+<g id="edge41" class="edge">
+<title>Global-&gt;Tracker_Term</title>
+<path fill="none" stroke="#000000" d="M882.3742,-375.6975C787.9826,-369.4862 545.2265,-351.0134 521.6308,-324 506.6179,-306.8127 513.7805,-280.6107 522.9733,-260.9032"/>
+<polygon fill="#000000" stroke="#000000" points="526.1776,-262.3223 527.561,-251.8182 519.9291,-259.167 526.1776,-262.3223"/>
+</g>
+<!-- BankAccount -->
+<g id="node38" class="node">
+<title>BankAccount</title>
+<ellipse fill="#b2dfee" stroke="#b2dfee" cx="1534.6308" cy="-162" rx="64.2688" ry="18"/>
+<text text-anchor="middle" x="1534.6308" y="-157.8" font-family="Times,serif" font-size="14.00" fill="#000000">BankAccount</text>
+</g>
+<!-- Global&#45;&gt;BankAccount -->
+<g id="edge83" class="edge">
+<title>Global-&gt;BankAccount</title>
+<path fill="none" stroke="#000000" d="M947.4318,-365.5984C953.3384,-363.3975 959.6108,-361.373 965.6308,-360 1069.0549,-336.4118 1351.8993,-380.5792 1441.6308,-324 1490.2756,-293.3276 1516.152,-227.4177 1527.4622,-189.8046"/>
+<polygon fill="#000000" stroke="#000000" points="1530.8819,-190.5763 1530.2728,-179.999 1524.1529,-188.6475 1530.8819,-190.5763"/>
+</g>
+<!-- Tools -->
+<g id="node39" class="node">
+<title>Tools</title>
+<ellipse fill="#b2dfee" stroke="#b2dfee" cx="563.6308" cy="-306" rx="33.0643" ry="18"/>
+<text text-anchor="middle" x="563.6308" y="-301.8" font-family="Times,serif" font-size="14.00" fill="#000000">Tools</text>
+</g>
+<!-- Global&#45;&gt;Tools -->
+<g id="edge85" class="edge">
+<title>Global-&gt;Tools</title>
+<path fill="none" stroke="#000000" d="M882.7326,-374.4903C823.3921,-368.2185 703.4938,-352.948 605.6308,-324 603.168,-323.2715 600.6563,-322.4394 598.1476,-321.5415"/>
+<polygon fill="#000000" stroke="#000000" points="599.1845,-318.1895 588.5957,-317.8325 596.6507,-324.7149 599.1845,-318.1895"/>
+</g>
+<!-- Indexer -->
+<g id="node42" class="node">
+<title>Indexer</title>
+<ellipse fill="#b2dfee" stroke="#b2dfee" cx="1045.6308" cy="-306" rx="40.5499" ry="18"/>
+<text text-anchor="middle" x="1045.6308" y="-301.8" font-family="Times,serif" font-size="14.00" fill="#000000">Indexer</text>
+</g>
+<!-- Global&#45;&gt;Indexer -->
+<g id="edge67" class="edge">
+<title>Global-&gt;Indexer</title>
+<path fill="none" stroke="#000000" d="M943.9249,-364.1177C963.1974,-353.1048 990.3599,-337.5834 1011.7667,-325.3509"/>
+<polygon fill="#000000" stroke="#000000" points="1013.603,-328.3328 1020.5489,-320.3325 1010.13,-322.2551 1013.603,-328.3328"/>
+</g>
+<!-- Release -->
+<g id="node43" class="node">
+<title>Release</title>
+<ellipse fill="#b2dfee" stroke="#b2dfee" cx="1145.6308" cy="-306" rx="41.1258" ry="18"/>
+<text text-anchor="middle" x="1145.6308" y="-301.8" font-family="Times,serif" font-size="14.00" fill="#000000">Release</text>
+</g>
+<!-- Global&#45;&gt;Release -->
+<g id="edge68" class="edge">
+<title>Global-&gt;Release</title>
+<path fill="none" stroke="#000000" d="M948.1741,-366.3062C953.9155,-364.1028 959.9355,-361.8973 965.6308,-360 1022.5099,-341.0517 1038.4972,-342.1664 1095.6308,-324 1098.5693,-323.0657 1101.5928,-322.0685 1104.6289,-321.0408"/>
+<polygon fill="#000000" stroke="#000000" points="1105.9794,-324.2771 1114.2809,-317.6942 1103.6861,-317.6633 1105.9794,-324.2771"/>
+</g>
+<!-- Telegram -->
+<g id="node44" class="node">
+<title>Telegram</title>
+<ellipse fill="#b2dfee" stroke="#b2dfee" cx="662.6308" cy="-306" rx="48.0703" ry="18"/>
+<text text-anchor="middle" x="662.6308" y="-301.8" font-family="Times,serif" font-size="14.00" fill="#000000">Telegram</text>
+</g>
+<!-- Global&#45;&gt;Telegram -->
+<g id="edge69" class="edge">
+<title>Global-&gt;Telegram</title>
+<path fill="none" stroke="#000000" d="M886.8189,-369.0471C848.0383,-358.4347 781.576,-340.1503 724.6308,-324 720.021,-322.6926 715.2219,-321.3199 710.4252,-319.9402"/>
+<polygon fill="#000000" stroke="#000000" points="711.2226,-316.5275 700.6442,-317.1169 709.2813,-323.253 711.2226,-316.5275"/>
+</g>
+<!-- SentimentAnalysis -->
+<g id="node45" class="node">
+<title>SentimentAnalysis</title>
+<ellipse fill="#b2dfee" stroke="#b2dfee" cx="1326.6308" cy="-306" rx="83.9837" ry="18"/>
+<text text-anchor="middle" x="1326.6308" y="-301.8" font-family="Times,serif" font-size="14.00" fill="#000000">SentimentAnalysis</text>
+</g>
+<!-- Global&#45;&gt;SentimentAnalysis -->
+<g id="edge75" class="edge">
+<title>Global-&gt;SentimentAnalysis</title>
+<path fill="none" stroke="#000000" d="M947.5005,-365.8799C953.4022,-363.6585 959.6552,-361.5546 965.6308,-360 1079.8091,-330.2961 1112.1372,-342.6614 1228.6308,-324 1236.7949,-322.6922 1245.3266,-321.2453 1253.804,-319.7567"/>
+<polygon fill="#000000" stroke="#000000" points="1254.4729,-323.1928 1263.7057,-317.9961 1253.2473,-316.3009 1254.4729,-323.1928"/>
+</g>
+<!-- Tags -->
+<g id="node5" class="node">
+<title>Tags</title>
+<ellipse fill="#b2dfee" stroke="#b2dfee" cx="1119.6308" cy="-90" rx="29.6147" ry="18"/>
+<text text-anchor="middle" x="1119.6308" y="-85.8" font-family="Times,serif" font-size="14.00" fill="#000000">Tags</text>
+</g>
+<!-- Decoder&#45;&gt;Tags -->
+<g id="edge3" class="edge">
+<title>Decoder-&gt;Tags</title>
+<path fill="none" stroke="#000000" d="M1628.1514,-149.732C1621.4417,-147.5491 1614.3658,-145.4976 1607.6308,-144 1443.8531,-107.5818 1243.435,-95.2426 1159.5399,-91.4842"/>
+<polygon fill="#000000" stroke="#000000" points="1159.5684,-87.9823 1149.4268,-91.0478 1159.2666,-94.9758 1159.5684,-87.9823"/>
+</g>
+<!-- Duplicates -->
+<g id="node15" class="node">
+<title>Duplicates</title>
+<ellipse fill="#b2dfee" stroke="#b2dfee" cx="1912.6308" cy="-90" rx="52.1636" ry="18"/>
+<text text-anchor="middle" x="1912.6308" y="-85.8" font-family="Times,serif" font-size="14.00" fill="#000000">Duplicates</text>
+</g>
+<!-- Decoder&#45;&gt;Duplicates -->
+<g id="edge15" class="edge">
+<title>Decoder-&gt;Duplicates</title>
+<path fill="none" stroke="#000000" d="M1694.1733,-150.2558C1700.6085,-148.1028 1707.3106,-145.9287 1713.6308,-144 1763.0289,-128.9255 1819.9528,-113.6911 1860.2306,-103.2649"/>
+<polygon fill="#000000" stroke="#000000" points="1861.288,-106.6068 1870.0974,-100.7207 1859.5402,-99.8285 1861.288,-106.6068"/>
+</g>
+<!-- ApiKey -->
+<g id="node4" class="node">
+<title>ApiKey</title>
+<ellipse fill="#b2dfee" stroke="#b2dfee" cx="2230.6308" cy="-162" rx="41.7133" ry="18"/>
+<text text-anchor="middle" x="2230.6308" y="-157.8" font-family="Times,serif" font-size="14.00" fill="#000000">ApiKey</text>
+</g>
+<!-- Categ&#45;&gt;ApiKey -->
+<g id="edge2" class="edge">
+<title>Categ-&gt;ApiKey</title>
+<path fill="none" stroke="#000000" d="M2247.2244,-287.7623C2243.9837,-263.201 2238.1843,-219.2474 2234.372,-190.3541"/>
+<polygon fill="#000000" stroke="#000000" points="2237.7957,-189.5458 2233.0176,-180.0896 2230.8559,-190.4616 2237.7957,-189.5458"/>
+</g>
+<!-- Urls -->
+<g id="node6" class="node">
+<title>Urls</title>
+<ellipse fill="#b2dfee" stroke="#b2dfee" cx="2001.6308" cy="-234" rx="27.8248" ry="18"/>
+<text text-anchor="middle" x="2001.6308" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">Urls</text>
+</g>
+<!-- Categ&#45;&gt;Urls -->
+<g id="edge57" class="edge">
+<title>Categ-&gt;Urls</title>
+<path fill="none" stroke="#000000" d="M2219.7162,-297.3151C2173.7716,-283.9764 2086.0216,-258.5006 2036.9967,-244.2675"/>
+<polygon fill="#000000" stroke="#000000" points="2037.7313,-240.8363 2027.152,-241.4094 2035.7796,-247.5588 2037.7313,-240.8363"/>
+</g>
+<!-- Mail -->
+<g id="node9" class="node">
+<title>Mail</title>
+<ellipse fill="#b2dfee" stroke="#b2dfee" cx="2452.6308" cy="-162" rx="29.0509" ry="18"/>
+<text text-anchor="middle" x="2452.6308" y="-157.8" font-family="Times,serif" font-size="14.00" fill="#000000">Mail</text>
+</g>
+<!-- Categ&#45;&gt;Mail -->
+<g id="edge6" class="edge">
+<title>Categ-&gt;Mail</title>
+<path fill="none" stroke="#000000" d="M2263.055,-289.4442C2281.8275,-266.5909 2315.3342,-226.9536 2330.6308,-216 2363.6545,-192.3524 2377.6039,-196.6968 2414.6308,-180 2416.4276,-179.1898 2418.268,-178.3502 2420.1229,-177.4966"/>
+<polygon fill="#000000" stroke="#000000" points="2421.7977,-180.5776 2429.3832,-173.1809 2418.8407,-174.2328 2421.7977,-180.5776"/>
+</g>
+<!-- Sync_module -->
+<g id="node10" class="node">
+<title>Sync_module</title>
+<ellipse fill="#b2dfee" stroke="#b2dfee" cx="1967.6308" cy="-18" rx="64.2901" ry="18"/>
+<text text-anchor="middle" x="1967.6308" y="-13.8" font-family="Times,serif" font-size="14.00" fill="#000000">Sync_module</text>
+</g>
+<!-- Categ&#45;&gt;Sync_module -->
+<g id="edge7" class="edge">
+<title>Categ-&gt;Sync_module</title>
+<path fill="none" stroke="#000000" d="M2282.8708,-302.944C2351.4936,-296.1745 2506.215,-278.3967 2551.6308,-252 2599.1045,-224.4072 2626.7685,-196.7822 2611.6308,-144 2601.2277,-107.7264 2598.7808,-91.7579 2566.6308,-72 2522.7972,-45.0619 2191.3975,-27.5946 2041.213,-20.9826"/>
+<polygon fill="#000000" stroke="#000000" points="2041.2963,-17.483 2031.1533,-20.544 2040.9913,-24.4763 2041.2963,-17.483"/>
+</g>
+<!-- Cve -->
+<g id="node13" class="node">
+<title>Cve</title>
+<ellipse fill="#b2dfee" stroke="#b2dfee" cx="2105.6308" cy="-162" rx="27" ry="18"/>
+<text text-anchor="middle" x="2105.6308" y="-157.8" font-family="Times,serif" font-size="14.00" fill="#000000">Cve</text>
+</g>
+<!-- Categ&#45;&gt;Cve -->
+<g id="edge9" class="edge">
+<title>Categ-&gt;Cve</title>
+<path fill="none" stroke="#000000" d="M2233.6701,-290.0393C2207.9921,-264.3612 2157.4272,-213.7964 2128.11,-184.4792"/>
+<polygon fill="#000000" stroke="#000000" points="2130.3385,-181.7579 2120.7925,-177.1617 2125.3887,-186.7076 2130.3385,-181.7579"/>
+</g>
+<!-- Credential -->
+<g id="node20" class="node">
+<title>Credential</title>
+<ellipse fill="#b2dfee" stroke="#b2dfee" cx="2551.6308" cy="-162" rx="51.0203" ry="18"/>
+<text text-anchor="middle" x="2551.6308" y="-157.8" font-family="Times,serif" font-size="14.00" fill="#000000">Credential</text>
+</g>
+<!-- Categ&#45;&gt;Credential -->
+<g id="edge30" class="edge">
+<title>Categ-&gt;Credential</title>
+<path fill="none" stroke="#000000" d="M2271.2161,-292.2095C2287.0354,-281.785 2308.7735,-266.7878 2326.6308,-252 2344.302,-237.3662 2343.765,-227.4791 2363.6308,-216 2414.4285,-186.6475 2434.2729,-196.3023 2490.6308,-180 2494.4592,-178.8926 2498.4207,-177.7396 2502.4016,-176.576"/>
+<polygon fill="#000000" stroke="#000000" points="2503.6614,-179.854 2512.2723,-173.6813 2501.6915,-173.1369 2503.6614,-179.854"/>
+</g>
+<!-- CreditCards -->
+<g id="node24" class="node">
+<title>CreditCards</title>
+<ellipse fill="#b2dfee" stroke="#b2dfee" cx="2347.6308" cy="-162" rx="57.9004" ry="18"/>
+<text text-anchor="middle" x="2347.6308" y="-157.8" font-family="Times,serif" font-size="14.00" fill="#000000">CreditCards</text>
+</g>
+<!-- Categ&#45;&gt;CreditCards -->
+<g id="edge19" class="edge">
+<title>Categ-&gt;CreditCards</title>
+<path fill="none" stroke="#000000" d="M2256.0376,-288.0915C2263.2798,-269.1765 2276.227,-238.9705 2292.6308,-216 2300.286,-205.2803 2310.1862,-194.8202 2319.4729,-186.0051"/>
+<polygon fill="#000000" stroke="#000000" points="2322.0778,-188.3645 2327.0668,-179.0177 2317.338,-183.2133 2322.0778,-188.3645"/>
+</g>
+<!-- Redis_SourceCode -->
+<g id="node28" class="node">
+<title>Redis_SourceCode</title>
+<ellipse fill="#b2dfee" stroke="#b2dfee" cx="2457.6308" cy="-234" rx="85.114" ry="18"/>
+<text text-anchor="middle" x="2457.6308" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">Redis_SourceCode</text>
+</g>
+<!-- Categ&#45;&gt;Redis_SourceCode -->
+<g id="edge23" class="edge">
+<title>Categ-&gt;Redis_SourceCode</title>
+<path fill="none" stroke="#000000" d="M2278.1162,-296.1397C2310.2884,-285.0031 2363.3786,-266.6258 2403.4979,-252.7383"/>
+<polygon fill="#000000" stroke="#000000" points="2404.8333,-255.9799 2413.1382,-249.4013 2402.5434,-249.365 2404.8333,-255.9799"/>
+</g>
+<!-- Onion -->
+<g id="node34" class="node">
+<title>Onion</title>
+<ellipse fill="#b2dfee" stroke="#b2dfee" cx="1281.6308" cy="-234" rx="35.3548" ry="18"/>
+<text text-anchor="middle" x="1281.6308" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">Onion</text>
+</g>
+<!-- Categ&#45;&gt;Onion -->
+<g id="edge80" class="edge">
+<title>Categ-&gt;Onion</title>
+<path fill="none" stroke="#000000" d="M2216.3101,-303.5216C2071.1426,-292.724 1493.7368,-249.7765 1326.9569,-237.3714"/>
+<polygon fill="#000000" stroke="#000000" points="1326.8063,-233.8506 1316.5742,-236.5991 1326.287,-240.8313 1326.8063,-233.8506"/>
+</g>
+<!-- ApiKey&#45;&gt;Tags -->
+<g id="edge52" class="edge">
+<title>ApiKey-&gt;Tags</title>
+<path fill="none" stroke="#000000" d="M2194.025,-153.3368C2178.0278,-149.8785 2158.99,-146.2019 2141.6308,-144 1946.5143,-119.2503 1324.537,-96.9221 1159.9225,-91.3371"/>
+<polygon fill="#000000" stroke="#000000" points="1159.8629,-87.8332 1149.7505,-90.9936 1159.6266,-94.8292 1159.8629,-87.8332"/>
+</g>
+<!-- ApiKey&#45;&gt;Duplicates -->
+<g id="edge62" class="edge">
+<title>ApiKey-&gt;Duplicates</title>
+<path fill="none" stroke="#000000" d="M2197.9361,-150.8387C2190.3319,-148.4249 2182.2356,-145.9997 2174.6308,-144 2104.7966,-125.6371 2023.1465,-109.6607 1969.7924,-99.9453"/>
+<polygon fill="#000000" stroke="#000000" points="1970.303,-96.4809 1959.8399,-98.1459 1969.0576,-103.3693 1970.303,-96.4809"/>
+</g>
+<!-- Tags&#45;&gt;Sync_module -->
+<g id="edge51" class="edge">
+<title>Tags-&gt;Sync_module</title>
+<path fill="none" stroke="#000000" d="M1149.3143,-87.4797C1269.168,-77.3034 1719.4247,-39.0741 1895.9728,-24.0842"/>
+<polygon fill="#000000" stroke="#000000" points="1896.5248,-27.55 1906.1928,-23.2164 1895.9325,-20.5751 1896.5248,-27.55"/>
+</g>
+<!-- MISP_The_hive_feeder -->
+<g id="node40" class="node">
+<title>MISP_The_hive_feeder</title>
+<ellipse fill="#b2dfee" stroke="#b2dfee" cx="1119.6308" cy="-18" rx="103.6354" ry="18"/>
+<text text-anchor="middle" x="1119.6308" y="-13.8" font-family="Times,serif" font-size="14.00" fill="#000000">MISP_The_hive_feeder</text>
+</g>
+<!-- Tags&#45;&gt;MISP_The_hive_feeder -->
+<g id="edge49" class="edge">
+<title>Tags-&gt;MISP_The_hive_feeder</title>
+<path fill="none" stroke="#000000" d="M1119.6308,-71.8314C1119.6308,-64.131 1119.6308,-54.9743 1119.6308,-46.4166"/>
+<polygon fill="#000000" stroke="#000000" points="1123.1309,-46.4132 1119.6308,-36.4133 1116.1309,-46.4133 1123.1309,-46.4132"/>
+</g>
+<!-- LibInjection -->
+<g id="node7" class="node">
+<title>LibInjection</title>
+<ellipse fill="#b2dfee" stroke="#b2dfee" cx="2001.6308" cy="-162" rx="58.5463" ry="18"/>
+<text text-anchor="middle" x="2001.6308" y="-157.8" font-family="Times,serif" font-size="14.00" fill="#000000">LibInjection</text>
+</g>
+<!-- Urls&#45;&gt;LibInjection -->
+<g id="edge4" class="edge">
+<title>Urls-&gt;LibInjection</title>
+<path fill="none" stroke="#000000" d="M2001.6308,-215.8314C2001.6308,-208.131 2001.6308,-198.9743 2001.6308,-190.4166"/>
+<polygon fill="#000000" stroke="#000000" points="2005.1309,-190.4132 2001.6308,-180.4133 1998.1309,-190.4133 2005.1309,-190.4132"/>
+</g>
+<!-- SQLInjectionDetection -->
+<g id="node19" class="node">
+<title>SQLInjectionDetection</title>
+<ellipse fill="#b2dfee" stroke="#b2dfee" cx="1823.6308" cy="-162" rx="101.2795" ry="18"/>
+<text text-anchor="middle" x="1823.6308" y="-157.8" font-family="Times,serif" font-size="14.00" fill="#000000">SQLInjectionDetection</text>
+</g>
+<!-- Urls&#45;&gt;SQLInjectionDetection -->
+<g id="edge14" class="edge">
+<title>Urls-&gt;SQLInjectionDetection</title>
+<path fill="none" stroke="#000000" d="M1977.9938,-224.439C1951.5424,-213.7395 1907.9237,-196.096 1873.7887,-182.2886"/>
+<polygon fill="#000000" stroke="#000000" points="1875.0172,-179.0101 1864.4345,-178.5048 1872.3923,-185.4993 1875.0172,-179.0101"/>
+</g>
+<!-- LibInjection&#45;&gt;Tags -->
+<g id="edge66" class="edge">
+<title>LibInjection-&gt;Tags</title>
+<path fill="none" stroke="#000000" d="M1959.0987,-149.4004C1950.719,-147.2994 1941.9462,-145.3633 1933.6308,-144 1781.7689,-119.1019 1301.1723,-97.5628 1159.3794,-91.6212"/>
+<polygon fill="#000000" stroke="#000000" points="1159.5184,-88.1241 1149.3813,-91.2046 1159.2269,-95.118 1159.5184,-88.1241"/>
+</g>
+<!-- LibInjection&#45;&gt;Duplicates -->
+<g id="edge84" class="edge">
+<title>LibInjection-&gt;Duplicates</title>
+<path fill="none" stroke="#000000" d="M1980.539,-144.937C1968.8167,-135.4537 1954.0647,-123.5196 1941.3075,-113.1991"/>
+<polygon fill="#000000" stroke="#000000" points="1943.24,-110.2606 1933.2641,-106.6921 1938.8373,-115.7027 1943.24,-110.2606"/>
+</g>
+<!-- Bitcoin&#45;&gt;Tags -->
+<g id="edge73" class="edge">
+<title>Bitcoin-&gt;Tags</title>
+<path fill="none" stroke="#000000" d="M947.4492,-150.6001C953.4726,-148.3943 959.7452,-146.1128 965.6308,-144 1006.1752,-129.4455 1052.882,-113.1312 1084.1293,-102.2816"/>
+<polygon fill="#000000" stroke="#000000" points="1085.4033,-105.5443 1093.7038,-98.9601 1083.109,-98.9309 1085.4033,-105.5443"/>
+</g>
+<!-- Bitcoin&#45;&gt;Duplicates -->
+<g id="edge79" class="edge">
+<title>Bitcoin-&gt;Duplicates</title>
+<path fill="none" stroke="#000000" d="M945.7579,-149.7077C952.1995,-147.4405 959.0641,-145.3619 965.6308,-144 1135.4709,-108.7749 1667.0539,-94.9565 1850.0211,-91.1668"/>
+<polygon fill="#000000" stroke="#000000" points="1850.3509,-94.6608 1860.2774,-90.9573 1850.2079,-87.6623 1850.3509,-94.6608"/>
+</g>
+<!-- Mail&#45;&gt;Tags -->
+<g id="edge50" class="edge">
+<title>Mail-&gt;Tags</title>
+<path fill="none" stroke="#000000" d="M2430.6783,-149.7894C2425.5543,-147.4563 2420.0171,-145.3297 2414.6308,-144 2290.3558,-113.3211 1363.8994,-94.5174 1159.4699,-90.7161"/>
+<polygon fill="#000000" stroke="#000000" points="1159.5324,-87.2168 1149.4695,-90.5315 1159.4031,-94.2156 1159.5324,-87.2168"/>
+</g>
+<!-- Mail&#45;&gt;Duplicates -->
+<g id="edge65" class="edge">
+<title>Mail-&gt;Duplicates</title>
+<path fill="none" stroke="#000000" d="M2430.6094,-150.0499C2425.4891,-147.7032 2419.9706,-145.5053 2414.6308,-144 2333.2469,-121.0582 2089.4194,-102.0262 1974.2122,-94.0407"/>
+<polygon fill="#000000" stroke="#000000" points="1974.357,-90.5425 1964.1404,-93.348 1973.8767,-97.526 1974.357,-90.5425"/>
+</g>
+<!-- Mail&#45;&gt;ModuleStats -->
+<g id="edge64" class="edge">
+<title>Mail-&gt;ModuleStats</title>
+<path fill="none" stroke="#000000" d="M2463.2952,-144.937C2468.6131,-136.4284 2475.1641,-125.9468 2481.1134,-116.4279"/>
+<polygon fill="#000000" stroke="#000000" points="2484.241,-118.0274 2486.573,-107.6924 2478.305,-114.3174 2484.241,-118.0274"/>
+</g>
+<!-- ZMQ_Global -->
+<g id="node11" class="node">
+<title>ZMQ_Global</title>
+<ellipse fill="#ff7f00" stroke="#ff7f00" cx="987.6308" cy="-522" rx="63.7045" ry="18"/>
+<text text-anchor="middle" x="987.6308" y="-517.8" font-family="Times,serif" font-size="14.00" fill="#000000">ZMQ_Global</text>
+</g>
+<!-- Mixer -->
+<g id="node12" class="node">
+<title>Mixer</title>
+<ellipse fill="#b2dfee" stroke="#b2dfee" cx="987.6308" cy="-450" rx="34.769" ry="18"/>
+<text text-anchor="middle" x="987.6308" y="-445.8" font-family="Times,serif" font-size="14.00" fill="#000000">Mixer</text>
+</g>
+<!-- ZMQ_Global&#45;&gt;Mixer -->
+<g id="edge8" class="edge">
+<title>ZMQ_Global-&gt;Mixer</title>
+<path fill="none" stroke="#000000" d="M987.6308,-503.8314C987.6308,-496.131 987.6308,-486.9743 987.6308,-478.4166"/>
+<polygon fill="#000000" stroke="#000000" points="991.1309,-478.4132 987.6308,-468.4133 984.1309,-478.4133 991.1309,-478.4132"/>
+</g>
+<!-- Mixer&#45;&gt;Global -->
+<g id="edge72" class="edge">
+<title>Mixer-&gt;Global</title>
+<path fill="none" stroke="#000000" d="M972.2006,-433.6621C963.4573,-424.4046 952.3508,-412.6447 942.6013,-402.3217"/>
+<polygon fill="#000000" stroke="#000000" points="944.8827,-399.6399 935.4719,-394.7729 939.7936,-404.4463 944.8827,-399.6399"/>
+</g>
+<!-- Redis_preProcess1 -->
+<g id="node41" class="node">
+<title>Redis_preProcess1</title>
+<ellipse fill="#b2dfee" stroke="#b2dfee" cx="1059.6308" cy="-378" rx="84.5285" ry="18"/>
+<text text-anchor="middle" x="1059.6308" y="-373.8" font-family="Times,serif" font-size="14.00" fill="#000000">Redis_preProcess1</text>
+</g>
+<!-- Mixer&#45;&gt;Redis_preProcess1 -->
+<g id="edge55" class="edge">
+<title>Mixer-&gt;Redis_preProcess1</title>
+<path fill="none" stroke="#000000" d="M1003.6099,-434.0209C1012.7444,-424.8864 1024.4005,-413.2303 1034.7124,-402.9184"/>
+<polygon fill="#000000" stroke="#000000" points="1037.3321,-405.2485 1041.9283,-395.7025 1032.3823,-400.2987 1037.3321,-405.2485"/>
+</g>
+<!-- Cve&#45;&gt;Tags -->
+<g id="edge54" class="edge">
+<title>Cve-&gt;Tags</title>
+<path fill="none" stroke="#000000" d="M2085.2594,-150.0287C2080.2972,-147.6211 2074.8977,-145.4023 2069.6308,-144 1980.8421,-120.3599 1328.881,-97.0249 1159.6641,-91.3192"/>
+<polygon fill="#000000" stroke="#000000" points="1159.565,-87.814 1149.4532,-90.9766 1159.3302,-94.81 1159.565,-87.814"/>
+</g>
+<!-- Cve&#45;&gt;Duplicates -->
+<g id="edge28" class="edge">
+<title>Cve-&gt;Duplicates</title>
+<path fill="none" stroke="#000000" d="M2084.1454,-150.6775C2079.4181,-148.35 2074.3986,-146.0015 2069.6308,-144 2034.1378,-129.0999 1992.9504,-115.0502 1961.6687,-105.0185"/>
+<polygon fill="#000000" stroke="#000000" points="1962.4705,-101.6009 1951.8801,-101.9067 1960.3497,-108.2719 1962.4705,-101.6009"/>
+</g>
+<!-- PgpDump -->
+<g id="node14" class="node">
+<title>PgpDump</title>
+<ellipse fill="#b2dfee" stroke="#b2dfee" cx="1024.6308" cy="-162" rx="50.4052" ry="18"/>
+<text text-anchor="middle" x="1024.6308" y="-157.8" font-family="Times,serif" font-size="14.00" fill="#000000">PgpDump</text>
+</g>
+<!-- PgpDump&#45;&gt;Tags -->
+<g id="edge46" class="edge">
+<title>PgpDump-&gt;Tags</title>
+<path fill="none" stroke="#000000" d="M1046.1878,-145.6621C1060.0081,-135.1877 1078.0551,-121.51 1092.8006,-110.3345"/>
+<polygon fill="#000000" stroke="#000000" points="1095.1885,-112.9163 1101.0442,-104.0867 1090.9604,-107.3375 1095.1885,-112.9163"/>
+</g>
+<!-- PgpDump&#45;&gt;Duplicates -->
+<g id="edge10" class="edge">
+<title>PgpDump-&gt;Duplicates</title>
+<path fill="none" stroke="#000000" d="M1061.1304,-149.4337C1068.5034,-147.3023 1076.2563,-145.3464 1083.6308,-144 1230.7692,-117.137 1683.6448,-98.3564 1850.2682,-92.1946"/>
+<polygon fill="#000000" stroke="#000000" points="1850.4875,-95.689 1860.3522,-91.8242 1850.2305,-88.6937 1850.4875,-95.689"/>
+</g>
+<!-- Keys&#45;&gt;Tags -->
+<g id="edge82" class="edge">
+<title>Keys-&gt;Tags</title>
+<path fill="none" stroke="#000000" d="M983.0577,-228.1032C931.3334,-216.4926 833.1558,-187.9188 868.6308,-144 894.6977,-111.7287 1015.5555,-97.8379 1079.5783,-92.6597"/>
+<polygon fill="#000000" stroke="#000000" points="1080.0165,-96.1363 1089.7162,-91.8742 1079.4757,-89.1572 1080.0165,-96.1363"/>
+</g>
+<!-- Keys&#45;&gt;PgpDump -->
+<g id="edge11" class="edge">
+<title>Keys-&gt;PgpDump</title>
+<path fill="none" stroke="#000000" d="M1015.6589,-215.8314C1016.9423,-208.131 1018.4684,-198.9743 1019.8947,-190.4166"/>
+<polygon fill="#000000" stroke="#000000" points="1023.3702,-190.8526 1021.5619,-180.4133 1016.4655,-189.7018 1023.3702,-190.8526"/>
+</g>
+<!-- Keys&#45;&gt;Duplicates -->
+<g id="edge27" class="edge">
+<title>Keys-&gt;Duplicates</title>
+<path fill="none" stroke="#000000" d="M1043.1738,-231.1665C1086.4225,-227.2433 1168.0022,-220.1699 1237.6308,-216 1287.8029,-212.9953 2106.8045,-216.2408 2141.6308,-180 2195.1024,-124.3566 2059.0643,-102.4274 1974.3574,-94.3391"/>
+<polygon fill="#000000" stroke="#000000" points="1974.575,-90.8445 1964.298,-93.42 1973.938,-97.8154 1974.575,-90.8445"/>
+</g>
+<!-- D4_client -->
+<g id="node18" class="node">
+<title>D4_client</title>
+<ellipse fill="#b2dfee" stroke="#b2dfee" cx="404.6308" cy="-234" rx="49.2357" ry="18"/>
+<text text-anchor="middle" x="404.6308" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">D4_client</text>
+</g>
+<!-- DomClassifier&#45;&gt;D4_client -->
+<g id="edge12" class="edge">
+<title>DomClassifier-&gt;D4_client</title>
+<path fill="none" stroke="#000000" d="M405.3785,-287.8314C405.2715,-280.131 405.1443,-270.9743 405.0255,-262.4166"/>
+<polygon fill="#000000" stroke="#000000" points="408.5252,-262.3637 404.8865,-252.4133 401.5259,-262.4609 408.5252,-262.3637"/>
+</g>
+<!-- SQLInjectionDetection&#45;&gt;Tags -->
+<g id="edge53" class="edge">
+<title>SQLInjectionDetection-&gt;Tags</title>
+<path fill="none" stroke="#000000" d="M1751.255,-149.4014C1738.7313,-147.4377 1725.8208,-145.5494 1713.6308,-144 1505.7055,-117.5712 1255.2351,-99.1766 1159.4852,-92.6337"/>
+<polygon fill="#000000" stroke="#000000" points="1159.5937,-89.1331 1149.3797,-91.9481 1159.1198,-96.1171 1159.5937,-89.1331"/>
+</g>
+<!-- SQLInjectionDetection&#45;&gt;Duplicates -->
+<g id="edge47" class="edge">
+<title>SQLInjectionDetection-&gt;Duplicates</title>
+<path fill="none" stroke="#000000" d="M1845.6308,-144.2022C1857.2852,-134.774 1871.7337,-123.0853 1884.2262,-112.979"/>
+<polygon fill="#000000" stroke="#000000" points="1886.531,-115.6164 1892.1042,-106.6058 1882.1283,-110.1743 1886.531,-115.6164"/>
+</g>
+<!-- Credential&#45;&gt;Tags -->
+<g id="edge61" class="edge">
+<title>Credential-&gt;Tags</title>
+<path fill="none" stroke="#000000" d="M2514.5496,-149.4719C2506.7324,-147.2801 2498.4753,-145.2913 2490.6308,-144 2356.4974,-121.9195 1371.4884,-96.2812 1159.6796,-90.9862"/>
+<polygon fill="#000000" stroke="#000000" points="1159.7055,-87.4859 1149.6214,-90.7356 1159.531,-94.4837 1159.7055,-87.4859"/>
+</g>
+<!-- Credential&#45;&gt;Duplicates -->
+<g id="edge31" class="edge">
+<title>Credential-&gt;Duplicates</title>
+<path fill="none" stroke="#000000" d="M2514.1656,-149.7059C2506.4496,-147.525 2498.3293,-145.4809 2490.6308,-144 2305.2962,-108.3474 2081.8225,-95.9596 1975.1785,-91.8776"/>
+<polygon fill="#000000" stroke="#000000" points="1975.0422,-88.3702 1964.9193,-91.4969 1974.7826,-95.3654 1975.0422,-88.3702"/>
+</g>
+<!-- Credential&#45;&gt;ModuleStats -->
+<g id="edge16" class="edge">
+<title>Credential-&gt;ModuleStats</title>
+<path fill="none" stroke="#000000" d="M2538.5589,-144.5708C2532.0889,-135.9441 2524.1495,-125.3582 2516.9908,-115.8134"/>
+<polygon fill="#000000" stroke="#000000" points="2519.7575,-113.6689 2510.9575,-107.7689 2514.1575,-117.8689 2519.7575,-113.6689"/>
+</g>
+<!-- Importer_Json -->
+<g id="node22" class="node">
+<title>Importer_Json</title>
+<ellipse fill="#b2dfee" stroke="#b2dfee" cx="423.6308" cy="-450" rx="66.6344" ry="18"/>
+<text text-anchor="middle" x="423.6308" y="-445.8" font-family="Times,serif" font-size="14.00" fill="#000000">Importer_Json</text>
+</g>
+<!-- Importer_Json&#45;&gt;Global -->
+<g id="edge39" class="edge">
+<title>Importer_Json-&gt;Global</title>
+<path fill="none" stroke="#000000" d="M482.4763,-441.4579C582.4238,-426.9494 783.2868,-397.7919 873.6889,-384.669"/>
+<polygon fill="#000000" stroke="#000000" points="874.2433,-388.1253 883.6368,-383.2249 873.2377,-381.1979 874.2433,-388.1253"/>
+</g>
+<!-- Importer_Json&#45;&gt;Tags -->
+<g id="edge17" class="edge">
+<title>Importer_Json-&gt;Tags</title>
+<path fill="none" stroke="#000000" d="M377.695,-436.8267C297.787,-412.5333 141.6308,-358.3608 141.6308,-306 141.6308,-306 141.6308,-306 141.6308,-234 141.6308,-176.1607 182.6392,-167.1791 235.6308,-144 313.5993,-109.8957 917.8405,-94.3927 1079.8004,-90.8241"/>
+<polygon fill="#000000" stroke="#000000" points="1079.8971,-94.3229 1089.8186,-90.6062 1079.7448,-87.3246 1079.8971,-94.3229"/>
+</g>
+<!-- Tracker_Regex&#45;&gt;Tags -->
+<g id="edge18" class="edge">
+<title>Tracker_Regex-&gt;Tags</title>
+<path fill="none" stroke="#000000" d="M751.7353,-216.4518C733.069,-197.0155 709.8268,-165.5795 728.6308,-144 751.5202,-117.7321 984.8134,-99.1195 1079.7588,-92.5774"/>
+<polygon fill="#000000" stroke="#000000" points="1080.0953,-96.0627 1089.835,-91.8928 1079.6207,-89.0788 1080.0953,-96.0627"/>
+</g>
+<!-- CreditCards&#45;&gt;Tags -->
+<g id="edge22" class="edge">
+<title>CreditCards-&gt;Tags</title>
+<path fill="none" stroke="#000000" d="M2306.3885,-149.2607C2298.2519,-147.1719 2289.7259,-145.276 2281.6308,-144 2058.52,-108.8307 1338.1758,-93.894 1159.848,-90.6831"/>
+<polygon fill="#000000" stroke="#000000" points="1159.6672,-87.1794 1149.6065,-90.5009 1159.5427,-94.1783 1159.6672,-87.1794"/>
+</g>
+<!-- CreditCards&#45;&gt;Duplicates -->
+<g id="edge58" class="edge">
+<title>CreditCards-&gt;Duplicates</title>
+<path fill="none" stroke="#000000" d="M2305.2097,-149.6192C2297.4077,-147.5739 2289.3041,-145.6017 2281.6308,-144 2173.733,-121.4779 2046.1554,-105.0297 1972.7891,-96.5372"/>
+<polygon fill="#000000" stroke="#000000" points="1973.138,-93.0544 1962.8043,-95.3919 1972.3403,-100.0088 1973.138,-93.0544"/>
+</g>
+<!-- CreditCards&#45;&gt;ModuleStats -->
+<g id="edge78" class="edge">
+<title>CreditCards-&gt;ModuleStats</title>
+<path fill="none" stroke="#000000" d="M2379.0757,-146.9064C2401.6238,-136.0833 2432.2096,-121.4022 2456.6668,-109.6627"/>
+<polygon fill="#000000" stroke="#000000" points="2458.21,-112.8044 2465.7107,-105.3217 2455.1809,-106.4937 2458.21,-112.8044"/>
+</g>
+<!-- Redis -->
+<g id="node25" class="node">
+<title>Redis</title>
+<ellipse fill="#ff7f00" stroke="#ff7f00" cx="653.6308" cy="-522" rx="33.0624" ry="18"/>
+<text text-anchor="middle" x="653.6308" y="-517.8" font-family="Times,serif" font-size="14.00" fill="#000000">Redis</text>
+</g>
+<!-- Retro_Hunt -->
+<g id="node26" class="node">
+<title>Retro_Hunt</title>
+<ellipse fill="#b2dfee" stroke="#b2dfee" cx="56.6308" cy="-378" rx="56.7619" ry="18"/>
+<text text-anchor="middle" x="56.6308" y="-373.8" font-family="Times,serif" font-size="14.00" fill="#000000">Retro_Hunt</text>
+</g>
+<!-- Redis&#45;&gt;Retro_Hunt -->
+<g id="edge20" class="edge">
+<title>Redis-&gt;Retro_Hunt</title>
+<path fill="none" stroke="#000000" d="M621.1952,-517.6406C565.0271,-509.7888 446.2067,-491.8423 347.6308,-468 260.6567,-446.9638 161.5225,-414.4161 104.3019,-394.7652"/>
+<polygon fill="#000000" stroke="#000000" points="105.3971,-391.4407 94.8024,-391.489 103.1148,-398.0582 105.3971,-391.4407"/>
+</g>
+<!-- submit_paste -->
+<g id="node30" class="node">
+<title>submit_paste</title>
+<ellipse fill="#b2dfee" stroke="#b2dfee" cx="851.6308" cy="-450" rx="61.9963" ry="18"/>
+<text text-anchor="middle" x="851.6308" y="-445.8" font-family="Times,serif" font-size="14.00" fill="#000000">submit_paste</text>
+</g>
+<!-- Redis&#45;&gt;submit_paste -->
+<g id="edge76" class="edge">
+<title>Redis-&gt;submit_paste</title>
+<path fill="none" stroke="#000000" d="M681.1619,-511.9887C712.7044,-500.5187 764.9728,-481.512 803.3318,-467.5633"/>
+<polygon fill="#000000" stroke="#000000" points="804.5616,-470.8404 812.7634,-464.1336 802.1693,-464.2618 804.5616,-470.8404"/>
+</g>
+<!-- Retro_Hunt&#45;&gt;Tags -->
+<g id="edge74" class="edge">
+<title>Retro_Hunt-&gt;Tags</title>
+<path fill="none" stroke="#000000" d="M55.8022,-359.9068C54.8426,-314.884 59.3279,-197.592 127.6308,-144 165.673,-114.1513 898.4725,-95.1556 1079.4727,-90.9068"/>
+<polygon fill="#000000" stroke="#000000" points="1079.7069,-94.4024 1089.6227,-90.6705 1079.5439,-87.4043 1079.7069,-94.4024"/>
+</g>
+<!-- Crawler -->
+<g id="node27" class="node">
+<title>Crawler</title>
+<ellipse fill="#b2dfee" stroke="#b2dfee" cx="779.6308" cy="-162" rx="42.27" ry="18"/>
+<text text-anchor="middle" x="779.6308" y="-157.8" font-family="Times,serif" font-size="14.00" fill="#000000">Crawler</text>
+</g>
+<!-- Crawler&#45;&gt;Global -->
+<g id="edge21" class="edge">
+<title>Crawler-&gt;Global</title>
+<path fill="none" stroke="#000000" d="M804.9455,-176.6195C819.8363,-186.2521 838.1352,-200.0177 850.6308,-216 882.8812,-257.2495 902.8642,-315.8211 912.5582,-350.0701"/>
+<polygon fill="#000000" stroke="#000000" points="909.2248,-351.1495 915.2386,-359.8721 915.9769,-349.3031 909.2248,-351.1495"/>
+</g>
+<!-- Crawler&#45;&gt;Tags -->
+<g id="edge59" class="edge">
+<title>Crawler-&gt;Tags</title>
+<path fill="none" stroke="#000000" d="M812.5999,-150.6591C820.1189,-148.2808 828.1098,-145.916 835.6308,-144 921.9864,-122.0006 1025.1722,-104.541 1080.3003,-95.9066"/>
+<polygon fill="#000000" stroke="#000000" points="1080.9979,-99.3404 1090.343,-94.3483 1079.9245,-92.4232 1080.9979,-99.3404"/>
+</g>
+<!-- IP&#45;&gt;Tags -->
+<g id="edge33" class="edge">
+<title>IP-&gt;Tags</title>
+<path fill="none" stroke="#000000" d="M1119.6308,-143.8314C1119.6308,-136.131 1119.6308,-126.9743 1119.6308,-118.4166"/>
+<polygon fill="#000000" stroke="#000000" points="1123.1309,-118.4132 1119.6308,-108.4133 1116.1309,-118.4133 1123.1309,-118.4132"/>
+</g>
+<!-- IP&#45;&gt;Duplicates -->
+<g id="edge37" class="edge">
+<title>IP-&gt;Duplicates</title>
+<path fill="none" stroke="#000000" d="M1144.7679,-154.8015C1158.9921,-151.0024 1177.1756,-146.6013 1193.6308,-144 1434.1542,-105.9771 1724.3077,-94.5593 1849.7795,-91.2683"/>
+<polygon fill="#000000" stroke="#000000" points="1850.0583,-94.7625 1859.9662,-91.0097 1849.8806,-87.7647 1850.0583,-94.7625"/>
+</g>
+<!-- submit_paste&#45;&gt;Global -->
+<g id="edge26" class="edge">
+<title>submit_paste-&gt;Global</title>
+<path fill="none" stroke="#000000" d="M868.0917,-432.5708C876.7366,-423.4174 887.4648,-412.0582 896.8911,-402.0773"/>
+<polygon fill="#000000" stroke="#000000" points="899.468,-404.4463 903.7897,-394.7729 894.3789,-399.6399 899.468,-404.4463"/>
+</g>
+<!-- Tracker_Yara&#45;&gt;Tags -->
+<g id="edge77" class="edge">
+<title>Tracker_Yara-&gt;Tags</title>
+<path fill="none" stroke="#000000" d="M311.8094,-219.5883C368.5151,-199.3431 477.1401,-162.8533 572.6308,-144 759.9433,-107.0177 988.5889,-94.8581 1079.5436,-91.3104"/>
+<polygon fill="#000000" stroke="#000000" points="1079.8274,-94.8023 1089.6886,-90.9285 1079.564,-87.8072 1079.8274,-94.8023"/>
+</g>
+<!-- Phone&#45;&gt;Tags -->
+<g id="edge35" class="edge">
+<title>Phone-&gt;Tags</title>
+<path fill="none" stroke="#000000" d="M1390.9157,-150.1825C1385.2748,-147.9392 1379.3098,-145.7499 1373.6308,-144 1299.0175,-121.0094 1209.1141,-104.4121 1158.7539,-96.0795"/>
+<polygon fill="#000000" stroke="#000000" points="1159.0606,-92.5833 1148.6275,-94.4275 1157.9335,-99.492 1159.0606,-92.5833"/>
+</g>
+<!-- Phone&#45;&gt;Duplicates -->
+<g id="edge71" class="edge">
+<title>Phone-&gt;Duplicates</title>
+<path fill="none" stroke="#000000" d="M1444.2324,-149.7825C1449.8816,-147.5682 1455.8787,-145.4917 1461.6308,-144 1597.4682,-108.773 1762.3832,-96.4275 1850.3122,-92.1743"/>
+<polygon fill="#000000" stroke="#000000" points="1850.5611,-95.6666 1860.3879,-91.7062 1850.2362,-88.6741 1850.5611,-95.6666"/>
+</g>
+<!-- Onion&#45;&gt;Tags -->
+<g id="edge36" class="edge">
+<title>Onion-&gt;Tags</title>
+<path fill="none" stroke="#000000" d="M1256.2396,-221.357C1237.8014,-211.503 1212.8251,-196.7168 1193.6308,-180 1171.5396,-160.7601 1150.761,-134.4865 1136.8795,-115.2943"/>
+<polygon fill="#000000" stroke="#000000" points="1139.6509,-113.1518 1131.007,-107.0253 1133.9437,-117.205 1139.6509,-113.1518"/>
+</g>
+<!-- Onion&#45;&gt;Crawler -->
+<g id="edge56" class="edge">
+<title>Onion-&gt;Crawler</title>
+<path fill="none" stroke="#000000" d="M1246.973,-230.2931C1175.8322,-222.5027 1008.2635,-203.2198 868.6308,-180 855.1236,-177.7539 840.5365,-174.9597 827.1572,-172.2481"/>
+<polygon fill="#000000" stroke="#000000" points="827.6993,-168.7864 817.1994,-170.201 826.2897,-175.643 827.6993,-168.7864"/>
+</g>
+<!-- DumpValidOnion -->
+<g id="node36" class="node">
+<title>DumpValidOnion</title>
+<ellipse fill="#b2dfee" stroke="#b2dfee" cx="1283.6308" cy="-162" rx="80.5431" ry="18"/>
+<text text-anchor="middle" x="1283.6308" y="-157.8" font-family="Times,serif" font-size="14.00" fill="#000000">DumpValidOnion</text>
+</g>
+<!-- Onion&#45;&gt;DumpValidOnion -->
+<g id="edge40" class="edge">
+<title>Onion-&gt;DumpValidOnion</title>
+<path fill="none" stroke="#000000" d="M1282.1355,-215.8314C1282.3494,-208.131 1282.6037,-198.9743 1282.8415,-190.4166"/>
+<polygon fill="#000000" stroke="#000000" points="1286.3402,-190.5066 1283.1193,-180.4133 1279.3429,-190.3122 1286.3402,-190.5066"/>
+</g>
+<!-- Sync_importer -->
+<g id="node35" class="node">
+<title>Sync_importer</title>
+<ellipse fill="#b2dfee" stroke="#b2dfee" cx="661.6308" cy="-450" rx="68.3594" ry="18"/>
+<text text-anchor="middle" x="661.6308" y="-445.8" font-family="Times,serif" font-size="14.00" fill="#000000">Sync_importer</text>
+</g>
+<!-- Sync_importer&#45;&gt;Global -->
+<g id="edge38" class="edge">
+<title>Sync_importer-&gt;Global</title>
+<path fill="none" stroke="#000000" d="M708.652,-436.8778C756.8573,-423.4252 831.1407,-402.6949 877.4884,-389.7607"/>
+<polygon fill="#000000" stroke="#000000" points="878.5271,-393.1046 887.2182,-387.0454 876.6454,-386.3623 878.5271,-393.1046"/>
+</g>
+<!-- Sync_importer&#45;&gt;Tags -->
+<g id="edge63" class="edge">
+<title>Sync_importer-&gt;Tags</title>
+<path fill="none" stroke="#000000" d="M606.3393,-439.3686C479.7335,-414.2637 179.6308,-350.1043 179.6308,-306 179.6308,-306 179.6308,-306 179.6308,-234 179.6308,-158.1536 -233.3314,-270.4781 435.6308,-144 560.5762,-120.3771 952.8522,-98.5982 1079.6622,-92.0177"/>
+<polygon fill="#000000" stroke="#000000" points="1079.9094,-95.5097 1089.7158,-91.499 1079.5487,-88.519 1079.9094,-95.5097"/>
+</g>
+<!-- Tracker_Term&#45;&gt;Tags -->
+<g id="edge43" class="edge">
+<title>Tracker_Term-&gt;Tags</title>
+<path fill="none" stroke="#000000" d="M549.1409,-215.863C562.5351,-194.6215 587.8147,-160.273 619.6308,-144 699.8554,-102.9675 975.7655,-92.9976 1079.6464,-90.6747"/>
+<polygon fill="#000000" stroke="#000000" points="1079.802,-94.1723 1089.7257,-90.4615 1079.6539,-87.1739 1079.802,-94.1723"/>
+</g>
+<!-- BankAccount&#45;&gt;Tags -->
+<g id="edge60" class="edge">
+<title>BankAccount-&gt;Tags</title>
+<path fill="none" stroke="#000000" d="M1487.2484,-149.6955C1478.7473,-147.6655 1469.9476,-145.6788 1461.6308,-144 1352.7917,-122.0304 1222.9613,-103.6509 1159.0976,-95.1187"/>
+<polygon fill="#000000" stroke="#000000" points="1159.4336,-91.6327 1149.06,-93.7864 1158.5125,-98.5718 1159.4336,-91.6327"/>
+</g>
+<!-- BankAccount&#45;&gt;Duplicates -->
+<g id="edge44" class="edge">
+<title>BankAccount-&gt;Duplicates</title>
+<path fill="none" stroke="#000000" d="M1582.04,-149.8248C1590.5382,-147.781 1599.33,-145.7562 1607.6308,-144 1693.3487,-125.8649 1793.5009,-108.9404 1854.9932,-99.0315"/>
+<polygon fill="#000000" stroke="#000000" points="1855.5753,-102.4829 1864.8945,-97.4428 1854.4662,-95.5713 1855.5753,-102.4829"/>
+</g>
+<!-- Tools&#45;&gt;Tags -->
+<g id="edge48" class="edge">
+<title>Tools-&gt;Tags</title>
+<path fill="none" stroke="#000000" d="M580.0059,-290.1074C590.3989,-279.6798 603.8677,-265.5181 614.6308,-252 650.564,-206.869 637.5535,-174.3218 686.6308,-144 751.9332,-103.6537 985.1874,-93.3455 1079.5657,-90.8014"/>
+<polygon fill="#000000" stroke="#000000" points="1079.6702,-94.3 1089.578,-90.5469 1079.4922,-87.3023 1079.6702,-94.3"/>
+</g>
+<!-- Telegram&#45;&gt;Tags -->
+<g id="edge81" class="edge">
+<title>Telegram-&gt;Tags</title>
+<path fill="none" stroke="#000000" d="M662.9368,-287.85C664.5903,-253.5614 673.5027,-179.5245 718.6308,-144 746.7281,-121.882 983.813,-100.7865 1079.6617,-93.0794"/>
+<polygon fill="#000000" stroke="#000000" points="1080.1367,-96.5528 1089.8272,-92.2697 1079.5809,-89.5749 1080.1367,-96.5528"/>
+</g>
+</g>
+</svg>
