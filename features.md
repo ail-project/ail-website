@@ -50,6 +50,6 @@ layout: info
 
 # Processing overview
 
-AIL provides a modular approach with different Python modules in charge of the various features. Modules are be plugged and started live to allow distribution of load accross multi processors.
+AIL provides a modular approach with different Python modules in charge of the various features. Modules can be plugged and started live to allow distribution of load accross multi processors.
 
 ![](https://www.ail-project.org/assets/img/graph.svg)
