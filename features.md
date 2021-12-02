@@ -4,6 +4,12 @@ permalink: /features
 layout: info
 ---
 
+# Screenshots
+
+![](https://www.ail-project.org/assets/img/ail-new.png)
+![](https://www.ail-project.org/assets/img/ail-new2.png)
+
+# Features
 
 * Modular architecture to handle streams of unstructured or structured information
 * Default support for external ZMQ feeds, such as provided by CIRCL or other providers
@@ -24,7 +30,7 @@ layout: info
 * Alerting to [MISP](https://github.com/MISP/MISP) to share found leaks within a threat intelligence platform using [MISP standard](https://www.misp-project.org/objects.html#_ail_leak)
 * Detect and decode encoded file (Base64, hex encoded or your own decoding scheme) and store files
 * Detect Amazon AWS and Google API keys
-* Detect Bitcoin address and Bitcoin private keys
+* Detect Bitcoin address and Bitcoin private keys and correlation with additional Bitcoin addresses from 
 * Detect private keys, certificate, keys (including SSH, OpenVPN)
 * Detect IBAN bank accounts
 * Tagging system with [MISP Galaxy](https://github.com/MISP/misp-galaxy) and [MISP Taxonomies](https://github.com/MISP/misp-taxonomies) tags
@@ -42,3 +48,8 @@ layout: info
 * A YARA retro-hunting to perform searches on collected items
 * AIL Synchronisation features to sync with other AIL instances
 
+# Processing overview
+
+AIL provides a modular approach with different Python modules in charge of the various features. Modules are be plugged and started live to allow distribution of load accross multi processors.
+
+![](https://www.ail-project.org/assets/img/graph.svg)
