@@ -4,12 +4,38 @@ title:  "Installing AIL with lxc/lxd"
 author: adulau
 ---
 
-
 ## Introduction
 
 [lxc/lxd](https://linuxcontainers.org/) provides a framework for vendor neutral containers. This post explains how to install AIL framework in a container or already use the existing AIL container.
 
-## Steps
+# If you want to run the container without doing the installation
+
+A ready made container is available at the following location [https://cra.circl.lu/lxc-containers/497cb236635bbe9dc345bc807e386b8f48f7f304fc25163cdb6df8e39fbc4146.tar.gz](
+https://cra.circl.lu/lxc-containers/497cb236635bbe9dc345bc807e386b8f48f7f304fc25163cdb6df8e39fbc4146.tar.gz) and you can use `lxc import` to import the container.
+
+```
+lxc image import https://cra.circl.lu/lxc-containers/497cb236635bbe9dc345bc807e386b8f48f7f304fc25163cdb6df8e39fbc4146.tar.gz --alias fresh-ail
+lxc launch fresh-ail myailcontainer
+```
+
+Now, dive in the container:
+```
+$ lxc exec myailcontainer -- /bin/bash
+# su ail
+$ cd ~/ail-framework/bin
+$ ../LAUNCH -l
+```
+Get the container's IP address by entering `lxc list`
+Then open a web browser on the host at
+```
+https://<container-ip-address>:7000
+```
+
+The default password for the web interface of AIL is G4FP7EabeXfuNPi
+
+# If you want to build from scratch your own AIL container
+
+## Installation Steps
 The instance name will be `ail`.
 
 - install lxd `apt install lxd` and `apt install lxc`
@@ -111,28 +137,4 @@ Check the IP address of your container and connect to:
 - `lxc publish  ail/fresh-install --alias ail-fresh-install`
 - `lxc image export ail-fresh-install .`
 
-# If you want to run the container without doing the installation
 
-A ready made container is available. [
-https://cra.circl.lu/lxc-containers/497cb236635bbe9dc345bc807e386b8f48f7f304fc25163cdb6df8e39fbc4146.tar.gz](
-https://cra.circl.lu/lxc-containers/497cb236635bbe9dc345bc807e386b8f48f7f304fc25163cdb6df8e39fbc4146.tar.gz) and you can use `lxc import` to import the container.
-
-```
-lxc image import https://cra.circl.lu/lxc-containers/497cb236635bbe9dc345bc807e386b8f48f7f304fc25163cdb6df8e39fbc4146.tar.gz --alias fresh-ail
-lxc launch fresh-ail myailcontainer
-```
-
-Now, dive in the container:
-```
-$ lxc exec myailcontainer -- /bin/bash
-# su ail
-$ cd ~/ail-framework/bin
-$ ../LAUNCH -l
-```
-Get the container's IP address by entering `lxc list`
-Then open a web browser on the host at
-```
-https://<container-ip-address>:7000
-```
-
-The default password for the web interface of AIL is G4FP7EabeXfuNPi
