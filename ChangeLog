@@ -1,6 +1,71 @@
 # Changelog
 
 
+## v4.1 (2022-03-11)
+
+### Changes
+
+* [flask] updated. [Alexandre Dulaunoy]
+
+* [flask] requirements for higher version of flask. [Alexandre Dulaunoy]
+
+* [v4.1] add Investigation with MISP Export + v4.1 update. [Terrtia]
+
+* [Telegram module] refactor module + fix str format. [Terrtia]
+
+### Fix
+
+* [Investigation] edit misp event + add misp instance url. [Terrtia]
+
+* [Investigation] fix MISP Export + UI sidebar. [Terrtia]
+
+* [UI inestigations] add items link. [Terrtia]
+
+* [UI inestigations] add objects link. [Terrtia]
+
+* [telegram launcher] [Terrtia]
+
+* [items] abstract class. [Terrtia]
+
+* [Investigation] UI sidebar. [Terrtia]
+
+* [v4.1] fix ardb # tracking DB. [Terrtia]
+
+* [username] user icon. [Thirion Aurélien]
+
+* [Term tracker] fix item date. [Terrtia]
+
+* [Telegram module] fix launcher. [Terrtia]
+
+* [pybgpranking] package install. [Terrtia]
+
+* [popper install] rename popper repository. [Terrtia]
+
+  https://github.com/floating-ui/floating-ui/discussions/1425
+
+* [UI] remove update note. [Terrtia]
+
+* [trackers] fix get_all_items_sources. [Terrtia]
+
+* [crawler] fix is_splash_manager_connected #133. [Terrtia]
+
+### Other
+
+* Merge branch 'master' of github.com:ail-project/ail-framework. [Terrtia]
+
+* Merge pull request #139 from gallypette/jabber-feeder. [Thirion Aurélien]
+
+  add: [username] jabber support
+
+* Add: [username] jabber support. [Jean-Louis Huynen]
+
+* Merge branch 'master' of github.com:ail-project/ail-framework. [Terrtia]
+
+* Create SECURITY.md. [Alexandre Dulaunoy]
+
+* Merge branch 'dev' [Terrtia]
+
+
 ## v4.0 (2021-12-01)
 
 ### Changes
