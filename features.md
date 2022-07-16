@@ -25,7 +25,8 @@ layout: info
 * Statistics on modules and web
 * Real-time modules manager in terminal
 * Global sentiment analysis for each providers based on nltk vader module
-* Terms, Set of terms and Regex tracking and occurrence
+* Terms, Set of terms, Regex and YARA tracking and occurrence
+* Extended tracker to find potential typo squatting domains using [ail-typo-squatting](https://github.com/ail-project/ail-typo-squatting)
 * Many more modules for extracting phone numbers, credentials and others
 * Alerting to [MISP](https://github.com/MISP/MISP) to share found leaks within a threat intelligence platform using [MISP standard](https://www.misp-project.org/objects.html#_ail_leak)
 * Detect and decode encoded file (Base64, hex encoded or your own decoding scheme) and store files
