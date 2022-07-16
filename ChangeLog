@@ -1,6 +1,136 @@
 # Changelog
 
 
+## %%version%% (unreleased)
+
+### Fix
+
+* [tracker typo squatting] fix perf. [Terrtia]
+
+* [tracker typo squatting] fix cache. [Terrtia]
+
+* [tracker typo squatting] [Terrtia]
+
+
+## v4.2 (2022-06-24)
+
+### Changes
+
+* [Tracker} Tracker_Typo_Squatting. [David Cruciani]
+
+* [v4.2] add v4.2 update. [Terrtia]
+
+* [investigation] fix investigation by user + delete an obj from all investigation. [Terrtia]
+
+* [install vitualenv] remove travis env. [Terrtia]
+
+* [Retro Hunt] add logs. [Terrtia]
+
+* [Retro Hunt] add logs. [Terrtia]
+
+* [Retro Hunt] add logs. [Terrtia]
+
+* [AIL2AIL Sync] update exchange format. [Terrtia]
+
+* [AIL2AIL Sync] update exchange format. [Terrtia]
+
+* [add Hosts module] [Terrtia]
+
+* [sync module] debug. [Terrtia]
+
+* [sync client] debug. [Terrtia]
+
+* [websockets client] bind client ip. [Terrtia]
+
+* [websocket server] add host and port config. [Terrtia]
+
+* [telegram importer] add username correlation. [Terrtia]
+
+* [UI subtype objs] get obj by subtype + name. [Terrtia]
+
+* [misp export] add username. [Terrtia]
+
+### Fix
+
+* [typosquatting] remove unused import. [Thirion Aurélien]
+
+* [tracker] clean import. [Thirion Aurélien]
+
+* [tracker term] fix typosquatting key. [Thirion Aurélien]
+
+* [Typo] tracker typo. [David Cruciani]
+
+* [tracker] UI for other than typosquat. [David Cruciani]
+
+* [typo] UI. [David Cruciani]
+
+* [Language] fix cld3 import. [Terrtia]
+
+* [launcher] kill AIL_2_AIL screen. [Terrtia]
+
+* [cld3] enable cld3. [Terrtia]
+
+* [cld3 python3.10] temp disable cld3. [Terrtia]
+
+* [launcher] remove Travis test. [Terrtia]
+
+* [Retro Hunt] item directory. [Terrtia]
+
+* [Retro Hunt] item directory. [Terrtia]
+
+* [Retro Hunt] fix item directory. [Terrtia]
+
+* [AIL exchange mime-type] [Terrtia]
+
+* [Hosts module] module + launcher. [Terrtia]
+
+* [abstract module] exception traceback #145. [Terrtia]
+
+* [ui tag selector] force custom tags. [Terrtia]
+
+* [installer] remove old tor install. [Terrtia]
+
+* [sync module] fix redis tag queue. [Terrtia]
+
+* [sync module] fix tags filter. [Terrtia]
+
+* [sync client] debug. [Terrtia]
+
+* [sync client] debug. [Terrtia]
+
+* [sync module] debug. [Terrtia]
+
+* [websockets client] fix client bind. [Terrtia]
+
+* [websockets] remove size limit. [Terrtia]
+
+* [UI subtype objs] fix form. [Terrtia]
+
+* [misp config] https. [Thirion Aurélien]
+
+### Other
+
+* Merge pull request #147 from ail-project/typo. [Thirion Aurélien]
+
+  Integration of the typo-squatting tracker
+
+* Fix; [set tracker] missing function. [Thirion Aurélien]
+
+* Merge branch 'master' into typo. [David Cruciani]
+
+* Add: [tracker] typo-squatting. [David Cruciani]
+
+* Merge branch 'master' of github.com:ail-project/ail-framework. [Terrtia]
+
+* Merge pull request #146 from gallypette/master. [Thirion Aurélien]
+
+  add: [modules] zerobinz
+
+* Add: [modules] zerobinz. [huynenjl@gmail.com]
+
+* Merge branch 'master' of github.com:ail-project/ail-framework. [Terrtia]
+
+
 ## v4.1 (2022-03-11)
 
 ### Changes
