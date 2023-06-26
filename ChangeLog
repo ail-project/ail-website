@@ -1,15 +1,420 @@
 # Changelog
 
 
-## %%version%% (unreleased)
+## v5.1 (2023-06-26)
+
+### Changes
+
+* [pystemon importer] fix gzipped pastes. [Terrtia]
+
+* [correlation graph] show message if max_nodes reached + fix cookie-name sparkline. [Terrtia]
+
+* [crawler] auto tag crawled domains. [Terrtia]
+
+* [correlation] add an option to remove max number of nodes if max_node == 0. [Terrtia]
+
+* [object cookie-name] add new cookie-name object + correlation. [Terrtia]
+
+* [title search] add pagination. [Terrtia]
+
+* [titles] add title IDs and contents search. [Terrtia]
+
+* [favicon object] add favicon object. [Terrtia]
+
+* [sow item] show item investigations. [Terrtia]
+
+* [kvrocks migration] mv update/v.50. [Terrtia]
+
+* [redis] update minimal version. [Terrtia]
+
+* [doc] add AIL v5.0 + objects + Importers + sync. [Terrtia]
+
+* [correlation] filter blank screenshots. [Terrtia]
+
+* [importers] improve abstract class and logs. [Terrtia]
+
+* [domains explorer] unsafe tag default image. [Terrtia]
+
+* [README.md] update. [Terrtia]
+
+* [HOWTO] improve HOWTO. [Terrtia]
+
+* [correlation graph] update node legend. [Terrtia]
+
+* [correlation graph] select correlation depth. [Terrtia]
+
+* [correlation] correlation graph: filter title objects. [Terrtia]
+
+* [correlation] add direct correlation stats. [Terrtia]
+
+* [new title object] add new title object + correlation on page title. [Terrtia]
+
+* [Phone module] Filter Invalid Phone numbers + UI Show extracted. [Terrtia]
+
+* [importers] add Dir/File Importer. [Terrtia]
 
 ### Fix
+
+* [pystemon importer] fix base64 encoding. [Terrtia]
+
+* [crawler] same capture uuid if a domain is already crawled. [Terrtia]
+
+* [IPAdress module] empty queue if no IP ranges provided. [Terrtia]
+
+* [retro hunt] fix object tag queue + decoded content. [Terrtia]
+
+* [daterange object] fix objects by date. [Terrtia]
+
+* [title] fix title search empty result. [Terrtia]
+
+* [crawler] fix incomplete response. [Terrtia]
+
+* [user] fix get user token #163. [Terrtia]
+
+* [user] fix user delete #163. [Terrtia]
+
+* [MISP export] fix ail object first/last seen + obj logger. [Terrtia]
+
+* [MISP export] fix empty event. [Terrtia]
+
+* [d4] change enable d4. [Terrtia]
+
+* [kvrocks migration] [Terrtia]
+
+* [objects] fix investigation + ail2ail + screenshot MISP export. [Terrtia]
+
+* [domains explorer] None screeenshot. [Terrtia]
+
+* [show domains] fix down domains. [Terrtia]
+
+* [domains explorer] domain screeenshot. [Terrtia]
+
+* [domains explorer] fix empty screenshots. [Terrtia]
+
+* [correlation] fix tagging nb nodes. [Terrtia]
+
+* [README.md] fix CI badge. [Terrtia]
+
+* [README.md] fix logo. [Terrtia]
+
+* [module.cfg] fix templateModule example. [Terrtia]
+
+* [module extractor] fix tracker extractor. [Terrtia]
+
+* [tracker] fix tracker delete. [Terrtia]
+
+* [tracker] fix webhook. [Terrtia]
+
+* [crawler] fix undefined capture status. [Terrtia]
+
+* [correlation btc info] catch btc txs error. [Terrtia]
+
+* [Phone module] Filter Invalid Phone numbers. [Terrtia]
+
+* [phone] fix phone module. [Terrtia]
+
+* [domain search] fix template domain types filter. [Terrtia]
+
+* [domain search] fix template domain types filter. [Terrtia]
+
+* [MISP auto export] fix module input message. [Terrtia]
+
+* [tests] replace unmaintened nose by nose2. [Terrtia]
+
+* [tests] fix tests. [Terrtia]
+
+* [instaler] fix yara and pycld3 install. [Terrtia]
+
+* [tests] github workflow. [Terrtia]
+
+* [tests] github workflow. [Terrtia]
+
+* [flask] remove old import. [Terrtia]
+
+### Other
+
+* Merge github.com:CIRCL/AIL-framework. [Terrtia]
+
+* Merge pull request #592 from shadow2033/patch-2. [Thirion Aurélien]
+
+  Update Categ Mail
+
+* Update Mail. [shadow2033]
+
+  ///English
+  added (inbox; zoho)
+
+  ///Russian
+  добавлен (inbox; zoho)
+
+
+## v5.0 (2023-05-17)
+
+### Changes
+
+* [update] bump version < 5.0 roll back commit. [Terrtia]
+
+* [kvrocks] add migration notice. [Terrtia]
+
+* [update] older versions: filter 5.0 updates. [Terrtia]
+
+* [ail] cleanup. [Terrtia]
+
+* [MISP] refactor MISP thehive auto push. [Terrtia]
+
+* [IPAddress module] migrate IPAddress module. [Terrtia]
+
+* [logs] add new logger. [Terrtia]
+
+* [trackers UI] add admin endpoint. [Terrtia]
+
+* [trackers] refactor trackers. [Terrtia]
+
+* [crawler] add unsafe tag if domain contain unsafe screenshot. [Terrtia]
+
+* [objects + retro hunt] refactor retro hunt + objects retro hunts + get objects generator by filters (date_from, sources, mimetypes, ...) [Terrtia]
+
+* [trackers] refactor trackers: track objects + filter by object types/sources/subtypes. [Terrtia]
+
+* [correlation] blur image by default. [Terrtia]
+
+* [corellation graph] hide unsafe screenshots. [Terrtia]
+
+* [pystemon importer] create new PystemonImporter module, refactor pystemon feeder. [Terrtia]
+
+* [cleanup] [Terrtia]
+
+* [UI settings] add ail modules svg + fix admin view. [Terrtia]
+
+* [AIL queues] rewrite module queues. remove PUBSUB. [Terrtia]
+
+* [correlation] new admin enpoint delete correlation + add screenshot correlation filter. [Terrtia]
+
+* [correlation] tags all objects. [Terrtia]
+
+* [tags] remove old flask blueprint. [Terrtia]
+
+* [config] Kvrocks config + reset DB. [Terrtia]
+
+* [DB] remove ARDB + temp disable MISP import and auto export. [Terrtia]
+
+* [crawler] update default user agent. [Terrtia]
+
+* [Mixer] refactor Mixer + fix ZMQImporter config. [Terrtia]
+
+* [crawle] migrate domains settings. [Terrtia]
+
+* [stats] disable statistics. [Terrtia]
+
+* [core] merge conflict. [Terrtia]
+
+* [feeder] rename bgp_monitor. [Terrtia]
+
+* [feeder] add bgp_monitor importer. [Terrtia]
+
+* [pgpdump] check trackers on extracted metadata. [Terrtia]
+
+* [api] send url to crawler. [Terrtia]
+
+* [trackers] add warnings logs. [Terrtia]
+
+* [logs] add syslog level + facility + script startup message. [Terrtia]
+
+* [v4.2.1] add pubsublogger update. [Terrtia]
+
+* [logs] add syslog server option. [Terrtia]
+
+* [crawler] add crawler scheduler. [Terrtia]
+
+* [subtype objects] migrate UI cryptocurrency, pgp, username. [Terrtia]
+
+* [extractor] add cache + UI extractor + word/set extractor. [Terrtia]
+
+* [crawler] refactor crawler tasks + migrate cookiejars + add proxy option. [Terrtia]
+
+* [crawler] cookies migration + refactor. [Terrtia]
+
+* [exporter] add TheHive exporter. [Terrtia]
+
+* [exporter] refactor + add a new way to create and use exporters. [Terrtia]
+
+* [importer] refactor ZMQ + Feeder importer. [Terrtia]
+
+* [cleanup] remove ARDB + fix hive case. [Terrtia]
+
+* [MISP export + redis] refactor MISP, export all relationships between objects, relationships between investigated objects + bump redis-py version + theHive export. [Terrtia]
+
+* [Item] change parent-child key. [Terrtia]
+
+* [decoded migration] migrate Decoded Objects. [Terrtia]
+
+* [CVE] CVE search integration. [Terrtia]
+
+* [CVE] migrate CVE + get CVEs by daterange. [Terrtia]
+
+* [DB Migration] UI: Extract + highlight leaks and trackers match, Data Retention save object first/last date, Refactor Tools. [Terrtia]
+
+* [migration] migrate Item + Domain metas. [Terrtia]
+
+* [migration] migrate Screenshots + Trackers + Duplicates + fix zadd zincrby. [Terrtia]
+
+* [modules] migrate D4_client + PgpDump modules. [Terrtia]
+
+* [all] remove old objects + migrate cryptocurrencies module + cleanup code. [Terrtia]
+
+* [updates] remove v2.4 update + cleanup. [Terrtia]
+
+* [telegram] migration. [Terrtia]
+
+* [tags] refactor tags + cleanup. [Terrtia]
+
+* [crawler + core + cve] migrate crawler to lacus + add new CVE object and correlation + migrate core. [Terrtia]
+
+* [modules + correlation] migrate Cve,Iban,Language + fix correlation graph. [Terrtia]
+
+* [module] refactor Iban module + fix pgp migration. [Terrtia]
+
+* [statistics] ARDB migration. [Terrtia]
+
+* [Kvrocks migration] rewrite obj tags + migration. [Terrtia]
+
+* [launcher] disable SentimentAnalysis. [Terrtia]
+
+* [Kvrocks migration] add users + updates + trackers + retro_hunts + investigation migration. [Terrtia]
+
+* [custom tags] create + select custom tags. [Terrtia]
+
+* [kvrocks] launch + install. [Terrtia]
+
+### Fix
+
+* [HOWTO] add missing screenshots. [Terrtia]
+
+* [tag auto push] fix navbar. [Terrtia]
+
+* [cves] fix cve search timeout. [Terrtia]
+
+* [Onion module] fix kvrocks sismeber. [Terrtia]
+
+* [core] fix instance ail:uuid. [Terrtia]
+
+* [telegram] fix regex. [Terrtia]
+
+* [logger] rename default logger file + fix log messages. [Terrtia]
+
+* [trackers] fix pgp yara tracker. [Terrtia]
+
+* [cves] catch cve search errors. [Terrtia]
+
+* [trackers] fix trackers edit. [Terrtia]
+
+* [UI feeder] fix logger. [Terrtia]
+
+* [domain explorer] increase default blur. [Terrtia]
+
+* [search domains] fix search domains by daterange. [Terrtia]
+
+* [domain explorer] fix search by daterange. [Terrtia]
+
+* [correlation] fix objects tagging. [Terrtia]
+
+* [api] fix token length. [Terrtia]
+
+* [modules] log level. [Terrtia]
+
+* [flask senf_file] fix decoded download. [Terrtia]
+
+* [domain UI] fix correlation card + language search. [Terrtia]
+
+* [investigation] fix create investigation. [Terrtia]
+
+* [module extractor] fix cache + fix yara match. [Terrtia]
+
+* [MISP exporter] fix MISP exporter CIRCL/AIL-framework#590. [Terrtia]
+
+* [objects] show/add subtype objects tags. [Terrtia]
+
+* [kvrocks config] fix default dir. [Terrtia]
+
+* [tracker modulew] fix duplicate module stats. [Terrtia]
+
+* [crawler] typo. [Terrtia]
+
+* [tags] fix delete subtype tags. [Terrtia]
+
+* [correlation] fix UI cve, decoded tags. [Terrtia]
+
+* [correlation] fix related bitcoins. [Terrtia]
+
+* [subtypes dashboard] fix obj base url. [Terrtia]
+
+* [credential module] fix logging message. [Terrtia]
+
+* [tags] enabled tags selector. [Terrtia]
+
+* [tags] fix UI enabled tags selector. [Terrtia]
+
+* [tags] fix UI enabled tags selector. [Terrtia]
+
+* [cve + crawler] fix crawler lacus client refresh + typo. [Terrtia]
+
+* [submit] fix UI submit. [Terrtia]
+
+* [queues] fix Mixer queue. [Terrtia]
+
+* [queues] fix Mixer queue. [Terrtia]
+
+* [submit] fix UI submit. [Terrtia]
+
+* [modules] small fixs. [Terrtia]
+
+* [modules] small fixs. [Terrtia]
+
+* [LAUNCH] remove ardb check. [Terrtia]
+
+* [tracker] fix exporters. [Terrtia]
+
+* [core] fix merge. [Terrtia]
+
+* [feeder] bgp_monitor class. [Terrtia]
+
+* [api] fix crawler api response. [Terrtia]
+
+* [api] fix crawler api. [Terrtia]
 
 * [tracker typo squatting] fix perf. [Terrtia]
 
 * [tracker typo squatting] fix cache. [Terrtia]
 
 * [tracker typo squatting] [Terrtia]
+
+* [exporter] thehive exporter, create case. [Terrtia]
+
+* [user] fix user creation. [Terrtia]
+
+* [modules] fix modules. [Terrtia]
+
+* [data_rentention_engine] fix object first/last seen. [Terrtia]
+
+* [Tracker migration] clean old Term library. [Terrtia]
+
+* [blueprints] remove old user library. [Terrtia]
+
+### Other
+
+* Merge master. [Terrtia]
+
+* Merge branch 'master' of github.com:ail-project/ail-framework. [Terrtia]
+
+* Merge pull request #151 from cudeso/patch-1. [Alexandre Dulaunoy]
+
+  Remove CIRCL NS / ZMQ from sample config file
+
+* Remove CIRCL NS / ZMQ from sample config file. [Koen Van Impe]
+
+* DB migration. [Terrtia]
+
+* Chg; [Duplicates module] refactor module + DB keys. [Terrtia]
 
 
 ## v4.2 (2022-06-24)
