@@ -1,6 +1,59 @@
 # Changelog
 
 
+## v5.2 (2023-07-12)
+
+### Changes
+
+* [update] remove old updates < 5.0. [Terrtia]
+
+* [updater] refactor background updater + add v5.2 update. [Terrtia]
+
+* [crawler har] compress HAR. [Terrtia]
+
+* [correlation] correlation graph, add an option to hide an object/node by pressing H + reset correlation graph. [Terrtia]
+
+* [etag] add new etag object. [Terrtia]
+
+* [investigation] add object comment. [Terrtia]
+
+### Fix
+
+* [updater] fix env. [Terrtia]
+
+* [background update] fix logger. [Terrtia]
+
+* [crawler] add timeout to Unknown captures. [Terrtia]
+
+* [crawler] add exception handing for ping_lacus. [fukusuket]
+
+* [crawler] added existence check for screenshot set. [fukusuket]
+
+* [decoded] fix download file. [Terrtia]
+
+* [updater] fix db checker. [Terrtia]
+
+* [correlation tags] fix tag all objects. [Terrtia]
+
+* [correlation card decoded meta] mimetype + size. [Terrtia]
+
+* [correlation card decoded meta] mimetype + size. [Terrtia]
+
+* [updater] remove old ARDB env. [Terrtia]
+
+* [hunter + misp export] fix misp event json export + retro hunt date search and description. [Terrtia]
+
+### Other
+
+* Merge pull request #174 from fukusuket/fix-500-erro-when-invalid-lacus-url. [Thirion Aurélien]
+
+  fix: [crawler] add exception handing for `ping_lacus`
+
+* Merge pull request #176 from fukusuket/fix-500-error-when-crawler-screenshot-setting-off. [Thirion Aurélien]
+
+  fix: [crawler] added existence check for screenshot set
+
+
 ## v5.1 (2023-06-26)
 
 ### Changes
