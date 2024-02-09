@@ -1,5 +1,421 @@
 # Changelog
 
+## v5.3 (2024-02-05)
+
+### Changes
+
+* [LAUNCH] change restart flags. [terrtia]
+
+* [UI] If version None do not show release note link. [Steve Clement]
+
+* [LAUNCH] make sure reload works. [Steve Clement]
+
+* [LAUNCH] Addded a "restart" option, killAll + launchAuto. [Steve Clement]
+
+* [tags] add Tag class. [terrtia]
+
+* [Hosts] improve perf + regex timeout + cache DNS results. [terrtia]
+
+* [kvrocks] j -4 install + update to latest version. [terrtia]
+
+* [translation] translate chats info, users info and subchannels names. [terrtia]
+
+* [chats] show NB messages by chat. [terrtia]
+
+* [v5.3] add v5.3 update. [terrtia]
+
+* [relationships] add relationship engine + WIP relationships between forwarded messages/chats. [terrtia]
+
+* [message] UI translate message object. [terrtia]
+
+* [Language] replace pycld3 by gcld3 + clean text before language detection. [terrtia]
+
+* [hosts] filter onion. [terrtia]
+
+* [install] remove python package from thirdparty. [terrtia]
+
+* [thirdparties] remove sb-admin + debug #194. [terrtia]
+
+* [queues] timeout obj after 2 days. [terrtia]
+
+* [chats] get user message ids by chat. [terrtia]
+
+* [correlation] UI chats filters + correation user-account/username. [terrtia]
+
+* [crawlers] add endpoints to reset captures. [terrtia]
+
+* [crawlers] add endpoints to reset captures. [terrtia]
+
+* [chats] add pagination. [terrtia]
+
+* [chats] add participants corrlation shortcut. [terrtia]
+
+* [tags] searech messages tags by daterange. [terrtia]
+
+* [tags] search messages by tags. [terrtia]
+
+* [categ] messages, bypass categ module + fix correlation. [terrtia]
+
+* [crawler] push onion discovery capture_uuid to another AIL. [terrtia]
+
+* [chats] add chats participants + user-accounts basic template. [terrtia]
+
+* [chats] translate messages on demand. [terrtia]
+
+* [chats] add discord threads, Forum channel. [terrtia]
+
+* [chats] add messages threads. [terrtia]
+
+* [chats] add message file-name object + str emoticon reactions. [terrtia]
+
+* [chat users] add users icons. [terrtia]
+
+* [chats] factorise heatmap + chat icon. [terrtia]
+
+* [chats] add message and blur blocks. [terrtia]
+
+* [queues] add new image queue + add exif module. [terrtia]
+
+* [images] add sidebar shortcut. [terrtia]
+
+* [chats] add image object + show message image. [terrtia]
+
+* [chats] add heatmap nb week messages by hour. [terrtia]
+
+* [chats] message object template. [terrtia]
+
+* [submodules] bump. [terrtia]
+
+* [messages] refactor get_messages_meta + add basic message template. [terrtia]
+
+* [chats explorer] show chats/subchannels creation date. [terrtia]
+
+* [chats] add UI shortcut + networks list + show chats/subchannels info. [terrtia]
+
+* [chats] improve UI + fix importer. [terrtia]
+
+* [chats] add chats explorer v0. [terrtia]
+
+* [core] merge master + fix object subtype correlation stats. [terrtia]
+
+* [crawlers] submit cookies to the crawler task API. [Jean-Louis Huynen]
+
+* [crawlers] submit a single cookie to the crawler task API. [Jean-Louis Huynen]
+
+* [mail exporter] add obj content extract for each regex match. [Terrtia]
+
+* [mail exporter] add obj content extract for each yara rule match. [Terrtia]
+
+* [titles] add yara tracker on title + tags domains if unsafe title tags. [Terrtia]
+
+* [modules] crawl pasties domains. [Terrtia]
+
+* [module + queues] track + rename object global ID by module. [terrtia]
+
+* [importers obj_type] importers queues: add feeder source + object global ID. [terrtia]
+
+* [ail queues] merge. [terrtia]
+
+* [chat + user-account] correlations + usernames timeline. [Terrtia]
+
+* [core] add telegram importer + Chat object + message Object + add timeline engine. [Terrtia]
+
+* [module extrator] add debug. [Terrtia]
+
+* [module extrator] add debug. [Terrtia]
+
+* [telegram fedeer] use meta of the new feeder. [Terrtia]
+
+* [flask] cleanup. [Terrtia]
+
+* [flask] cleanup, remove unused import. [Terrtia]
+
+* [crawler ui] last crawled domains, show last check timestamp. [Terrtia]
+
+* [tracker ui] improve show typo squatting button + add tooltip. [Terrtia]
+
+* [api crawler] fix response + add cookiejar, proxy and frequency parameters. [Terrtia]
+
+* [HHHash] add HHHash object and correlation https://www.foo.be/2023/07/HTTP-Headers-Hashing_HHHash. [Terrtia]
+
+* [objs processed] xxhash messages. [terrtia]
+
+* [queues] track object + check if object processed. [Terrtia]
+
+### Fix
+
+* [LAUNCH] fix ENV error message. [terrtia]
+
+* [crawler] fix capture None domain name. [terrtia]
+
+* [tags] fix invalid tags. [terrtia]
+
+* [README] api.md link typo. [fukusuket]
+
+* [tags] fix typo. [terrtia]
+
+* [docs + UI] fix repository links. [terrtia]
+
+* [ui] Do not show relNotes link if not on a tag. [Steve Clement]
+
+* [repo] Point to the correct ail-project repo. [Steve Clement]
+
+* [D4] fix module cache. [terrtia]
+
+* [misp export] fix empty event on module start. [terrtia]
+
+* [crawlers] fix capture return error code. [terrtia]
+
+* [crawlers] fix errored capture queue. [terrtia]
+
+* [crawlers] fix errored capture start time. [terrtia]
+
+* [chat view] fix created_at + filter. [terrtia]
+
+* [heatmap] fix tooltip position. [terrtia]
+
+* [crawler] log UNKNOWN timeout. [terrtia]
+
+* [Language] fix language source. [terrtia]
+
+* [hosts] fix number of hosts extracted. [terrtia]
+
+* [DomClassifier] improve perf. [terrtia]
+
+* [DomClassifier] improve perf. [terrtia]
+
+* [DomClassifier] improve perf. [terrtia]
+
+* [queue] save last timout in cache. [terrtia]
+
+* [crawler] fix api create_task. [terrtia]
+
+* [tags] debug. [terrtia]
+
+* [tags] debug. [terrtia]
+
+* [tags] debug. [terrtia]
+
+* [tags] debug. [terrtia]
+
+* [tags] debug. [terrtia]
+
+* [tags] debug. [terrtia]
+
+* [tags] debug. [terrtia]
+
+* [tags] debug. [terrtia]
+
+* [tags] debug. [terrtia]
+
+* [tags] remove invalid tags. [terrtia]
+
+* [keys module] fix tags. [terrtia]
+
+* [crawlers] fix task start. [terrtia]
+
+* [crawler] debug. [terrtia]
+
+* [crawler] debug. [terrtia]
+
+* [crawler] debug. [terrtia]
+
+* [libinjection] memory leak, disable module. [terrtia]
+
+* [zmq importer] fix object source name. [terrtia]
+
+* [chat] fix translation pagination. [terrtia]
+
+* [crawler] fix capture start time. [terrtia]
+
+* [sidebar] typo. [terrtia]
+
+* [translate] fix exception. [terrtia]
+
+* [api] fix add crawler capture return. [terrtia]
+
+* [language] libretranslate unreachable. [terrtia]
+
+* [requirement] fix libretranslate, fix #189 + fix #190. [terrtia]
+
+* [retro_hunt] fix daterange. [terrtia]
+
+* [chat d3 heatmap] add missing function. [terrtia]
+
+* [doc] simplify ail feeder. [terrtia]
+
+* [investigations] delete obj. [terrtia]
+
+* [chats] fix username meta. [terrtia]
+
+* [languages] fix language module. [terrtia]
+
+* [chats] fix chat username. [terrtia]
+
+* [tags] fix galaxies synonyms. [terrtia]
+
+* [chats] fix messages replies. [terrtia]
+
+* [dep] Pinning flask to < 3.0 due to Werkzeug 3.0 issues: https://stackoverflow.com/a/77215455. [Steve Clement]
+
+* [tracker] delete yara rule, fix filter by object type. [terrtia]
+
+* [items source] filter invalid item sources. [Terrtia]
+
+* [json importer] fix empty source name. [Terrtia]
+
+* [items source] fix empty sources list. [Terrtia]
+
+* Typo. [Terrtia]
+
+* [title] fix None title. [Terrtia]
+
+* [tracker objs filter] fix title icon. [Terrtia]
+
+* [module pasties] fix module name. [Terrtia]
+
+* [module] fix module obj type: language + mail. [terrtia]
+
+* [queues] fix ended duplicate + sync queue. [terrtia]
+
+* [chats] message css + reply ID. [terrtia]
+
+* Correlations. [Terrtia]
+
+* [module extractor] fix invalid yara offset. [Terrtia]
+
+* [module extractor] fix invalid yara offset. [Terrtia]
+
+* [tags ui] fix galaxy, get number of tags enabled + add toolip helper. [Terrtia]
+
+* [settings] fix edit user. [Terrtia]
+
+* [Tracker] edit tracker filters. [Terrtia]
+
+* [MailExporter] improve logs + SMTP over SSL: add an option to validate self signed CA This exporter use STARTTLS by defaults. If the SMTP server does not support the STARTTLS extension, the client will switch to SSL instead. [Terrtia]
+
+* [tools crawler] fix helper. [Terrtia]
+
+* [tools crawler] improve helper. [Terrtia]
+
+* [crawler] fix down domain + domain redirection history. [Terrtia]
+
+* [domain search] returns an empty string when searched with invalid characters. [fukusuket]
+
+* [doc] fix LAUNCH.sh typo. [fukusuket]
+
+### Other
+
+* Merge branch 'dev' of github.com:CIRCL/AIL-framework into dev. [terrtia]
+
+* Merge pull request #595 from shadow2033/patch-3. [Thirion Aurélien]
+
+  Update Categ CreditCards keyworlds
+
+* Update CreditCards. [shadow2033]
+
+  ///English
+  added (Mir; QIWI; WebMoney)
+
+  ///Russian
+  добавлены (Mir; QIWI; WebMoney)
+
+* Merge remote-tracking branch 'origin/master' into dev. [terrtia]
+
+* Merge pull request #205 from NMD03/patch-1. [Thirion Aurélien]
+
+  Update README.md
+
+* Update README.md. [Niclas Dauster]
+
+* Merge pull request #203 from NMD03/LXD-imagebuilder. [Thirion Aurélien]
+
+  Add [autobuild] build script + systemd config
+
+* Add [autobuild] build script + systemd config. [niclas]
+
+* Merge remote-tracking branch 'circl/master' [Alexandre Dulaunoy]
+
+* Merge pull request #604 from NMD03/LXD-installer. [Thirion Aurélien]
+
+  Add LXD installer
+
+* Update [README] add installer options. [niclas]
+
+* Add [interactive install] interactive install. [niclas]
+
+* Fix [tor install] tor install on lacus. [niclas]
+
+* Add [install] install tor on lacus. [niclas]
+
+* Add [install] container setup ail + lacus. [niclas]
+
+* Initial commit. [niclas]
+
+* Merge pull request #198 from fukusuket/fix-readme-api-document-link-typo. [Alexandre Dulaunoy]
+
+  fix: [README] api.md link typo
+
+* Merge remote-tracking branch 'refs/remotes/origin/dev' into dev. [terrtia]
+
+* Merge pull request #202 from SteveClement/dev. [Steve Clement]
+
+  chg: [LAUNCH] Addded a "restart" option, killAll + launchAuto
+
+* Merge branch 'dev' into dev. [Steve Clement]
+
+* Merge pull request #201 from SteveClement/UI_fix. [Steve Clement]
+
+  fix: [repo] Point to the correct ail-project repo
+
+* Merge branch 'ail-project:dev' into dev. [Steve Clement]
+
+* Merge pull request #1 from SteveClement/UI_fix. [Steve Clement]
+
+  fix: [repo] Point to the correct ail-project repo
+
+* Merge branch 'master' into dev. [terrtia]
+
+* Merge pull request #196 from markus-lassfolk/master. [Thirion Aurélien]
+
+  Fix IndexError in get_last_tag_from_remote Function
+
+* Fix IndexError in get_last_tag_from_remote function. [Markus Lassfolk]
+
+  This commit adds a check to ensure that the output from the subprocess command in the get_last_tag_from_remote function has a sufficient number of lines before attempting to access specific indices. This change prevents the IndexError that occurred when the git command's output was shorter than expected.
+
+* Merge pull request #195 from markus-lassfolk/master. [Alexandre Dulaunoy]
+
+  Typo in CRAWLED_SCREENSHOT
+
+* Typo in CRAWLED_SCREENSHOT. [Markus Lassfolk]
+
+  There was a typo in the CRAWLED_SCREENSHOT
+
+* Fix [api] fix add_crawler_capture endpoint. [terrtia]
+
+* Merge branch 'master' into dev. [terrtia]
+
+* Merge branch 'master' into dev. [terrtia]
+
+* Merge pull request #183 from SteveClement/flask_fix. [Thirion Aurélien]
+
+  fix: [dep] Pinning flask to < 3.0 due to Werkzeug 3.0 issues
+
+* Merge branch 'master' of github.com:ail-project/ail-framework. [Terrtia]
+
+* Update crawler_add_task.py. [Alexandre Dulaunoy]
+
+* Merge branch 'master' of github.com:ail-project/ail-framework. [Terrtia]
+
+* Merge pull request #179 from fukusuket/fix-500-error-when-invalid-domain-search. [Thirion Aurélien]
+
+  fix: [domain search] prevent exceptions when search domain by invalid characters
+
+* Merge pull request #177 from fukusuket/fix-readme-launch-sh-typo. [Alexandre Dulaunoy]
+
+  fix: [doc] fix README `LAUNCH.sh` typo
+
 
 ## v5.2 (2023-07-12)
 
