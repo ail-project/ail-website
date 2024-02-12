@@ -8,25 +8,29 @@ author: Niclas Dauster
 
 #  Streamlining AIL & Lacus Deployment: An Automated Installer for LXD
 
-The [AIL framework (Analysis of Information Leak)](https://github.com/ail-project/ail-framework/tree/master) has long been at the forefront of privacy and data leak analysis, providing tools for monitoring, analyzing, and managing leaks of sensitive information. The introduction of a dedicated [LXD](https://canonical.com/lxd) installer marks a significant milestone in making AIL more accessible and easier to deploy, especially in combination with [Lacus](https://github.com/ail-project/lacus), a capturing system using a network telescope. This development is particularly pertinent within the scope of the [MISP-LEA Project](#about-misp-lea), as it underscores a strategic move towards enhancing the accessibility and deployment efficiency of cybersecurity tools for analyzing information leaks. 
+The [AIL framework (Analysis of Information Leak)](https://github.com/ail-project/ail-framework/tree/master) has long been at the forefront of privacy and data leak analysis, providing tools for monitoring, analyzing, and managing sensitive unstructured information. The introduction of a dedicated [LXD](https://canonical.com/lxd) installer marks a significant milestone in making AIL more accessible and easier to deploy, especially in combination with [Lacus](https://github.com/ail-project/lacus), a capturing system using instrumented browser capabilities. This development is particularly pertinent within the scope of the [MISP-LEA Project](#about-misp-lea), as it underscores a strategic move towards enhancing the accessibility and deployment efficiency of cybersecurity tools for analyzing information leaks, gathering intelligence or Tor hidden services. 
 
 ## Why LXD?
+
 LXD, a next-generation system container and virtual machine manager, offers an efficient and secure way to run multiple isolated Linux systems (containers) on a single host. Leveraging LXD for AIL and Lacus environments means streamlined deployments and better resource utilization.
 
 ## Key Features of the LXD Installer
+
 The LXD installer for AIL and Lacus brings several key benefits to the table:
 1. **Simplified Installation Process:** The LXD installer for AIL and Lacus simplifies the setup process, making it accessible even to those with minimal experience in container management.
 
 2. **Resource Efficiency:** LXD's lightweight nature means that AIL and Lacus can run on a wide range of hardware setups without significant resource overhead, making it ideal for both small-scale investigations and large-scale deployments.
 
 ## Getting Started
+
 The LXD installer for AIL and Lacus is designed to be user-friendly and straightforward. Here's a high-level overview of the installation process. For detailed instructions, refer to the [LXD installer README](https://github.com/ail-project/ail-framework/blob/master/other_installers/LXD/README.md).
-1. **Prerequisites:** Ensure that LXD is installed on the host system. If not, follow the [official LXD installation guide](https://documentation.ubuntu.com/lxd/en/latest/tutorial/first_steps/). Additionally, ensure that jq is installed on the host system.
+1. **Prerequisites:** Ensure that LXD is installed on the host system. If not, follow the [official LXD installation guide](https://documentation.ubuntu.com/lxd/en/latest/tutorial/first_steps/). Additionally, ensure that `jq` is installed on the host system.
 2. **Clone the Repository:** Clone the AIL framework repository to the host system.
 3. **Run the Installer:** Navigate to the `other_installers/LXD` directory within the AIL framework repository and run the `INSTALL.sh` script. Running the script in interactive mode will guide you through the installation process, prompting you for necessary information along the way:
-    ```bash
+
+```bash
     bash INSTALL.sh --interactive
-    ```
+```
 
 The installation process is comprehensive, as it involves a complete setup of AIL within the container, which can be time-consuming. To expedite this process, you have the option to download pre-built LXD images from the [AIL images website](https://images.ail-project.org/). Utilizing these images can significantly reduce installation time by following these steps:
 
