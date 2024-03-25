@@ -1,5 +1,187 @@
 # Changelog
 
+
+## v5.4 (2024-03-25)
+
+### Changes
+
+* [language] add thread languages stats. [terrtia]
+
+* [language messages] add nb languages stats by chat/subchannel objects. [terrtia]
+
+* [lang] merge master. [terrtia]
+
+* [lang] improve language detection + UI: manual translation and detection. [terrtia]
+
+* [requirements] add lexilang. [terrtia]
+
+* [trackers match] show objects date. [terrtia]
+
+* [requirements] add demoji. [terrtia]
+
+* [user-account] add default card. [terrtia]
+
+* [chat-subchannel] add basic + default card. [terrtia]
+
+* [chat] add chat default + basic card. [terrtia]
+
+* [image object] add default + basic card. [terrtia]
+
+* [global module] perf. [terrtia]
+
+* [tools] reprocess objects by type. [terrtia]
+
+* [modules] improve error output. [terrtia]
+
+* [RetroHunt] retro hunt on messages. [terrtia]
+
+* [correlation UI] change Direct Correlations position. [terrtia]
+
+* [correlation] description: get message content + don't show etag, cookie_name and hhash by default. [terrtia]
+
+* [chats] add heatmap nb messages/hour for all messages. [terrtia]
+
+* [api] get chat/subchannel/thread messages. [terrtia]
+
+* [api] get object + get investigation. [terrtia]
+
+* [domains] add crawler status stats by domain type pie chart. [terrtia]
+
+* [d3 js] add barchart_stack graph function. [terrtia]
+
+* [crawler] add monthly crawled domains stats. [terrtia]
+
+* [test] add basic API test. [terrtia]
+
+* [git] update gitignore. [terrtia]
+
+* [api] refactor blueprint. [terrtia]
+
+* [favicon] add v5.4 update + update pylacus. [terrtia]
+
+* [favicon] add favicons objects + correlation. [terrtia]
+
+* [vanity] vanity tree, add links. [terrtia]
+
+* [vanity] add vanity domain explorer + fix blurred screenshot + fix languages search filter. [terrtia]
+
+* [domain] sort onion vanity name by prefix. [terrtia]
+
+* [titles] add api to get unsafe titles. [terrtia]
+
+* [titles] add api to get all titles. [terrtia]
+
+* [tracker] list of last matchs, show description. [terrtia]
+
+* [tracker] list of last matchs, show description. [terrtia]
+
+* [retro_hunt] show match + fix None subtype. [terrtia]
+
+* [titles] add endpoints to get all titles. [terrtia]
+
+* [messages] manual translation by language + add new kvrocks lang namespace. [terrtia]
+
+* [chat] add endpoints to download chat, subchannel and thread, + fix message translated by default. [terrtia]
+
+* [doc] add screenshot. [terrtia]
+
+* [exif] add debug. [terrtia]
+
+* [doc] add discord/telegram chats JSON fields. [terrtia]
+
+* [HOWTO] Libretranslate Chat translation. [terrtia]
+
+* [requirement] bump flask requirement. [terrtia]
+
+### Fix
+
+* [chat] fix subchannel-message correlation + fix empty message language detection. [terrtia]
+
+* [chat-subchannel] card empty chat. [terrtia]
+
+* [dashboard] fix objects links. [terrtia]
+
+* [tracker] fix yara content error on empty message. [terrtia]
+
+* [FeederImporter] add all objects in queue. [terrtia]
+
+* [module] fix SQLInjectionDetection object ID. [terrtia]
+
+* [chats] fix templates, chat subtype. [terrtia]
+
+* [api] remove debug output. [terrtia]
+
+* [domains] add missing JS file. [terrtia]
+
+* [crawler] fix monthly crawled domains stats svg size. [terrtia]
+
+* [crawler] fix monthly crawled domains stats. [terrtia]
+
+* [tests] fix tests + global new file content. [terrtia]
+
+* [favicon] fix misp object export. [terrtia]
+
+* [favicon] crawler favicon. [terrtia]
+
+* [vanity] fix title. [terrtia]
+
+* [domain] add screenshot img onerror. [terrtia]
+
+* [vanity] length > 5 clusters. [terrtia]
+
+* [vanity] debug. [terrtia]
+
+* [vanity] debug. [terrtia]
+
+* [vanity] length+1 min vanity = 2. [terrtia]
+
+* [vanity] vanity builder. [terrtia]
+
+* [vanity] update id domains is up + min vanity = 4. [terrtia]
+
+* [api] get titles domain. [terrtia]
+
+* [tracker] fix typo. [terrtia]
+
+* [tracker] fix message trackers. [terrtia]
+
+* [titles] add api to get all titles. [terrtia]
+
+* [titles] add api to get all titles. [terrtia]
+
+* [retro_hunt] api delete paused retro_hunt. [terrtia]
+
+* [retro_hunt] delete paused retro_hunt. [terrtia]
+
+* [doc] fix pystemon install. [terrtia]
+
+* [doc] fix pystemon install. [terrtia]
+
+* [flask] fix escape import. [terrtia]
+
+* [chats] fix chats image importer. [terrtia]
+
+* [language] catch libretranslate exception. [terrtia]
+
+* [language] crawled items, force gcld3 detection. [terrtia]
+
+* [LAUNCH] update screen status. [terrtia]
+
+* [LAUNCH] fix killall. [terrtia]
+
+### Other
+
+* Merge lang. [terrtia]
+
+* Merge branch 'master' of github.com:ail-project/ail-framework. [terrtia]
+
+* Merge pull request #215 from NMD03/master. [Thirion Aurélien]
+
+  Add [ailbuilder] cleanup
+
+* Add [ailbuilder] cleanup. [niclas]
+
+
 ## v5.3 (2024-02-05)
 
 ### Changes
