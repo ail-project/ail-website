@@ -1,6 +1,65 @@
 # Changelog
 
 
+## v5.5 (2024-04-25)
+
+### Changes
+
+* [doc] add overview. [terrtia]
+
+* [ocr] ocr daterange object, get ocrs by daterange + fixs. [terrtia]
+
+* [reprocess tool] add OcrExtractor module + filter image gif. [terrtia]
+
+* [ocr] add cache + correlation ocr-chats-messages + launch ocr extractor by default. [terrtia]
+
+* [domains] card domain, fix last check. [terrtia]
+
+* [ocr] detect and translate language + show ocr view + add languages blueprint. [terrtia]
+
+* [ocr] get languages model + group extracted content by line + process ocr objects + get all images. [terrtia]
+
+* [perf] reduce memory usage. [terrtia]
+
+* [ocr] extract text from image + add ocr object. [terrtia]
+
+* [tracker] add experimental report generator. [terrtia]
+
+* [user-account] add heatmap nb user messages. [terrtia]
+
+* [message] show trackers + modules matches. [terrtia]
+
+* [trackers] UI: remove object from tracker. [terrtia]
+
+* [user-account] show chats + subchannels. [terrtia]
+
+### Fix
+
+* [ocr] fix None copy date. [terrtia]
+
+* [correlation] fix objects selector. [terrtia]
+
+* [correlation] fix objects selector. [terrtia]
+
+* [correlation] fix objects selector. [terrtia]
+
+* [ocr] UI correlation, fix language bloc. [terrtia]
+
+* [thehive] fix export logger. [terrtia]
+
+* [UI matches extractor] fix empty matches. [terrtia]
+
+* [UI matches extractor] handle overlapping matches. [terrtia]
+
+* [languages] fix items language min probability. [terrtia]
+
+### Other
+
+* Merge branch 'master' into ocr. [terrtia]
+
+* Merge branch 'master' into ocr. [terrtia]
+
+
 ## v5.4 (2024-03-25)
 
 ### Changes
