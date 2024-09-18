@@ -1,6 +1,255 @@
 # Changelog
 
 
+## %%version%% (unreleased)
+
+### Fix
+
+* [crawler barchart] up/down colors. [terrtia]
+
+
+## v5.7 (2024-09-17)
+
+### Changes
+
+* [submodule] update. [terrtia]
+
+* [module] disable indexer queue. [terrtia]
+
+* [orgs list] show numbers of users. [terrtia]
+
+* [modules] disable LibInjection. [terrtia]
+
+* [chat request] add other chat type + placeholders. [terrtia]
+
+* [chats] show username. [terrtia]
+
+* [flask] use the same cookie name + cache git commits, tags and branch name. [terrtia]
+
+* [user roles] rename coordinator as org_admin. [terrtia]
+
+* [search] disable whoosh index and search. [terrtia]
+
+* [create user] new account qr code. [terrtia]
+
+* [create user] new account qr code. [terrtia]
+
+* [trackers] check acl of last trackers matches. [terrtia]
+
+* [ocr] ocr card, add first seen and last seen. [terrtia]
+
+* [2fa] add instance name in config. [terrtia]
+
+* [MISP Export] filter None MISP objects. [terrtia]
+
+* [chats explorer] add chat monitoring request. [terrtia]
+
+* [access logs] add user_agent. [terrtia]
+
+* [access logs] add user_agent. [terrtia]
+
+* [UI] abort 403 and 404. [terrtia]
+
+* [cookiejars]  show organisation. [terrtia]
+
+* [trackers + retro_hunts]  show organisation. [terrtia]
+
+* [investigations] show organisation. [terrtia]
+
+* [UI] replace remote_addr by access_route. [terrtia]
+
+* [user profile] show user organisation. [terrtia]
+
+* [UI + API] update endpoints ACL. [terrtia]
+
+* [acl] refactor acl cookiejars, trackers, retro_hunts, investigation + refactor users roles. [terrtia]
+
+* [update] create default org + update trackers/retro_hunts/investigations creator_org. [terrtia]
+
+* [items] check obj invesigations acl. [terrtia]
+
+* [module extractor] check tracker and retro hunt acl. [terrtia]
+
+* [user] refactor user creation and edit + edit user organisation. [terrtia]
+
+* [trackers + retro_hunts] add org level to retro_hunt + update acl to support org + refactor trackers org. [terrtia]
+
+* [cookiejar] add org level to cookiejar + update acl to support org. [terrtia]
+
+* [ail orgs] refactor organisations + add org level to investigations. [terrtia]
+
+* [core] add users organisation + tracker acl by organisation. [terrtia]
+
+* [logs] add access logs. [terrtia]
+
+* [ail users] cleanup Role_Manager. [terrtia]
+
+* [ail users] save last api usage. [terrtia]
+
+* [tests] improve test output, show all running screens. [terrtia]
+
+* [ail users] remove old User lib + improve API test. [terrtia]
+
+* [crawler] add button to manually delete lacus queues. [terrtia]
+
+* [misp-taxonomies] updated. [Alexandre Dulaunoy]
+
+* [misp-galaxy] updated to the latest version. [Alexandre Dulaunoy]
+
+* [chat viewer] show message forwarded from. [terrtia]
+
+* [usernames timeline] remove empty usernames. [terrtia]
+
+* [chats explorer] filter Chats that don't contain messages. [terrtia]
+
+* [user-account] chat user-accounts: show usernames list + usernames timeline. [terrtia]
+
+* [dashboard] replace interval requests by event stream. [terrtia]
+
+* [update] add v5.7 update. [terrtia]
+
+* [users] manually logout users/kill user session + add users meta:creator, creation date, last_edit, last_login, last_seen, is_logged. [terrtia]
+
+* [2FA] user + admin manage 2FA OTP. [terrtia]
+
+* [login] add 2FA TOTP and HOTP. [terrtia]
+
+* [chord] add parameters to filtersby min and max value. [terrtia]
+
+* [chats viewer] add relationships buttons. [terrtia]
+
+* [relationships] add messages mentions -> chats + user-accounts. [terrtia]
+
+* [user-account] show chord diagram, Numbers of Messages Posted by Chat. [terrtia]
+
+* [d3 heatmap] v7 migration + fix tooltip. [terrtia]
+
+* [circos] add number of IN/OUT message in tooltip. [terrtia]
+
+* [d3] get last D3 js version. [terrtia]
+
+* [relationships] messages foraward between chats/user-account + chat chord diagram. [terrtia]
+
+* [relationship] get object relationhips by relationship name + object types. [terrtia]
+
+* [crawler] add function to delete schedules. [terrtia]
+
+* [crawler stats] add previous month stats by domain type. [terrtia]
+
+* [user message] show user messages by chat. [terrtia]
+
+* [settings] refactor old settings blueprint module. [terrtia]
+
+* [settings] refactor UI settings. [terrtia]
+
+* [user session] refactor login + AIL users, use alternative IDs, kill user(s) session. [terrtia]
+
+### Fix
+
+* [crawler] fix crawler queue stats. [terrtia]
+
+* [crawler] fix crawler queue stats. [terrtia]
+
+* [crawler] fix crawler queue stats. [terrtia]
+
+* [delete user] remove user from org. [terrtia]
+
+* [crawler] crawler capture with empty task. [terrtia]
+
+* [user] fix role edit. [terrtia]
+
+* [user] user check. [terrtia]
+
+* [object subtype dashboard] fix None first/last seen. [terrtia]
+
+* [objects] get_object, None pgp name. [terrtia]
+
+* [objects] get_object, filter None string. [terrtia]
+
+* [trackers] typo. [terrtia]
+
+* [trackers] blueprint user_role. [terrtia]
+
+* [2fa] fix name. [terrtia]
+
+* [org] fix trackers None orgs. [terrtia]
+
+* [update v5.7] create roles list. [terrtia]
+
+* [MISP Export] fix Decoded objects export. [terrtia]
+
+* [user] fix users self password change. [terrtia]
+
+* [users settings] fix user edit. [terrtia]
+
+* [tracker] firce delete objects filter on edit. [terrtia]
+
+* [showDomain] typo fixed. [Alexandre Dulaunoy]
+
+* [debug] [terrtia]
+
+* [user-account] fix chord graph tooltip. [terrtia]
+
+* [trackers] fix webhook export. [terrtia]
+
+* [dashboard] Filter out dashboard event-stream SSL.SSLEOFError from the log if a client disconnects. [terrtia]
+
+* [trackers] fix tracker view objects acl for global trackers. [terrtia]
+
+* [trackers] fix tracker view objects acl for global trackers. [terrtia]
+
+* [trackers] fix post filters selector + fix tracker webhooks creation + fix set edit. [terrtia]
+
+* [cookiejar] fix add cookie cookiejar uuid. [terrtia]
+
+* [relationships] objects link. [terrtia]
+
+* [user-account] fix last username timestamp. [terrtia]
+
+### Other
+
+* Merge branch 'master' into otp. [terrtia]
+
+* Merge branch 'master' into otp. [terrtia]
+
+* Merge branch 'master' of github.com:ail-project/ail-framework. [terrtia]
+
+* Update README.md. [Alexandre Dulaunoy]
+
+* Merge branch 'relationships' into otp. [terrtia]
+
+* Merge branch 'master' into relationships. [terrtia]
+
+* Merge branch 'master' into otp. [terrtia]
+
+
+## v5.6 (2024-05-10)
+
+### Changes
+
+* Chg: [tron] add TRON crytocurrency detection + correlation. Thanks @pventuzelo for the contribution. [terrtia]
+
+* [tags] search ocrs and images by tags + fix ocr, filter invalid image. [terrtia]
+
+* [correlation graph] add date first/last seen separator + fix display of ocr object tags. [terrtia]
+
+### Fix
+
+* [language detector] fix exception if the libretranslate url is not specified. [terrtia]
+
+* [ocr] catch cv2 errors. [terrtia]
+
+* [pgpdump] fix installer, new pgpdump version require to launch autoreconf. [terrtia]
+
+* [ocr] catch OSError on MP4 files. [terrtia]
+
+* [ocr] fix ocr supported languages. [terrtia]
+
+* [Language] Updated the language detector to return a empty list when no language is detected. [terrtia]
+
+* [ocr] filter ocr supported languages + fix type of object accepted by the tracker. [terrtia]
+
+
 ## v5.5 (2024-04-25)
 
 ### Changes
