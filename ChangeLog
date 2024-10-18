@@ -1,9 +1,122 @@
 # Changelog
 
 
-## %%version%% (unreleased)
+## v5.9 (2024-10-18)
+
+### Changes
+
+* [qrcodes] daterange search: sort qrcode by content. [terrtia]
+
+* [dom-hash] add dom-hash object compute dom-hash for domains and crawled items. [terrtia]
+
+* [CEDetector] tag domains. [terrtia]
+
+* [CEDetector] add detect message. [terrtia]
+
+* [titles] setup Titles queues + CEDetector module. [terrtia]
+
+* [tools] add reprocess title + CEDetector. [terrtia]
+
+* [crawler] disable unsafe title auto tagging. [terrtia]
+
+* [module] debug. [terrtia]
+
+* [module] add CEDetector. [terrtia]
+
+* [crawler] tag domain by vanity. [terrtia]
+
+* [crawler] crawl list urls: filter duplicates. [terrtia]
+
+* [crawler] submit free text of urls to crawl. [terrtia]
+
+* [onion module] filter onion v2. [terrtia]
+
+* [show domain] show titles content + fix item tags. [terrtia]
+
+* [crawler] update tor user agent. [terrtia]
+
+* [message image] show qrcodes extracted. [terrtia]
+
+* [domain lookup] extract domain from url input. [terrtia]
+
+* [api] rename domain lookup. [terrtia]
 
 ### Fix
+
+* [module] typo. [terrtia]
+
+* [tag] tag delete: fix update first/last seen. [terrtia]
+
+* [show domain] fix correlation button if nb correl == 0. [terrtia]
+
+* [crawler] filter lookup tags. [terrtia]
+
+* [crawler] filter lookup parent + domain daterange. [terrtia]
+
+
+## v5.8 (2024-10-03)
+
+### Changes
+
+* [tags search] search qrcode by tags. [terrtia]
+
+* [api] add domain lookup. [terrtia]
+
+* [chats explorer] image lazy loading. [terrtia]
+
+* [favicon] favicons by daterange, lazy loading. [terrtia]
+
+* [qrcode] improve qrcode extractor + add v5.8 update. [terrtia]
+
+* [debug] debug empty qr content. [terrtia]
+
+* [qrcode] extract qrcode content from images and screenshots + qrcode object + correlation. [terrtia]
+
+* [hunter sidebar] allign icons. [terrtia]
+
+* [show item] replace canevas by image blur + add a button to wrap text. [terrtia]
+
+* [create edit user] add org selector search. [terrtia]
+
+* [username] add username search. [terrtia]
+
+* [tags search] show last tag(s) date if no result. [terrtia]
+
+* [show domain screenshots] replace canevas by img blur. [terrtia]
+
+### Fix
+
+* [qrcode extractor] fix catch cv2 exception. [terrtia]
+
+* [qrcode extractor] fix empty qreader. [terrtia]
+
+* [qrcode extractor] filter code39. [terrtia]
+
+* [qrcode extractor] fix image/screenshot tag. [terrtia]
+
+* [bitcoin bech32] fix address validator. [terrtia]
+
+* [qrcode extractor] filter invalid image. [terrtia]
+
+* [qrcode extractor] filter invalid image. [terrtia]
+
+* [qrcode extractor] debug. [terrtia]
+
+* [qrcode extractor] fix invalid jpeg. [terrtia]
+
+* [qrcode install] add missing lib. [terrtia]
+
+* [mail module] fix typo. [terrtia]
+
+* [tags] fix invalid tag obj_id function. [terrtia]
+
+* [crwaler dashboard] fix current day domains up/down links. [terrtia]
+
+* [investigation] fix object table long object id. [terrtia]
+
+* [v5.7 update] add missing python packages. [terrtia]
+
+* [show domain] avoid overlaping table/image. [terrtia]
 
 * [crawler barchart] up/down colors. [terrtia]
 
