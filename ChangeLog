@@ -1,6 +1,55 @@
 # Changelog
 
 
+## v6.0 (2024-12-09)
+
+### Changes
+
+* [v6.0] add v6.0 update script. [terrtia]
+
+* [pubsublogger] remove old redis_logger. [terrtia]
+
+* [dashboard] filter submission tags. [terrtia]
+
+* [dashboard] show tracker description. [terrtia]
+
+* [queue] save module start time + pid. [terrtia]
+
+* [dashboard] add day date. [terrtia]
+
+* [flask] remove old modules + modules loader. [terrtia]
+
+* [dashboard] add crawler stats. [terrtia]
+
+* [dashboard] add objects tooltip. [terrtia]
+
+* [dashboard] nb objects per days + websocket update. [terrtia]
+
+* [dashboard] add echart feeder graph + cleanup olg graph libs + dashboard, show today nb objects. [terrtia]
+
+* [flask modules] remove old modules. [terrtia]
+
+* [fontawesome] v6.6.0 migration. [terrtia]
+
+* [barcode] add and extract barcode object. [terrtia]
+
+### Fix
+
+* [dashboard] fix day format. [terrtia]
+
+* [dashboard] fix feeeder names. [terrtia]
+
+* [retro hunts] remove objects. [terrtia]
+
+* [retro hunt] fix add tags. [terrtia]
+
+* [object item] fix show item url. [terrtia]
+
+* [barcode] fix message card. [terrtia]
+
+* [show organisation] fix sidebar. [terrtia]
+
+
 ## v5.9 (2024-10-18)
 
 ### Changes
