@@ -1,6 +1,180 @@
 # Changelog
 
 
+## v6.0.1 (2025-01-23)
+
+### Changes
+
+* [update v6.0.1] login lowercase. [terrtia]
+
+* [uodate v6.0.1] add update version. [terrtia]
+
+* [taxomomies + galaxy] update. [terrtia]
+
+* [show tracker] filter result by object type. [terrtia]
+
+* [updater] use tag subversion, ex:v6.0.1. [terrtia]
+
+* [crawler] improve queued error log. [terrtia]
+
+* [retro hunt + update] add ocr retro hunt + new update. [terrtia]
+
+* [user] force lowercase + add v6.0.1 update. [terrtia]
+
+* [chat explorer] show message, open message in chat/subchannel/thread. [terrtia]
+
+* [flask] update Flask_config.py. [Ikko Eltociear Ashimine]
+
+  accross -> across
+
+* [chat explorer] show chats tags. [terrtia]
+
+* [flask] set proxy ProxyFix. [terrtia]
+
+* [test] log if flask is reachable. [terrtia]
+
+* [user-account viewer] add messages heatmap by year. [terrtia]
+
+* [chat viewer] heatmap messages, add year selector. [terrtia]
+
+* [chat viewer] add chat messages by current year heatmap. [terrtia]
+
+* [message description] add chat name and username. [terrtia]
+
+* [chat explorer] improve basic chat card, add chat particpants btn + improve btn css. [terrtia]
+
+* [cryptocurrency] add ripple address subtype + correlation. [terrtia]
+
+* [misp taxonomies galaxy] bump. [terrtia]
+
+* [blur unsafe images] blur violence and pornography-illicit-or-illegal tags + add warning message. [terrtia]
+
+* [search domain by name] sanityze domain name + show domain. [terrtia]
+
+* [README] update dashboard image. [terrtia]
+
+### Fix
+
+* [ail updater] remove update between tags. [terrtia]
+
+* [ail updater] fix upper tags list + is_fork. [terrtia]
+
+* [show Domain] unblur default image if domain is down. [terrtia]
+
+* [module extrsctor] log invalid object meta. [terrtia]
+
+* [module extrsctor] fix invalid object meta. [terrtia]
+
+* [retro hunt] fix object to resume. [terrtia]
+
+* [retro hunt] fix item iterator. [terrtia]
+
+* [delete retro hunt] force pause state before delete. [terrtia]
+
+* [retro hunt] fix retro hunt resume. [terrtia]
+
+* [crawler] increase timeout QUEUED captures. [terrtia]
+
+* [crawler] increase timeout QUEUED captures. [terrtia]
+
+* [crawler] timeout QUEUED captures. [terrtia]
+
+* [crawler] title extraction, sigalarm raised by signal.alarm and sleep. [terrtia]
+
+* [crawler] debug signal timeout. [terrtia]
+
+* [crawler] log timeout + debug signal timeout. [terrtia]
+
+* [title beautifullsoup] sigalrm. [terrtia]
+
+* [title beautifullsoup] add signal, BeautifulSoup html.parser is stuck. [terrtia]
+
+* [crawler] crawler queued capture loop. [terrtia]
+
+* [crawler] debug crawler queued capture loop. [terrtia]
+
+* [chat messages by year] fix subchannel nb_max. [terrtia]
+
+* [chat forum] fix get years daterange. [terrtia]
+
+* [chat explorer] fix protocols name list order. [terrtia]
+
+* [crawler] fix reload_crawlers_stats queues stats. [terrtia]
+
+* [exifs module] Mp4 UnidentifiedImageError. [terrtia]
+
+* [investigation] add object with spaces in id to an investigation. [terrtia]
+
+* [module_extractor] fix onion extraction. [terrtia]
+
+* [module_extractor] don't extract onion from crawled items. [terrtia]
+
+* [crawler] avoid crawler loop if a capture end up in an invalid state. [terrtia]
+
+### Other
+
+* Merge branch 'master' of github.com:ail-project/ail-framework. [terrtia]
+
+* Merge pull request #253 from eltociear/patch-1. [Thirion Aurélien]
+
+  chg: [flask] update Flask_config.py
+
+* Merge pull request #250 from FafnerKeyZee/patch-1. [Thirion Aurélien]
+
+  Update Tracker.py
+
+* Update Tracker.py. [Fafner [_KeyZee_]]
+
+  If self._get_field('level') is None, trying to convert it into int will crash the system :)
+
+  2024-12-23 14:22:46,232 Flask_server ERROR:Exception on /trackers [GET]
+  Traceback (most recent call last):
+    File "/home/user/ail-framework/AILENV/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+      response = self.full_dispatch_request()
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/home/user/ail-framework/AILENV/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+      rv = self.handle_user_exception(e)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/home/user/ail-framework/AILENV/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+      rv = self.dispatch_request()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    File "/home/user/ail-framework/AILENV/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+      return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/home/user/ail-framework/AILENV/lib/python3.12/site-packages/flask_login/utils.py", line 290, in decorated_view
+      return current_app.ensure_sync(func)(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/home/user/ail-framework/var/www/Role_Manager.py", line 81, in decorated_view
+      return func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+    File "/home/user/ail-framework/var/www/blueprints/hunters.py", line 74, in trackers_dashboard
+      trackers = Tracker.get_trackers_dashboard(user_org, user_id)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/home/user/ail-framework/bin/lib/Tracker.py", line 785, in get_trackers_dashboard
+      if not tracker.check_level(user_org, user_id):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/home/user/ail-framework/bin/lib/Tracker.py", line 220, in check_level
+      level = self.get_level()
+              ^^^^^^^^^^^^^^^^
+    File "/home/user/ail-framework/bin/lib/Tracker.py", line 183, in get_level
+      level = int(self._get_field('level'))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Merge pull request #251 from FafnerKeyZee/patch-2. [Thirion Aurélien]
+
+  Update abstract_chat_object.py
+
+* Update abstract_chat_object.py. [Fafner [_KeyZee_]]
+
+  https://github.com/ail-project/ail-framework/commit/9a388dc9cb05eec9f612343fcdf4579b18bf1e00 broke the Forum view, we can not do stat on forum, only on subchan :)
+
+* Merge pull request #249 from vncloudsco/master. [Alexandre Dulaunoy]
+
+  Update Install silent and Dockerfile update
+
+* Update Install silent and dockerfile update. [Mạnh Tường Solo]
+
+
 ## v6.0 (2024-12-09)
 
 ### Changes
@@ -1341,10 +1515,6 @@
 
 * [logs] add syslog level + facility + script startup message. [Terrtia]
 
-* [v4.2.1] add pubsublogger update. [Terrtia]
-
-* [logs] add syslog server option. [Terrtia]
-
 * [crawler] add crawler scheduler. [Terrtia]
 
 * [subtype objects] migrate UI cryptocurrency, pgp, username. [Terrtia]
@@ -1503,12 +1673,6 @@
 
 * [api] fix crawler api. [Terrtia]
 
-* [tracker typo squatting] fix perf. [Terrtia]
-
-* [tracker typo squatting] fix cache. [Terrtia]
-
-* [tracker typo squatting] [Terrtia]
-
 * [exporter] thehive exporter, create case. [Terrtia]
 
 * [user] fix user creation. [Terrtia]
@@ -1525,6 +1689,29 @@
 
 * Merge master. [Terrtia]
 
+* DB migration. [Terrtia]
+
+* Chg; [Duplicates module] refactor module + DB keys. [Terrtia]
+
+
+## v4.2.1 (2022-09-08)
+
+### Changes
+
+* [v4.2.1] add pubsublogger update. [Terrtia]
+
+* [logs] add syslog server option. [Terrtia]
+
+### Fix
+
+* [tracker typo squatting] fix perf. [Terrtia]
+
+* [tracker typo squatting] fix cache. [Terrtia]
+
+* [tracker typo squatting] [Terrtia]
+
+### Other
+
 * Merge branch 'master' of github.com:ail-project/ail-framework. [Terrtia]
 
 * Merge pull request #151 from cudeso/patch-1. [Alexandre Dulaunoy]
@@ -1532,10 +1719,6 @@
   Remove CIRCL NS / ZMQ from sample config file
 
 * Remove CIRCL NS / ZMQ from sample config file. [Koen Van Impe]
-
-* DB migration. [Terrtia]
-
-* Chg; [Duplicates module] refactor module + DB keys. [Terrtia]
 
 
 ## v4.2 (2022-06-24)
@@ -2381,6 +2564,11 @@
 ### Changes
 
 * [update] add v3.2. [Terrtia]
+
+
+## v3.1.1 (2020-08-27)
+
+### Changes
 
 * [yara trackers] add debug. [Terrtia]
 
