@@ -17,8 +17,8 @@ The AIL Framework (Analysis Information Leak Framework) is an open-source modula
    - **Recommendation:** Quad-core CPU or better to handle concurrent processing tasks.
 
 2. **Memory (RAM):**
-   - **Minimum:** 8 GB.
-   - **Recommended:** 16 GB or more for smoother performance, especially when dealing with large datasets or multiple modules.
+   - **Minimum:** 32 GB.
+   - **Recommended:** 64 GB or more for smoother performance, especially when dealing with large datasets or multiple modules.
 
 3. **Storage:**
    - **Type:** Solid-State Drive (SSD) for faster read/write operations.
@@ -27,19 +27,19 @@ The AIL Framework (Analysis Information Leak Framework) is an open-source modula
 
 4. **Operating System:**
    - **Type:** Linux-based OS.
-   - **Recommended Distributions:** Ubuntu 22.04 LTS or later.
+   - **Recommended Distributions:** Ubuntu 24.04 LTS or later.
    - **Note:** The framework is primarily developed and tested on Ubuntu-based systems.
 
 5. **Internet Connectivity:**
    - A stable broadband connection for fetching data from online sources and updating modules.
 
 6. **Graphics Processing Unit (GPU):**
-   - **Optional:** Not required unless you plan to run LibreTranslate or EasyOCR that leverages GPU acceleration.
+   - **Optional:** Not required but recommended unless you plan to run LibreTranslate or EasyOCR that leverages GPU acceleration.
 
 ### **Additional Recommendations:**
 
 - **Python Environment:**
-  - Ensure you have Python 3.7 or higher installed, as the framework and its dependencies rely on Python 3.
+  - Ensure you have Python 3.8 or higher installed, as the framework and its dependencies rely on Python 3.
 
 - **Dependencies:**
   - Be prepared to install various Python libraries and system packages. Having a system with easy access to package managers like `apt` for Ubuntu will simplify this process.
@@ -60,8 +60,8 @@ The AIL Framework (Analysis Information Leak Framework) is an open-source modula
 To ensure optimal performance of the AIL Framework:
 
 - Use a modern multi-core processor (quad-core or better).
-- Equip your system with at least 16 GB of RAM.
-- Provide ample SSD storage (250 GB or more recommended).
+- Equip your system with at least 32 GB of RAM.
+- Provide ample SSD storage (5TB or more recommended).
 - Run the framework on a Ubuntu-based Linux system.
 - Maintain a stable internet connection for data collection and updates.
 
