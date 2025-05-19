@@ -12,7 +12,7 @@ layout: default
                     {% for post in site.posts limit:10 %}
                     <li><a href="{{ post.url | relative_url }}" {% if page.title==post.title %} class="active" {% endif %}>{{ post.title }}</a></li>
                     {% endfor %}
-                    <li><a href="{{ "/allposts" | relative_url }}">All posts ...</a></li>
+                    <li><a href="{{ "/allposts.html" | relative_url }}">All posts ...</a></li>
                 </ul>
             </div>
         </div>
