@@ -1,6 +1,298 @@
 # Changelog
 
 
+## v6.2 (2025-05-28)
+
+### New
+
+* [yara-editor] Added codemirror editor with Yara rule support. [Sami Mokaddem]
+
+* [images_engine] get screenshot description with ollama. [terrtia]
+
+### Changes
+
+* [v6.2] add v6.2 update. [terrtia]
+
+* [image engine] add image description + save image description by model + fix screenshot correlation description. [terrtia]
+
+* [search mail + gtracker] improve perf. [terrtia]
+
+* [create user] send mail to new a user. [terrtia]
+
+* [create user] debug send mail to new user. [terrtia]
+
+* [create user] test send mail to new user. [terrtia]
+
+* [search emgine] improve search dashboard + add search helper. [terrtia]
+
+* [images engine] save image description in DB. [terrtia]
+
+* [search] add search chats messages. [terrtia]
+
+* [search] new crawled search with meilisearch+ add new search dashboard. [terrtia]
+
+* [module queue] show FeederModuleImporter Nb in Queue. [terrtia]
+
+* [trackers] move create new tracker btn to top. [terrtia]
+
+* [doc] add tracker doc. [terrtia]
+
+* [language] remove special characters before language detection. [terrtia]
+
+* [show message] add message card message subchannels. [terrtia]
+
+* [show message] add message card + protocol. [terrtia]
+
+* [retro-hunt] new endpoints: generate retro-hunt report for chat messages + ocrs (from messages) [terrtia]
+
+* [correlation] add card file-name, mail and gtracker. [terrtia]
+
+* [reprocess] add TrackingId module. [terrtia]
+
+* [google tracking] add googke tracking module + object. [terrtia]
+
+* [mail] debug punycode encoding. [terrtia]
+
+* [mail] add new mail object + correlation chats/domains/crawled. [terrtia]
+
+* [LanguageDetector] improve perf. remove old lexilang detector. [terrtia]
+
+* [language] fix template title. [terrtia]
+
+* [language] refactor language engine + get chat messages by language + get user messages by language + improve lexiang detection. [terrtia]
+
+* [settings module] add stats modules. [terrtia]
+
+* [chat viewer] add languages stats. [terrtia]
+
+* [chat participants] show the numbers of messages by participant in a chat. [terrtia]
+
+* [reprocess tools] reprocess object message  by tags. [terrtia]
+
+* [chats] add corelation chat->cve, cryptocurrencies, ... + correlation domain->chat, message. [terrtia]
+
+* [MailExporter] debug: add EHLO. [terrtia]
+
+* [chat feeder] add matrix feeder. [terrtia]
+
+* [domain search] add btn to crawl unknown onion. [terrtia]
+
+* [settings + misp export] add new user config engine + Users can create and save MISP accounts/API keys to seamlessly export data to MISP or generate a JSON file. [terrtia]
+
+* [trackers dashboard] change Trackers last matches table. [terrtia]
+
+* [login OTP] increase valid window by 1. [terrtia]
+
+* [user settings HOTP] add button to print the next 50 HOTP tokens. [terrtia]
+
+### Fix
+
+* [image engine] fix image description tooltip. [terrtia]
+
+* [image engine] fix image description tooltip. [terrtia]
+
+* [image engine] fix image description tooltip. [terrtia]
+
+* [image engine] fix image description tooltip. [terrtia]
+
+* [image engine] fix image description tooltip. [terrtia]
+
+* [image engine] fix image description tooltip. [terrtia]
+
+* [crawler dashboard] fix none task capture time. [terrtia]
+
+* [translation] fix translation bg,el,hi,ja,zh + user chat messages translate messages. [terrtia]
+
+* [translation] fix russian translation. [terrtia]
+
+* [misp export] show error if no misp instance is specified. [terrtia]
+
+* [mail exporter] fix circular import. [terrtia]
+
+* [mail search] fix empty mail content. [terrtia]
+
+* [search emgine] add missing sidebar. [terrtia]
+
+* [item] fix show item meta. [terrtia]
+
+* [misp export] fix empty relation error. [terrtia]
+
+* [installing_deps.sh] remove portable mode for default install. [Thirion Aurélien]
+
+* [flask] Removed debug. [Sami Mokaddem]
+
+* [installing_deps.sh] remove portable mode for default install. [Thirion Aurélien]
+
+* [install] Fixed installion, init submodules and added missing python dep. [Sami Mokaddem]
+
+* [images engine] fix none screenshot_id. [terrtia]
+
+* [search] update requirements + fix search card. [terrtia]
+
+* [block_img_ollama] fix image description css. [terrtia]
+
+* [block_img_ollama] show image description btn. [terrtia]
+
+* [settings] fix module template if no modules lanched. [terrtia]
+
+* [modules queues] remove old unused queue. [terrtia]
+
+* [doc] fix anchors. [terrtia]
+
+* [api] fix crawl url check proxy default web. [terrtia]
+
+* [module] only use config file. TODO: move to UI and rename config field name. [terrtia]
+
+* [module] send onion to crawler if lacus is connected and activate_crawler is set to False. [terrtia]
+
+* [correlation graph] urlencode object id. [terrtia]
+
+* [show message] empty chat first/last seen. [terrtia]
+
+* [show message] empty card. [terrtia]
+
+* [language] add missing gcld3 iso1 code + get chat instance lamguages stats. [terrtia]
+
+* [language] add missing gcld3 iso1 code + get chat instance lamguages stats. [terrtia]
+
+* [mail] filter mail containing % to avoid issue with url encoded mails. [terrtia]
+
+* [translation] fix libretranslate iso code before translation. [terrtia]
+
+* [mail] UnicodeError. [terrtia]
+
+* [mail] limit max mail length. [terrtia]
+
+* [language] fix manual language selector, add missing language codes. [terrtia]
+
+* [Updater] fix submodule update. [terrtia]
+
+* [pytaxonomie] fix missing uuid in new pytaxoonmie version, bump taxonomies + galaxies. [terrtia]
+
+* [crawlers] fix domain onion cache. [terrtia]
+
+* [crawler] fix update_last_crawled_domain domain id. [terrtia]
+
+* [chat viewer] remove unused endpoint. [terrtia]
+
+* [domain search] check if onion is valid before sending to spider. [terrtia]
+
+* [domain search] fix typo. [terrtia]
+
+* [mail module] reduce disk usage, remove faup. [terrtia]
+
+* [username search] check if username is valid + add missing discord subtype. [terrtia]
+
+* [investigation misp export] fix JSON export. [terrtia]
+
+* [module extractor] fix object value extraction + invalid retrohunt. [terrtia]
+
+* [create user] set default user role to user by default. [terrtia]
+
+* [item blur screenshot] check domain tags. [terrtia]
+
+### Other
+
+* Merge branch 'master' of github.com:ail-project/ail-framework into langs. [terrtia]
+
+* Merge pull request #273 from ail-project/feature/yara-editor. [Thirion Aurélien]
+
+  Added YARA text editor support
+
+* Merge pull request #272 from ail-project/fix/install. [Thirion Aurélien]
+
+  fix: [install] Fixed installation, init submodules and added missing python dep
+
+* Merge branch 'master' into langs. [terrtia]
+
+* Merge pull request #267 from aaronkaplan/master. [Thirion Aurélien]
+
+  fix #266
+
+* Fix #266. [Aaron Kaplan]
+
+* Merge branch 'master' of github.com:ail-project/ail-framework. [terrtia]
+
+* Merge pull request #260 from NMD03/master. [Thirion Aurélien]
+
+  Fix [Lacus] new dependencies
+
+* Fix [Lacus] new dependencies. [NMD03]
+
+
+## v6.1 (2025-02-06)
+
+### Changes
+
+* [v6.1] add v6.1 update. [terrtia]
+
+* [crawler] add option to controls whether the crawler should proceed with crawling onion domains that have not yet been classified as safe or unsafe. [terrtia]
+
+* [Filter unsafe onion] add a new unsafe onion filter option. [terrtia]
+
+* [show tracker] add btn to hide/show long rule. [terrtia]
+
+* [module mail ectractor] remove DNS check for UI extraction. [terrtia]
+
+* [doc] add roles functionality. [terrtia]
+
+* [auto-update] update submodules. [terrtia]
+
+* [file-names] search file by name + fix search username case sensitive. [terrtia]
+
+* [files names] add file name dashboard. [terrtia]
+
+* [show item] show file-name and message content. [terrtia]
+
+* [chat explorer] show files tags. [terrtia]
+
+* [mail exporter] add object url only if email is ail user. [terrtia]
+
+* [module extractor] add link to tracker. [terrtia]
+
+* [process chat text] process text files from chats + correlations. [terrtia]
+
+* [crawler] update blocklist. [terrtia]
+
+* [module extractor] signal timeout global extraction + reduce regex and yara timeout. [terrtia]
+
+* [gitchangelogrc] match sub version of tags. [Alexandre Dulaunoy]
+
+* [tracker] collapse long rule. [terrtia]
+
+* [retro hunt] show object match last seen date. [terrtia]
+
+### Fix
+
+* [retro hunt] fix retro hunt item restart. [terrtia]
+
+* [MailExporter] correct typo. [Jean-Louis Huynen]
+
+* [show tracker] add btn to hide/show long rule. [terrtia]
+
+* [show tracker] add btn to hide/show long rule. [terrtia]
+
+* [doc] fix scheduler role. [terrtia]
+
+* [chat explorer] fix show codebar message content. [terrtia]
+
+* [create user] fix template error if an invalid password is provided. [terrtia]
+
+* [module extractor] remove SIGALRM usage to prevent Flask server termination. [terrtia]
+
+* [view org] fix sidebar. [terrtia]
+
+* [get str item content] fix some weird encoding issue. [terrtia]
+
+* [message file] remove file link if the file is not downloaded. [terrtia]
+
+* [api] fix add crawler task user_org. [terrtia]
+
+### Other
+
+* Merge branch 'master' of github.com:ail-project/ail-framework. [terrtia]
+
+
 ## v6.0.1 (2025-01-23)
 
 ### Changes
