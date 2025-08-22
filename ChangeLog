@@ -1,6 +1,200 @@
 # Changelog
 
 
+## v6.4 (2025-08-22)
+
+### Changes
+
+* [v6.4] add v6.4 update. [terrtia]
+
+* [crawler] add function to recrawl onion by month or to crawl all onion. [terrtia]
+
+* [cve] migrate UI cve info to vulnerability lookup. [terrtia]
+
+* [module extractor] improve email extraction. [terrtia]
+
+* [search mail] increase cache. [terrtia]
+
+* [mail search] improve search perf, cache search, paginate mail domain search. [terrtia]
+
+* [zmq importer] display triggered filter. [terrtia]
+
+* [zmq importer] add filter content. [terrtia]
+
+* [zmq importer] add option to filter by file start/end. [terrtia]
+
+* [absteact object] improve id iterator perf. [terrtia]
+
+* [search mail] refector mails search: Domain + user fragment, User + optional domain fragment, Exact address, Domain fragment only. [terrtia]
+
+* [language] add function to ping libretranslate. [terrtia]
+
+* [crawlers/dashboard] Crawler is now Lacus. [Alexandre Dulaunoy]
+
+### Fix
+
+* [thehive] adapt to unexpected breaking change. [terrtia]
+
+* [crawler recrawl] fix last parent. [terrtia]
+
+* [cve] fix typo. [terrtia]
+
+* [cve] fix UI cve vulnerability lookup url. [terrtia]
+
+* [module extractor] limit email extraction. [terrtia]
+
+* [module extractor] limit email extraction. [terrtia]
+
+* [zmq importer] fix content filters. [terrtia]
+
+* [language] improve exception handling of unknown iso1 language code. [terrtia]
+
+* [onion lookup] fix parsing of invalid url. [terrtia]
+
+* [onion lookup] fix parsing of invalid url. [terrtia]
+
+* [onion lookup] fix parsing of invalid url. [terrtia]
+
+### Other
+
+* Merge branch 'master' of github.com:ail-project/ail-framework. [terrtia]
+
+
+## v6.3 (2025-07-16)
+
+### Changes
+
+* [flask] log 500 errors user_id. [terrtia]
+
+* [language translation] do not sent unsupported languages to libretranslate. [terrtia]
+
+* [Onion module] improve perf. [terrtia]
+
+* [Onion module] improve perf. [terrtia]
+
+* [Onion module] improve perf. [terrtia]
+
+* [Onion module] improve perf. [terrtia]
+
+* [Onion module] print task uuid only id a new task is created. [terrtia]
+
+* [Onion module] reduce duplicate check. [terrtia]
+
+* [Onion module] reduce duplicate check. [terrtia]
+
+* [faup] replace and remove faup. [terrtia]
+
+* [ip] print deanomized hosts. [terrtia]
+
+* [ip] add ip object and ssh key correlation. [terrtia]
+
+* [qrcode extractor] extract color inverted qrcode. [terrtia]
+
+* [ssh-key] add ssh-key object and domains correlation + passive ssh search + passive ssh lookup. [terrtia]
+
+* [images engines] create domains descritpions, improve progress. [terrtia]
+
+* [images engines] create domains descritpions, print progress. [terrtia]
+
+* [stats] new fct, get ail stats. [terrtia]
+
+* [ZMQImporter] improve module prints. [terrtia]
+
+* [ZMQImporter] Add filter by feeder_name, item content is filtered if each line starts and ends with the specified pattern. [terrtia]
+
+* [tracker] add option and cache to prevent duplicate notifications on the same content. [terrtia]
+
+* [api] get onions up by month. [terrtia]
+
+* [tracker] add heatmap number of matches by years. [terrtia]
+
+* [images engine] add function to describe domains. [terrtia]
+
+* [image engine] describe domain. [terrtia]
+
+### Fix
+
+* [v6.3] do not shutdown DB. [terrtia]
+
+* [crawler psl_faup] fix invalid parsing of domain without scheme. [terrtia]
+
+* [object sidebar] fix ip icon. [terrtia]
+
+* [v6.3] add v6.3 update. [terrtia]
+
+* [search domain name] fix domain extraction. [terrtia]
+
+* [crawler dashboard] none capture meta. [terrtia]
+
+* [unpack_url] fix defferent behaviour between faup and psl_faup. [terrtia]
+
+* [language] add be code. [terrtia]
+
+* [Onion module] fix invalid url. [terrtia]
+
+* [Onion module] fix exception if extracted domain is None. [terrtia]
+
+* [psl_faup] fix invalid port number exception. [terrtia]
+
+* [CE Detector] fix module message. [terrtia]
+
+* [CE Detector] debug. [terrtia]
+
+* [CE Detector] avoid retagging. [terrtia]
+
+* [CE Detector] avoid retagging. [terrtia]
+
+* [faup] remove faup from crawler. [terrtia]
+
+* [retro hunt] delete retro hunt meta. [terrtia]
+
+* [retro hunt] delete retro hunt meta. [terrtia]
+
+* [correlation] fix ip correlation. [terrtia]
+
+* [card ip] remove sparkline. [terrtia]
+
+* [correlation] add ip to default list. [terrtia]
+
+* [ssh-keys] remove sparkline. [terrtia]
+
+* [ip] fix get ssh key ip. [terrtia]
+
+* [ip] fix get ssh key ip. [terrtia]
+
+* [ip] fix get ssh key ip. [terrtia]
+
+* [retro-hunt] fix objects filters. [terrtia]
+
+* [message translation] fix list of translation languages + chat messages by language and user by messages by language translation. [terrtia]
+
+* [manual message language] languages not translated by libretranslate. [terrtia]
+
+* [manual message language] select lang from the full list of languages. [terrtia]
+
+* [ssh key] fix template title. [terrtia]
+
+* [ssh-key] ssh-key object sidebar. [terrtia]
+
+* [passive ssh] do not print 404. [terrtia]
+
+* [passivessh] add missing image. [terrtia]
+
+* [Host + Domclassifier] lower domains to avoid duplicate. [terrtia]
+
+* [ZMQImporter] filtered content string. [terrtia]
+
+* [images engine] typo. [terrtia]
+
+* [images engine] typo. [terrtia]
+
+* [image engine] fix domain description image type. [terrtia]
+
+* [updater] remove debug. [terrtia]
+
+* [updater] fix tag subversion. [terrtia]
+
+
 ## v6.2 (2025-05-28)
 
 ### New
