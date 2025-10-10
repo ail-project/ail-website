@@ -29,4 +29,4 @@ The following options are available for any holder of an active support contract
 
 # Contact
 
-For inquiries please contact cps@circl.lu.
+For inquiries please contact aps@circl.lu.
