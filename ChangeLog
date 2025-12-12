@@ -1,6 +1,344 @@
 # Changelog
 
 
+## v6.6 (2025-12-05)
+
+### Changes
+
+* [pdf] reduce translated pdf size. [terrtia]
+
+* [pdf + translation] improve pdf translation + save translated pdf + pdf translation progress. [terrtia]
+
+* [pdf card] show Author. [terrtia]
+
+* [tracker regex] improve perf. [terrtia]
+
+* [v6.6] add update. [terrtia]
+
+* [file-name] process file-name: trackers + modules. [terrtia]
+
+* [pdf] add option to translate a PDF. [terrtia]
+
+* [file metadata] save pdf file metadata + new author object + correlation. [terrtia]
+
+* [PDF] add support for PDF Files. processing + correlation + content to markdown. [terrtia]
+
+* [crawler] crawling request, user cookiejar local storage. [terrtia]
+
+* [cookiejar] add UI local storage view + fix add cookies acl. [terrtia]
+
+* [merge] merge master. [terrtia]
+
+* [requirements] add faup-rs. [terrtia]
+
+* [users settings] add admin user view. [terrtia]
+
+* [crawler importer] fix endpoint + check required capture field. [terrtia]
+
+* [HOWTO.md] add meilisearch install. [Thirion Aurélien]
+
+* [crawler capture] add bew import to manually import crawler capture. [terrtia]
+
+* [ail_core] improve perf, enfore set usage. [terrtia]
+
+* [queue] create a new queue for tracker modules. [terrtia]
+
+* [crawler] update tor browser user agent. [terrtia]
+
+* [ail objects] add function to add custom metas to objects. [terrtia]
+
+* [chat and message viewer] show message reply forwarded_from meta. [terrtia]
+
+* [request chat monitoring] improve description. [terrtia]
+
+* [chats monitoring requests] track new requests + mark as done/rejected + delete chat monitoring requests. [terrtia]
+
+* [ail users] enable/disable user accounts. [terrtia]
+
+* [images_engine] improve domain description prompt. [terrtia]
+
+* [images_engines] improve prompts + ad prompt to detect csam domains and images. [terrtia]
+
+* [tag] add fct to check if a single tag in safe. [terrtia]
+
+* [screenshot] also tag domain if tag is unsafe. [terrtia]
+
+* [screenshot] also tag domain if tag is unsafe. [terrtia]
+
+* [cookiejar] import lacus local storage. [terrtia]
+
+### Fix
+
+* [chat importer] None if image size > 5Mb. [terrtia]
+
+* [pdf] fix downloaded pdfa name. [terrtia]
+
+* [pdf] fix temp dir. [terrtia]
+
+* [card pdf] hide author if None. [terrtia]
+
+* [Translation module] fix launcher. [terrtia]
+
+* [Images/Screenshots] Add missing return statement in get_description_models() [David Curran]
+
+  The get_description_models() method was building a list of description model
+  names but never returning it, causing the method to implicitly return None.
+
+  This fix adds the missing return statement to both Images.py and Screenshots.py.
+
+* [test] fix crawler test rel path + kwargs. [terrtia]
+
+* [trackers] fix remove object + improve url navigation. [terrtia]
+
+* [pdf] fix max_size_config. [terrtia]
+
+* [tracker] add space between : and url. [terrtia]
+
+* [pdf] fix max_pdf_size config name. [terrtia]
+
+* [pdf] fix pdf limit size to 100 mb by default. [terrtia]
+
+* [correlation] fix file-name -> pdf correlation. [terrtia]
+
+* [pdf] fix empty author set. [terrtia]
+
+* [file-name] fix base url. [terrtia]
+
+* [file-name] fix tracker file-name filtering + template. [terrtia]
+
+* [v6.6 update] update pylacus. [terrtia]
+
+* [Global + Tracker term] fix warning + content of invalid text mimetype. [terrtia]
+
+* [pdf template] add missing template. [terrtia]
+
+* [api] remove crawler duplicate cookiejar importer. [terrtia]
+
+* [feeders dashbard] fix feeders stats. [terrtia]
+
+* [pdf] fix correlation show object. [terrtia]
+
+* [tracker decoded] decoded term amd regex tracker, Ensure only string content is processed. [terrtia]
+
+* [language] gcld3 use deprecated language code. [terrtia]
+
+* [import crawler capture] fix API response. [terrtia]
+
+* [queue] send objs in global module to trackers queue. [terrtia]
+
+* [crawler] fix cache domain dashboard list. [terrtia]
+
+* [crawler] fix cache domain dashboard list. [terrtia]
+
+* Fix: [crawler] fix new capture status @rafiot. [terrtia]
+
+* [message viewer] fix forward meta. [terrtia]
+
+* [message viewer] fix forward meta. [terrtia]
+
+* [chat viewer] some forwarded_from meta were missing. [terrtia]
+
+* [images_engine] LLM do not respect specified case. [terrtia]
+
+* [images_engine] fix reponse dict. [terrtia]
+
+* [images_engine] LLM do not fully respect requested anwsers. [terrtia]
+
+* [domain explorer] fix i2p domain explorer pagination. [terrtia]
+
+### Other
+
+* Chg [pdf] improve translation layout. [terrtia]
+
+* Merge branch 'master' of github.com:ail-project/ail-framework. [terrtia]
+
+* Merge pull request #312 from cavedave/fix/images-screenshots-issues-v2. [Thirion Aurélien]
+
+  fix: [Images/Screenshots] Add missing return statement in get_descrip…
+
+* Merge branch 'master' of github.com:CIRCL/AIL-framework. [terrtia]
+
+* Merge pull request #614 from cavedave/feature/api-crawler-tests. [Thirion Aurélien]
+
+  Add some more tests for crawler API endpoints
+
+* Fix GitHub Actions workflow: add disk cleanup and optimize matrix. [David Curran]
+
+  - Add disk cleanup step to prevent 'No space left on device' errors
+    * Clears APT cache and lists
+    * Removes unused tools (dotnet, ghc, android SDK)
+    * Removes hosted tool cache (safe since workflow uses system Python)
+  - Comment out unused Python version matrix (was creating 4 identical jobs)
+    * Makes tests 4x faster without changing results
+    * Add TODO with instructions on how to enable multi-version testing properly
+  - All cleanup operations check for directory existence before removing
+
+* Add some more tests for crawler API endpoints. [David Curran]
+
+  - Add tests/test_api_crawler.py with 10 test cases covering:
+    * POST /api/v1/add/crawler/task endpoint (success, errors, auth, validation)
+    * POST /api/v1/add/crawler/capture endpoint (success, errors, auth)
+    * Authentication and authorization scenarios
+    * Input validation and error handling
+  - Update bin/LAUNCH.sh to include test_api_crawler in test runner
+  - All tests use Flask test client with mocked dependencies for isolation
+
+* Merge branch 'master' into local_storage. [terrtia]
+
+* Merge pull request #290 from ail-project/dependabot/npm_and_yarn/var/www/static/codemirror/codemirror-yara/vite-6.4.1. [Steve Clement]
+
+  build(deps-dev): bump vite from 6.3.6 to 6.4.1 in /var/www/static/codemirror/codemirror-yara
+
+* Build(deps-dev): bump vite in /var/www/static/codemirror/codemirror-yara. [dependabot[bot]]
+
+  Bumps [vite](https://github.com/vitejs/vite/tree/HEAD/packages/vite) from 6.3.6 to 6.4.1.
+  - [Release notes](https://github.com/vitejs/vite/releases)
+  - [Changelog](https://github.com/vitejs/vite/blob/main/packages/vite/CHANGELOG.md)
+  - [Commits](https://github.com/vitejs/vite/commits/create-vite@6.4.1/packages/vite)
+
+  ---
+  updated-dependencies:
+  - dependency-name: vite
+    dependency-version: 6.4.1
+    dependency-type: direct:development
+  ...
+
+* Merge branch 'master' into local_storage. [terrtia]
+
+* Merge branch 'master' of github.com:ail-project/ail-framework. [terrtia]
+
+* Merge pull request #288 from alexandercronin/fix/typo_in_hunter_tamplates. [Thirion Aurélien]
+
+  fix typo `ans` to `and`
+
+* Fix typo `ans` to `and` [Alex Cronin]
+
+
+## v6.5 (2025-09-29)
+
+### New
+
+* [crawler] add I2P crawler + auto discovery crawler. [terrtia]
+
+* [search engine] search description of images, screenshots and domain. [terrtia]
+
+* [search engine] add description indexes of domains, images and screenshots. [terrtia]
+
+* Add support for kvrocks installed from the deb package. [Raphaël Vinot]
+
+* Skip SSL context in Flask if the cert/keys are missing. [Raphaël Vinot]
+
+### Changes
+
+* [v6.5] add v6.5 update. [terrtia]
+
+* [correlation engine] fct to search for ids in one depth correlation, return intermediate obj. [terrtia]
+
+* [correlation engine] add fct to search for ids in one depth correlation. [terrtia]
+
+* [i2p crawler] filter I2P Website Unreachable and Website Unknown - Website Not Found in Addressbook domains. [terrtia]
+
+* [i2p crawler] filter I2P Website Unreachable and Website Unknown - Website Not Found in Addressbook domains. [terrtia]
+
+* [psl_faup] add support for additionnal tlds like b32.i2p + improve performance. [terrtia]
+
+* [settings] show numbers of active orgs + numbers of logged and active users. [terrtia]
+
+* [image engine] add fct to describe all images. [terrtia]
+
+* [image description] index iamge and domain description. [terrtia]
+
+* [search engine images description] show image. [terrtia]
+
+* Move yara install from var/www/update_thirdparty.sh to installing_deps.sh. [Raphaël Vinot]
+
+### Fix
+
+* [crawler] i2p localhost redirection. [terrtia]
+
+* [search domain by daterange] fix UI domain type selector. [terrtia]
+
+* [Onion module] fix already crawled domains. [terrtia]
+
+* [Onion module] fix module. [terrtia]
+
+* [psl_faup] set IP address as domain. [terrtia]
+
+* [crawler dashboard] fix html tag. [terrtia]
+
+* [crawler dashboard] improve stats crawler type layout. [terrtia]
+
+* [i2p crawler] only filter errored I2P pages + fix i2P crawler stats. [terrtia]
+
+* [i2p crawler] filter I2P Invalid Destination. [terrtia]
+
+* [i2p crawler] filter I2P Website on domhash. [terrtia]
+
+* [i2p crawler] filter I2P Website on domhash. [terrtia]
+
+* [image engine] fct to describe all images. [terrtia]
+
+* [image engine] fct to describe all images. [terrtia]
+
+* [search engine images description] fix pagination + domain image. [terrtia]
+
+* [search engine images description] fix domain image. [terrtia]
+
+* [search engine images description] fix template. [terrtia]
+
+* [search engine image description] fix obj link baseurl. [terrtia]
+
+* [search engine image description] fix obj link. [terrtia]
+
+* [search engine] fix blueprint redirect. [terrtia]
+
+* [search engine] search description of images, screenshots and domain. [terrtia]
+
+* [search engine] fix indexs name. [terrtia]
+
+* [search engine] fix indexs name. [terrtia]
+
+* [test] fix API/UI test. [terrtia]
+
+* [test] fix API/UI test. [terrtia]
+
+* [doc] fix pystemon config dir name. [terrtia]
+
+### Other
+
+* Merge pull request #286 from ail-project/dependabot/npm_and_yarn/var/www/static/codemirror/codemirror-yara/vite-6.3.6. [Thirion Aurélien]
+
+  build(deps-dev): bump vite from 6.3.5 to 6.3.6 in /var/www/static/codemirror/codemirror-yara
+
+* Build(deps-dev): bump vite in /var/www/static/codemirror/codemirror-yara. [dependabot[bot]]
+
+  Bumps [vite](https://github.com/vitejs/vite/tree/HEAD/packages/vite) from 6.3.5 to 6.3.6.
+  - [Release notes](https://github.com/vitejs/vite/releases)
+  - [Changelog](https://github.com/vitejs/vite/blob/v6.3.6/packages/vite/CHANGELOG.md)
+  - [Commits](https://github.com/vitejs/vite/commits/v6.3.6/packages/vite)
+
+  ---
+  updated-dependencies:
+  - dependency-name: vite
+    dependency-version: 6.3.6
+    dependency-type: direct:development
+  ...
+
+* Merge branch 'master' of github.com:ail-project/ail-framework. [terrtia]
+
+* Merge pull request #280 from ail-project/kvrocks-deb. [Thirion Aurélien]
+
+  new: Add support for kvrocks installed from the deb package
+
+* Merge pull request #281 from ail-project/skip_sslcontext. [Thirion Aurélien]
+
+  new: Skip SSL context in Flask if the cert/keys are missing
+
+* Merge pull request #282 from ail-project/move_yara_install. [Thirion Aurélien]
+
+  chg: Move yara install from var/www/update_thirdparty.sh to installing_deps.sh
+
+
 ## v6.4 (2025-08-22)
 
 ### Changes
