@@ -11,6 +11,8 @@ layout: info
 
 # Features
 
+## Core features
+
 * Modular architecture to handle streams of unstructured or structured information
 * Default support for external ZMQ feeds, such as provided by CIRCL or other providers
 * Multiple feed support
@@ -48,6 +50,21 @@ layout: info
 * An advanced detection engine per keyword supporting words, set, regular expression and [YARA rules](https://github.com/ail-project/ail-yara-rules)
 * A YARA retro-hunting to perform searches on collected items
 * AIL Synchronisation features to sync with other AIL instances
+
+## Recent features introduced
+
+* Unified search interface with best-match/most-recent sorting and integrated date filtering
+* Chat Explorer with Discord, Telegram, and Matrix ingestion support, including replies, forwarded metadata, threads, subchannels, and message relationships
+* Integrated translation workflows for chats and multilingual analysis improvements
+* Built-in YARA editor (CodeMirror) for creating and managing rules directly in AIL
+* Image and screenshot intelligence improvements, including AI-generated descriptions and better unsafe-content handling/tagging
+* Expanded OCR and QR extraction capabilities, including improved correlation and support for inverted QR codes
+* Full PDF processing pipeline with metadata extraction, translation support, and PDF-to-Markdown content extraction
+* Passive SSH integration to correlate SSH keys with IPs, domains, and onion services for infrastructure analysis/deanonymization
+* I2P crawling support (in addition to Tor/web crawling), with improved crawler stability and capture import workflows
+* New investigation workflow improvements (investigation statuses, direct-correlation prioritization, and tracker-to-retro-hunt workflow)
+* Organization-aware access controls and stronger account security with 2FA (TOTP/HOTP)
+* Extended mail and username search capabilities with improved performance and pagination
 
 # Processing overview
 
