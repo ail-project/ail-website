@@ -5,9 +5,11 @@ layout: default
 <div class="header-container jumbotron">
     <div class="container">
         <h1>AIL Project</h1>
-        <p>AIL Project is an open source framework to collect, crawl, dig and analyse unstructured data.
-          The framework can be used to find information leaks, intelligence, insights and much more.</p>
-        <p><a class="btn btn-primary btn-lg" href="{{ "/features.html" | relative_url }}" role="button">Features</a></p>
+        <p>AIL Project is an open source framework to collect, crawl, process and analyse unstructured data from the clear web, Tor, and modern communication platforms.</p>
+        <p>
+            <a class="btn btn-primary btn-lg" href="{{ "/features.html" | relative_url }}" role="button">Explore Features</a>
+            <a class="btn btn-default btn-lg" href="https://github.com/ail-project/ail-framework" role="button">View on GitHub</a>
+        </p>
     </div>
 </div>
 
@@ -15,32 +17,74 @@ layout: default
     <div class="row">
         <div class="col-md-6">
             <h2 class="header-light regular-pad">What is AIL Project?</h2>
-              <p class="lead">AIL Project is an open source framework composed of different modules to collect, crawl, dig and analyse unstructured data.
-              AIL includes an <a href="https://github.com/ail-project/ail-framework">extensible Python-based framework</a> for analysis of unstructure information collected
-              via an advanced <a href="https://github.com/ail-project/ail-splash-manager">Crawler manager</a> or from different feeders (such as <a href="https://github.com/ail-project/ail-feeder-twitter">Twitter</a>, <a href="https://github.com/ail-project/ail-feeder-discord">Discord</a>, <a href="https://github.com/ail-project/ail-feeder-telegram">Telegram</a> Stream providers) or custom feeders.
-              </p>
-              <p class="lead">AIL supports active crawling of Tor hidden services along with crawling protected websites and forums with pre-recorded session cookies.</p>
+            <p class="lead">AIL Project is a modular intelligence and leak-analysis platform. It helps analysts ingest diverse sources, extract meaningful indicators, and correlate findings across technical, textual and visual artifacts.</p>
+            <p class="lead">AIL includes an <a href="https://github.com/ail-project/ail-framework">extensible Python-based framework</a>, an advanced <a href="https://github.com/ail-project/ail-lacus">Lacus crawler manager</a>, and dedicated feeder integrations for <a href="https://github.com/ail-project/ail-feeder-discord">Discord</a>, <a href="https://github.com/ail-project/ail-feeder-telegram">Telegram</a> and other stream providers.</p>
+            <p class="lead">From leak detection and retro-hunting to investigations and external integrations, AIL is designed to support day-to-day CTI and SOC workflows at scale.</p>
         </div>
         <div class="col-md-6 text-center">
             <img src="{{ "/assets/img/ail-project-medium.png" | relative_url }}" alt="AIL Project logo" class="img-responsive">
         </div>
     </div>
+
     <hr>
+
     <div class="row">
         <div class="col-sm-4">
-            <h1 class="text-center"><i class="fa fa-pencil" aria-hidden="true"></i></h1>
-            <h3 class="text-center">Free and Open Source</h3>
-            <p>AIL Project provides a full-blown open source solution to monitor for leak on the dark web at zero-cost. AIL can be run on-premise, in the cloud or dedicated SaaS. There is no external dependencies.</p>
+            <h1 class="text-center"><i class="fa fa-rss" aria-hidden="true"></i></h1>
+            <h3 class="text-center">Broad Data Collection</h3>
+            <p>Collect from web/Tor/I2P crawling, external feeds, and chat platforms. AIL supports ongoing ingestion and reprocessing so teams can continuously enrich old and new data.</p>
         </div>
         <div class="col-sm-4">
-            <h1 class="text-center"><i class="fa fa-cogs" aria-hidden="true"></i></h1>
-            <h3 class="text-center">Modular Design</h3>
-            <p>AIL Project has a modular design to ease contribution and extension. Analyser module, new feeder or stream can be incorporated into the AIL framework without the need to know the inner working. API and integration are already existing with other major open source projects such <a href="https://www.misp-project.org/">MISP</a> or <a href="https://flowintel.github.io/flowintel-doc/#/">FlowIntel</a>.</p>
+            <h1 class="text-center"><i class="fa fa-search" aria-hidden="true"></i></h1>
+            <h3 class="text-center">Deep Analysis & Correlation</h3>
+            <p>Extract credentials, emails, crypto artifacts, files, keys, and more. Use full-text indexing, YARA-based detections, OCR/QR extraction, and graph-based correlation to accelerate investigations.</p>
         </div>
         <div class="col-sm-4">
-            <h1 class="text-center"><i class="fa fa-code-fork" aria-hidden="true"></i></h1>
-            <h3 class="text-center">Open Contribution</h3>
-            <p>Every contributors to AIL Project will become a co-owner of the project to guarantee an always open source project. No CLA to sign, it's a simple <a href="https://ossbase.org/initiatives/cla-free/">CLA Free - Developer Certificate of Origin</a>. Join us!</p>
+            <h1 class="text-center"><i class="fa fa-share-alt" aria-hidden="true"></i></h1>
+            <h3 class="text-center">Operational Integrations</h3>
+            <p>Share intelligence to <a href="https://www.misp-project.org/">MISP</a> and <a href="https://flowintel.github.io/flowintel-doc/#/">FlowIntel</a>, and synchronize across AIL instances while keeping full control over your deployment model.</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="header-light regular-pad">What&apos;s New in Recent Releases</h2>
+            <p class="lead">AIL is actively developed with frequent feature releases. Recent additions include:</p>
+        </div>
+        <div class="col-md-6">
+            <ul>
+                <li>Unified search interface with best-match and most-recent ranking.</li>
+                <li>Chat Explorer improvements for Discord, Telegram, and Matrix metadata/threads.</li>
+                <li>Built-in YARA rule editor and expanded retro-hunting workflows.</li>
+                <li>Image/screenshot intelligence enhancements with AI-assisted descriptions.</li>
+                <li>Expanded OCR and QR extraction, including inverted QR code handling.</li>
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <ul>
+                <li>Full PDF processing pipeline with metadata extraction and translation support.</li>
+                <li>Passive SSH correlation for deanonymization and infrastructure analysis.</li>
+                <li>I2P crawling support and improved crawler stability.</li>
+                <li>Investigation workflow upgrades and stronger organization-aware access control.</li>
+                <li>Extended mail and username search with improved performance and pagination.</li>
+            </ul>
+        </div>
+        <div class="col-md-12">
+            <p>
+                <a class="btn btn-primary" href="{{ "/features" | relative_url }}">See Full Feature List</a>
+                <a class="btn btn-default" href="{{ "/allposts.html" | relative_url }}">Read Release Notes</a>
+            </p>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="header-light regular-pad">Free and Open Source by Design</h2>
+            <p class="lead">AIL is free and open source, CLA-free, and built for collaboration. Contributions are welcome across modules, integrations, detections, and workflows.</p>
         </div>
     </div>
 </div>
