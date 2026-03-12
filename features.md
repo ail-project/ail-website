@@ -84,7 +84,7 @@ layout: info
     <h2>Processing overview</h2>
     <p class="features-intro">AIL provides a modular approach with different Python modules in charge of the various features. Modules can be plugged and started live to allow distribution of load accross multi processors.</p>
     <figure class="feature-figure">
-      <img src="https://www.ail-project.org/assets/img/graph.svg" alt="AIL processing graph overview">
+      <img src="https://www.ail-project.org/assets/img/ail-internal.png" alt="AIL processing graph overview">
     </figure>
   </section>
 </div>
