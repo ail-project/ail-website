@@ -4,18 +4,57 @@ permalink: /who
 layout: info
 ---
 
-The core team behind the AIL Project is a group of highly motivated individuals.
+<div class="jumbotron">
+  <h2>People and organisations behind AIL</h2>
+  <p>
+    The AIL Project is an open-source effort maintained by a dedicated team and a wider community of contributors.
+    <strong>The project is managed by <a href="https://www.circl.lu/">CIRCL</a></strong>, which coordinates long-term development,
+    operational support, and sustainability.
+  </p>
+</div>
 
-- Alexandre Dulaunoy [@adulau](https://twitter.com/adulau)
-- Sami Mokaddem [@mokaddem_sami](https://twitter.com/mokaddem_sami)
-- Aurelien Thirion [@Terrtia](https://twitter.com/Terrtia)
+<div class="panel panel-primary">
+  <div class="panel-heading"><strong>Managed by CIRCL</strong></div>
+  <div class="panel-body">
+    <p>
+      CIRCL (Computer Incident Response Center Luxembourg) provides project stewardship, technical direction,
+      and continuity for AIL.
+    </p>
+    <p>
+      <a href="https://www.circl.lu/">
+        <img src="https://www.circl.lu/assets/images/logo.png" alt="CIRCL logo" style="max-height:80px;">
+      </a>
+    </p>
+  </div>
+</div>
 
-# Project funding
+## Core team
 
-![CIRCL.lu](https://www.circl.lu/assets/images/logo.png)
-![CEF Telecom funding (D4 Project](https://www.misp-project.org/assets/images/en_cef.png)
+- Alexandre Dulaunoy ([adulau](https://github.com/adulau))
+- Sami Mokaddem
+- Aurélien Thirion ([terrtia](https://github.com/terrtia))
 
-# Project Credit in Academic Papers
+## Known contributors
+
+We are grateful to everyone who helped shape AIL over the years, including:
+
+- Olivier Sagit ([osagit](https://github.com/osagit))
+- Tony Jabbour
+- Aaron Kaplan
+- fukusuket ([fukusuket](https://github.com/fukusuket))
+- NMD03 ([NMD03](https://github.com/NMD03))
+
+If we missed your name, please open an issue or a pull request and we will happily add you.
+
+## Project funding
+
+<p>
+  <img src="https://www.misp-project.org/assets/images/en_cef.png" alt="CEF Telecom funding" style="max-height:90px;">
+</p>
+
+Development of the AIL framework is co-funded by CIRCL and European initiatives.
+
+## Project Credit in Academic Papers
 
 If you write an academic paper relying or using AIL Project, you can cite AIL Project with the following BibTeX entry:
 
@@ -29,4 +68,3 @@ If you write an academic paper relying or using AIL Project, you can cite AIL Pr
   organization={IEEE}
 }
 ~~~
-
