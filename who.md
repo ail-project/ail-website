@@ -4,13 +4,17 @@ permalink: /who
 layout: info
 ---
 
-<div class="jumbotron">
-  <h2>People and organisations behind AIL</h2>
-  <p>
-    The AIL Project is an open-source effort maintained by a dedicated team and a wider community of contributors.
-    <strong>The project is managed by <a href="https://www.circl.lu/">CIRCL</a></strong>, which coordinates long-term development,
-    operational support, and sustainability.
-  </p>
+<div class="panel panel-default">
+  <div class="panel-heading"><strong>People and organisations behind AIL</strong></div>
+  <div class="panel-body">
+    <p>
+      The AIL Project is an open-source effort maintained by a dedicated core team and a wider community of contributors.
+    </p>
+    <p>
+      <strong>The project is managed by <a href="https://www.circl.lu/">CIRCL</a></strong>, which coordinates long-term development,
+      operational support, and sustainability.
+    </p>
+  </div>
 </div>
 
 <div class="panel panel-primary">
