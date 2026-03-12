@@ -1,6 +1,91 @@
 # Changelog
 
 
+## v6.7 (2026-03-12)
+
+### Changes
+
+* [ail_stats] get all subtypes objects nb. [terrtia]
+
+* [ui objects] refactor object dashboard + add investigations section. [terrtia]
+
+* [chat + correlation] add function to remove chat object + fix chat correlation. [terrtia]
+
+* [retro hunt] add hunted objects status: viewed, done, rejected (fp) [terrtia]
+
+* [tracker] add tracked objects status: viewed, done, rejected (fp) + improve invalid yara-rule error message. [terrtia]
+
+* [items + chats messages] add to top sticky btn. [terrtia]
+
+* [investigation] dowmload investigation objects. [terrtia]
+
+* [message iterator] add option to iterate on chat type as sources. [terrtia]
+
+* [mail + json feeder] use meta ID for item obj_id if don't exists + mail, extract email if not default zmq. [terrtia]
+
+* [tracker] add btn to create retro hunt from tracker. [terrtia]
+
+* [tracker + retro hunt] item, only extract current tracker/retro hunt. [terrtia]
+
+* [tracker + retro hunt] item, only extract current tracker/retro hunt. [terrtia]
+
+* [stats] add fct to reset feeders names. [terrtia]
+
+* [codereader] chg gif logger level. [terrtia]
+
+* [onion lookup] remove non onion strings. [terrtia]
+
+* [show correlation] add btns: Show Direct Correlations (Level 0) + Clear All Object Types + Select All Object Types. [terrtia]
+
+* [trackers] match objs, add view pdf btn if correlation filename == 1 pdf. [terrtia]
+
+* [onion lookup] hide titles fron unsafe domains. [terrtia]
+
+### Fix
+
+* [investigations ui] remove duplicate inf field. [terrtia]
+
+* [correlation] add missing correlations. [terrtia]
+
+* [tracker] view tracker change view event click to mousedown. [terrtia]
+
+* [chat feeder] message id of pdf and image, the channel ID was added to the global message ID. fix invalid chat correlation + image/pdf not linked in the same message in the UI. [terrtia]
+
+* [crawler] add domhash extraction timeout on malformed html. [terrtia]
+
+* [crawler] add domhash extraction timeout on malformed html. [terrtia]
+
+* [chat monitoring] fix typo. [terrtia]
+
+* [investigation] fix global datatable. [terrtia]
+
+* [investigation download] item filename. [terrtia]
+
+* [acl investigation] edit created. [terrtia]
+
+* [acl investigation] edit created. [terrtia]
+
+* [investigation] download, remove item .gz extension. [terrtia]
+
+* [mail] none source. [terrtia]
+
+* [passive ssh] except connection error. [terrtia]
+
+* [tracker] show traker to retro hunt only if yara type. [terrtia]
+
+* [item] fix extractor tracker uuid. [terrtia]
+
+* [correlation engine] load direct correlations first in the correlation graph. [terrtia]
+
+* [tracker] fix none pdf btn when multiple pdfs correlate with the same file-name. [terrtia]
+
+* [flask] fix error 500 logger for not logged users. [terrtia]
+
+* [chat importer] fix none images if size image > limit. [terrtia]
+
+* [pdf] fix translation overlapping bbox. [terrtia]
+
+
 ## v6.6 (2025-12-05)
 
 ### Changes

@@ -14,7 +14,7 @@ twitter: https://twitter.com/ail_project
 # theme options from https://bootswatch.com/3/
 # comment out this to use default Bootstrap
 bootwatch: cosmo # cerulean cosmo custom cyborg darkly flatly journal lumen readable sandstone simplex slate solar spacelab superhero united yeti
-
+include: [".well-known"]
 # Build settings
 markdown: kramdown
 highlighter: rouge
