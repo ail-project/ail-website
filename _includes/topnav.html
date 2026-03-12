@@ -2,11 +2,11 @@
     <div class="container navbar-container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
             <a class="navbar-brand" href="{{ site.baseurl }}/">
                 <span><img src="{{ "/assets/img/logonav.png" | relative_url }}" alt="Logo"></span> {{ site.title }}
             </a>
@@ -15,11 +15,14 @@
             <ul class="nav navbar-nav">
                 <li {% if page.sectionid=='docs' %} class="active" {% endif %}><a href="{{ "/features.html" | relative_url }}">Features</a></li>
                 <li {% if page.sectionid=='who' %} class="active" {% endif %}><a href="{{ "/who.html" | relative_url }}">Who</a></li>
-                <li {% if page.sectionid=='blog' %} class="active" {% endif %}><a href="{{ site.posts[0].url | relative_url }}">Blog</a></li>
+                <li {% if page.sectionid=='blog' or page.layout=='post' %} class="active" {% endif %}><a href="{{ "/allposts.html" | relative_url }}">Blog</a></li>
                 <li {% if page.sectionid=='faq' %} class="active" {% endif %}><a href="{{ "/faq.html" | relative_url }}">FAQ</a></li>
-		<li {% if page.sectionid=='onion-lookup' %} class="active" {% endif %}><a href="https://onion.ail-project.org/">onion-lookup</a></li>
+                <li {% if page.sectionid=='onion-lookup' %} class="active" {% endif %}><a href="https://onion.ail-project.org/">onion-lookup</a></li>
             </ul>
-            <div class="navbar-right">
+            <div class="navbar-right navbar-actions">
+                <a class="btn btn-primary navbar-latest-post" href="{{ site.posts[0].url | relative_url }}">
+                    <i class="fa fa-bolt" aria-hidden="true"></i> Latest release
+                </a>
                 <form class="navbar-form navbar-left">
                     <div class="form-group has-feedback">
                         <input id="search-box" type="search" class="form-control" placeholder="Search...">
@@ -27,8 +30,8 @@
                     </div>
                 </form>
                 <ul class="nav navbar-nav">
-                    <li><a href="{{ site.git_address }}"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-                    <li><a href="{{ site.twitter }}"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="{{ site.git_address }}" aria-label="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                    <li><a href="{{ site.twitter }}" aria-label="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                 </ul>
             </div>
         </div>

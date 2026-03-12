@@ -5,14 +5,35 @@ sectionid: blog
 permalink: allposts.html
 ---
 
+<div class="container blog-page">
+    <div class="blog-hero">
+        <p class="blog-eyebrow">AIL Updates</p>
+        <h1>Blog & Release Notes</h1>
+        <p class="lead">Follow feature releases, technical deep-dives, deployment notes and community updates from the AIL Project team.</p>
+    </div>
 
-<div class="container">
-    <div class="inner-content">
-        <h1>All Posts</h1> {% for page in site.posts %}
-        <p>
-            <strong><a href="{{ page.url | relative_url }}">{{ page.title }}</a></strong>
-            <span>on {{ page.date | date: "%B %e, %Y" }} {% if page.author %} by {{ page.author }}{% endif %}</span>
-        </p>
+    <div class="row blog-featured-row">
+        {% for post in site.posts limit:3 %}
+        <div class="col-md-4 col-sm-6">
+            <article class="blog-card blog-card-featured">
+                <p class="blog-card-date">{{ post.date | date: "%B %e, %Y" }}</p>
+                <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+                <p class="blog-card-meta">{% if post.author %}By {{ post.author }}{% else %}AIL Project Team{% endif %}</p>
+            </article>
+        </div>
+        {% endfor %}
+    </div>
+
+    <h2 class="header-light regular-pad">All posts</h2>
+    <div class="blog-list">
+        {% for post in site.posts %}
+        <article class="blog-list-item">
+            <div class="blog-list-item-main">
+                <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+                <p class="blog-list-item-meta">{{ post.date | date: "%B %e, %Y" }}{% if post.author %} • {{ post.author }}{% endif %}</p>
+            </div>
+            <a class="btn btn-default" href="{{ post.url | relative_url }}">Read post</a>
+        </article>
         {% endfor %}
     </div>
 </div>
