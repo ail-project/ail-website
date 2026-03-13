@@ -8,7 +8,7 @@ lang: en-US
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: https://ail-project.org # the base hostname & protocol for your site
 git_address: https://github.com/ail-project/
-twitter: https://twitter.com/ail_project
+mastodon: https://infosec.exchange/@ail_project
 #git_edit_address: https://github.com/ail-project/ail-website/blob/main
 
 # theme options from https://bootswatch.com/3/
