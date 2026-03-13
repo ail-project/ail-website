@@ -24,13 +24,7 @@
                 <a class="btn btn-primary navbar-latest-post" href="{{ site.posts[0].url | relative_url }}">
                     <i class="fa fa-bolt" aria-hidden="true"></i> Latest release
                 </a>
-                <form class="navbar-form navbar-left">
-                    <div class="form-group has-feedback">
-                        <input id="search-box" type="search" class="form-control" placeholder="Search...">
-                        <i class="fa fa-search form-control-feedback"></i>
-                    </div>
-                </form>
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav navbar-social-links">
                     <li><a href="{{ site.git_address }}" aria-label="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a></li>
                     <li><a href="{{ site.mastodon }}" aria-label="Mastodon"><i class="fa fa-commenting" aria-hidden="true"></i></a></li>
                 </ul>
