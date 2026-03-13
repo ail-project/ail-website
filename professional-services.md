@@ -1,6 +1,6 @@
 ---
 title: AIL Professional Services
-permalink: /professional-services
+permalink: /professional-services.html
 layout: info
 sectionid: professional-services
 ---
