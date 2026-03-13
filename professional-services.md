@@ -1,32 +1,49 @@
 ---
-title: AIL Professional Services 
+title: AIL Professional Services
 permalink: /professional-services
 layout: info
+sectionid: professional-services
 ---
 
-AIL Professional Services (AILPS) is a program managed by the lead developers of the AIL Project to offer highly skilled services around AIL project and to support the sustainability of the AIL ecosystem. This initiative addresses the policy requirements of companies/organizations that need commercial support contracts.
+<div class="panel panel-default">
+  <div class="panel-heading"><strong>AIL Professional Services</strong></div>
+  <div class="panel-body">
+    <p>
+      AIL Professional Services (AILPS) is delivered by the lead developers of the AIL Project.
+      It is designed for organizations that need guaranteed responsiveness, operational guidance,
+      and long-term collaboration while helping sustain the open-source AIL ecosystem.
+    </p>
+    <p>
+      In addition to the best-effort community support channels, AILPS provides structured,
+      prioritized support through contractual service offerings.
+    </p>
+  </div>
+</div>
 
-In addition to the best-effort support available through the usual support channels, AIL Professional Services are designed for companies and organizations that need their issues fast-tracked and prioritized.
+## Service packages
 
-# Support Contract
+| Package | Includes | Price |
+|---|---|---|
+| **Support Contract** | Prioritized handling of up to 5 issues per year (up to 6 hours per issue), including configuration requests and fast-tracked bug fixes for AIL core software and feeders maintained by us. | **EUR 10,000.00 / year** |
+| **Sustainability Support** | Your organization logo displayed prominently in the AIL Project website supporter section. | **EUR 15,000.00 / year** |
+| **Combined Package** | Sustainability supporter logo placement + prioritized handling of up to 6 issues per year (configuration requests or fast-tracked bug fixes for maintained AIL core software/modules). | **EUR 21,500.00 / year** |
 
-We offer an annual support contract for the fast-tracked resolution of 5 issues (6 hours per ticket). This contract includes the prioritized resolution of 5 issues, configuration requests, or fast-tracked bug fixes for the AIL Project core software or feeders maintained by us. Support is provided through our ticket system within business hours. Fast-tracking new/custom features is usually project-based and not included in this support contract, but exceptions can be made based on the complexity of the requested feature. This support contract costs EUR 10.000,00 per year.
+> Support is provided through our ticket system during business hours.
+> New/custom feature development is usually handled as a separate project, depending on scope and complexity.
 
-# Sustainability Support
+## Optional additional support
 
-To support the sustainability of AIL Project as an Open Source project, we offer the display of your logo prominently on the AIL Project website's supporter section. This type of support costs EUR 15.000,00 per year.
+For organizations with an active support contract:
 
-# Support Contract & Sustainability Support
+- **Advisory, installation, or integration support (remote):** EUR 2,000.00 per 8 hours.
+- **Development of new/custom features:** project-based pricing depending on requirements.
 
-To further support AIL's sustainability, we offer a combined package that includes the display of your logo on the AIL Project website's supporter section, along with the prioritized resolution of 6 issues, configuration requests, or fast-tracked bug fixes for the AIL core software or modules maintained by us. Support is provided through our ticket system within business hours. Fast-tracking new/custom features is usually project-based and not included in this support contract, but exceptions can be made depending on the complexity. This combined support package costs EUR 21.500,00 per year.
+## Typical use cases
 
-# Optional Additional Support Offerings
+- Accelerating production incident resolution.
+- Getting expert guidance for deployment, integration, and operations.
+- Funding sustainable development while receiving prioritized technical assistance.
 
-The following options are available for any holder of an active support contract:
+## Contact
 
-- Advisory, installation, or integration support, remotely (EUR 2.000,00 per 8 hours).
-- Development of new and/or custom features (project-based, cost depending on scope).
-
-# Contact
-
-For inquiries please contact aps@circl.lu.
+For inquiries, please contact **aps@circl.lu**.
