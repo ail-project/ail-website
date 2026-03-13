@@ -5,7 +5,7 @@ html {
   }
 body {
     // Keep page titles fully visible when the fixed top navigation wraps.
-    padding-top: $navbar-height + $navbar-margin-bottom + 32px;
+    padding-top: $navbar-height + $navbar-margin-bottom;
     margin-bottom: 46px;
   }
   
