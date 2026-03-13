@@ -6,11 +6,11 @@ layout: info
 
 # Frequently Asked Questions
 
-## How to size the hardware requirements for AIL? 
+## How to size the hardware requirements for AIL?
 
 The AIL Framework (Analysis Information Leak Framework) is an open-source modular framework designed for analyzing potential information leaks from unstructured data sources like pastes from Pastebin, social media, and other platforms. Running the AIL Framework can be resource-intensive depending on the volume and complexity of data you plan to process. Below are the recommended hardware requirements to install and run the AIL Framework effectively in a small use-case:
 
-### **Minimum Hardware Requirements:**
+### Minimum hardware requirements
 
 1. **Processor (CPU):**
    - **Type:** Multi-core processor (64-bit architecture).
@@ -22,40 +22,42 @@ The AIL Framework (Analysis Information Leak Framework) is an open-source modula
 
 3. **Storage:**
    - **Type:** Solid-State Drive (SSD) for faster read/write operations.
-   - **Minimum Free Space:** 5 TB.
-   - **Recommended:** 10 TB or more, depending on the amount of data you expect to collect and analyze (such as screenshot, HAR archive).
+   - **Minimum free space:** 5 TB.
+   - **Recommended:** 10 TB or more, depending on the amount of data you expect to collect and analyze (such as screenshot and HAR archives).
 
-4. **Operating System:**
+4. **Operating system:**
    - **Type:** Linux-based OS.
-   - **Recommended Distributions:** Ubuntu 24.04 LTS or later.
+   - **Recommended distributions:** Ubuntu 24.04 LTS or later.
    - **Note:** The framework is primarily developed and tested on Ubuntu-based systems.
 
-5. **Internet Connectivity:**
+5. **Internet connectivity:**
    - A stable broadband connection for fetching data from online sources and updating modules.
 
 6. **Graphics Processing Unit (GPU):**
-   - **Optional:** Not required but recommended unless you plan to run LibreTranslate or EasyOCR that leverages GPU acceleration.
+   - **Required for image description:** If you want to use the image description functionality (powered by a Qwen2.5-VL model), a GPU is required.
+   - **Recommendation:** An NVIDIA L40S-class GPU (or equivalent GPU capable of running Qwen2.5-VL).
+   - **Without compatible GPU:** Image description and other GPU-dependent features will not be available.
 
-### **Additional Recommendations:**
+### Additional recommendations
 
-- **Python Environment:**
+- **Python environment:**
   - Ensure you have Python 3.8 or higher installed, as the framework and its dependencies rely on Python 3.
 
 - **Dependencies:**
   - Be prepared to install various Python libraries and system packages. Having a system with easy access to package managers like `apt` for Ubuntu will simplify this process.
 
-### **Performance Considerations:**
+### Performance considerations
 
-- **Data Volume:**
+- **Data volume:**
   - The more data sources and the higher the data ingestion rate, the more CPU and RAM you'll need.
 
-- **Modules and Features:**
+- **Modules and features:**
   - Enabling resource-intensive modules (such as doing a lot of pattern matching) will increase hardware demands.
 
 - **Scalability:**
   - For large-scale installation, consider distributed setups or scaling horizontally by adding more machines to handle the storage or the crawling aspects.
 
-### **Summary:**
+### Summary
 
 To ensure optimal performance of the AIL Framework:
 
@@ -64,6 +66,7 @@ To ensure optimal performance of the AIL Framework:
 - Provide ample SSD storage (5TB or more recommended).
 - Run the framework on a Ubuntu-based Linux system.
 - Maintain a stable internet connection for data collection and updates.
+- Add an NVIDIA L40S-class GPU (or equivalent) if you need image description powered by Qwen2.5-VL.
 
 By meeting these hardware requirements, you'll be well-equipped to install the AIL Framework and utilize its full capabilities for analyzing information leaks effectively.
 
